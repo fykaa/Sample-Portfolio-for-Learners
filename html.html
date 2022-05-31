@@ -1,0 +1,320 @@
+<!-- tags to use:
+
+<a href="hello.html" target = "_blank">Go to Google</a>           -> you can also link internal webpages that are locally available in your directory
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- characters that are used will be of UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- website to open in the highest compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- to make your website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To add a description, we have to write the above statement  -->
+    <meta name="description" content="This is description">
+
+    <!-- Keywords are those special words through which a user reach any website -->
+    <meta name="keywords" content="html, html tutorials, web development">
+
+    <!-- If we want our website to be indexed in Google or other search engines and bots should follow all the links present on the website, then we have to write -->
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <title>Fyka's Portfolio</title>
+
+    <!-- This is how you include external css -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- This is how you include external JavaScript -->
+    <script src="javascript.js"></script>
+
+    <!-- Adding Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- INTERNAL CSS -->
+
+    <style>
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1>Fyka's Portfolio</h1>
+            <ul>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search my Portfolio">
+                </div>
+
+                <li><a href="#work"> Work</a></li>
+                <li><a href="#project"> Projects</a></li>
+                <li><a href="#write"> Contact</a></li>
+                <li><a href="#"> About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="about">
+
+            <h2 class="subhead">&rAarr; About Me &lAarr;</h2>
+
+            <p>
+
+                A Fullstack Developer based in Delhi, India. Currently an Intern at Groww, India. I'm pursuing BTech in
+                Computer
+                Science from VIT-Vellore.
+
+
+
+                I have hands on experience with various languages and frameworks. I've worked with Flutter and Go. I've
+                made
+                projects with React, Node. Delved a bit into native android dev with Kotlin and Jetpack Compose.
+
+
+
+                I love open source. I try to contribute to open source projects (which I like or use) from time to time.
+                Trying
+                to get better at contributing.
+
+
+
+                I also have some interest in design. I love to design UIs, social media posters for my projects on my
+                own.
+                In
+                fact, I designed this website too!</p>
+        </div>
+
+        <!-- To open a link in a new tab we add target -->
+        <a href="https://google.com" target="_blank">Go to Google Blank</a>
+        <a href="https://facebook.com" target="_self">Go to Facebook Self</a>
+
+        <!-- To add a break in line -->
+        <br>
+
+        <!-- To add an image -->
+        <img src="https://source.unsplash.com/200x110/?nature,water" alt="remote image" width="233" height="100"
+            id="image_to_hide">
+
+
+
+        <!-- Lists -->
+        <div class="project">
+
+            <h3 class="subhead">&rAarr;List of My Projects&lAarr;</h3>
+            <ul type="circle">
+                <h2>Skills in tech Stack</h3>
+                    <li>This is the first item of my unordered list</li>
+                    <li>This is the second item of my unordered list</li>
+                    <ul type="square">
+                        <li>Another one</li>
+                        <li>Another two</li>
+                        <li>Another three</li>
+                    </ul>
+            </ul>
+            <ol type="a">
+                <li>This is first item of my ordered list</li>
+                <li>This is second item of my ordered list</li>
+                <li>This is third item of my ordered list</li>
+            </ol>
+
+        </div>
+
+
+
+
+
+
+        <div class="work">
+
+            <!-- Tables -->
+            <h3 class="subhead">&rAarr;Table of All my work&lAarr;</h3>
+            <table class="work">
+                <thead style="border: 2px solid black;">
+                    <tr>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Project Name</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Details</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Duration</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portfolio Page</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
+                            cumque a
+                            deserunt minima illo odit necessitatibus hic facere voluptatibus, veritatis numquam veniam
+                            possimus
+                            ab nesciunt. Sunt?</td>
+                        <td>2 mos</td>
+                        <td>#</td>
+                    </tr>
+                    <tr>
+                        <td>Food delivery website</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
+                            cumque a
+                            deserunt minima illo odit necessitatibus hic facere voluptatibus, veritatis numquam veniam
+                            possimus
+                            ab nesciunt. Sunt?</td>
+                        <td>4 mos</td>
+                        <td>#</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+<h2 style="text-align: center;">Grid of vaarious technologies and keys I learnt in web development</h2>
+        <div class="gridcontainer">
+            
+            <div class="griditem">This is grid item 1</div>
+            <div class="griditem">This is grid item 2</div>
+            <div class="griditem">This is grid item 3</div>
+            <div class="griditem">This is grid item 4</div>
+            <div class="griditem">This is grid item 5</div>
+            <div class="griditem">This is grid item 6</div>
+            <div class="griditem">This is grid item 7</div>
+            <div class="griditem">This is grid item 8</div>
+            <div class="griditem">This is grid item 9</div>
+            <div class="griditem">This is grid item 10</div>
+            <div class="griditem">This is grid item 11</div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="write">
+
+        <h3 class="subhead">&rAarr; Write to me &lAarr;</h3>
+
+        <!-- Forms -->
+
+        <form class="write" action="backend.php">
+
+            <div class="box">
+                <label class="name" for="name">Name : </label>
+                <!-- To get the input as text type="text" -->
+                <input type="text" id="name" name="">
+            </div>
+
+
+            <div class="box" id="email">
+                Email : <input type="email" name="myEmail" required>
+            </div>
+
+            <!-- The <span> is an in-line element 
+            <div> is a block element. Which means, if we use two separate div tags for different inputs, then all the inputs will come on different lines. 
+            Till we learn we will use the <br> tags for breaking a line -->
+
+            <div class="box" id="number">
+                Number : <input type="number" name="">
+            </div>
+
+            <div class="box">
+                <!-- for="elig" means: if any element with ID elig is clicekd direct input box select hojayegaa -->
+                <label for="elig">Are you Eligible: </label><input type="checkbox" name="myEligibility" id="elig"
+                    checked>
+            </div>
+
+            <div class="box">
+                Feedback: Positive <input type="radio" name="myFeedback"> Negative <input type="radio"
+                    name="myFeedback">
+                Both<input type="radio" name="myFeedback">
+            </div>
+
+            <div>
+                <label for="nation">
+                    Your nationality:
+                </label>
+                <select name="" id="nation">
+                    <option value="indian" selected>Indian</option>
+                    <option value="not indian">Not Indian</option>
+                    <option value="nri">NRI</option>
+                </select>
+            </div>
+
+            <!-- TEXT BOX -->
+            <div>
+                Write Your Feedback: <br> <textarea name="" cols="25" rows="5"></textarea>
+            </div>
+
+            <div>
+                Completed? <input type="submit" value="Submit Now">
+            </div>
+            <br>
+
+            <div>
+                Reset? <input type="reset" value="Reset Now">
+            </div>
+
+        </form>
+    </div>
+
+
+    <!-- CONTACTS SECTION -->
+    <!-- FLEXBOX -->
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+
+    <!-- Inline Block Elements -->
+    <!-- Examples of inline elements: <a> <strong> , <em> , <b> , <i> , <q>, <mark> <span>
+        Examples of block elements:li, <p> and <div> -->
+
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, atque!</p>
+    <p>This is anothr p tag but on the same line prooving p is block</p>
+
+    <br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate ipsam laboriosam harum ex ut? Eos
+        minus expedita magni nemo</span> <span> This is another span tag but on saem line prooving span is inline</span>
+
+    <!-- IDs and Classes -->
+    <!-- One Id is unique to only one element using # -->
+    <!-- One Class can be given to multiple elements using . -->
+
+    <br>
+
+    <!-- Entities to write symbols &____ -->
+    <p>
+        For extra space: nbsp &nbsp; |
+        Paragraph symbol: lt &lt; |
+        Pound symbol: pound &pound; |
+        Copyright: copy &copy; |
+        Arrow: rAarr &rAarr; |
+        Empty character : #8203 &#8203; |
+    </p>
+
+
+    <!-- Semantic tags -->
+    <!-- Semantics are used to give proper meaning to the websites and help search engines to analyze it properly . very important structure for ranking in SEO-->
+
+    <!-- <header> <nav> <section> <article> <footer> -->
+    <footer>
+        Copyright &copy; reserved w Fyka Ansar &nbsp;
+    </footer>
+
+</body>
+
+</html>
