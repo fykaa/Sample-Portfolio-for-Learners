@@ -152,7 +152,7 @@
 
             <!-- Tables -->
             <h3 class="subhead">&rAarr;Table of All my work&lAarr;</h3>
-            <table class="work">
+            <table style="width: 95%;">
                 <thead style="border: 2px solid black;">
                     <tr>
                         <th style="border: 1px solid rgb(173, 44, 44);">Project Name</th>
@@ -162,7 +162,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr align="center">
                         <td>Portfolio Page</td>
                         <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
                             cumque a
@@ -172,7 +172,7 @@
                         <td>2 mos</td>
                         <td>#</td>
                     </tr>
-                    <tr>
+                    <tr align="center">
                         <td>Food delivery website</td>
                         <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
                             cumque a
@@ -216,22 +216,52 @@
         <form class="write" action="backend.php">
 
             <div class="box">
-                <label class="name" for="name">Name : </label>
+                <label
+                contenteditable="true"
+                spellcheck="true" 
+                class="name" for="name">Name : </label>
                 <!-- To get the input as text type="text" -->
-                <input type="text" id="name" name="">
+                <input 
+                value="First Last"
+                type="text"
+                placeholder="Enter Your Name here" 
+                autofocus
+                 id="name" name="">
             </div>
-
-
+            <br>
             <div class="box" id="email">
-                Email : <input type="email" name="myEmail" required>
+                Email : <input type="email" name="myEmail">
+            </div>
+            <br>
+            <!-- HTML Forms Validation - required, min maxlength, pattern -->
+            <div>
+                <label for="country_code">Country code:</label>
+                <input type="text" id="country_code" name="country_code" 
+                pattern="[A-Za-z]{3}"
+                required
+                minlength="2" 
+                maxlength="4" title="Three letter country code">
+
             </div>
 
             <!-- The <span> is an in-line element 
             <div> is a block element. Which means, if we use two separate div tags for different inputs, then all the inputs will come on different lines. 
             Till we learn we will use the <br> tags for breaking a line -->
 
+            <div>
+                <label for="caste">Caste: </label>
+                <input
+                type="text" 
+                disabled
+                name="" id="">
+            </div>
             <div class="box" id="number">
                 Number : <input type="number" name="">
+            </div>
+            
+            <br>
+            <div class="box" id="color">
+                House Color: <input type="color" name="">
             </div>
 
             <div class="box">
@@ -242,8 +272,7 @@
 
             <div class="box">
                 Feedback: Positive <input type="radio" name="myFeedback"> Negative <input type="radio"
-                    name="myFeedback">
-                Both<input type="radio" name="myFeedback">
+                    name="myFeedback"> Both <input type="radio" name="myFeedback">
             </div>
 
             <div>
@@ -254,6 +283,27 @@
                     <option value="indian" selected>Indian</option>
                     <option value="not indian">Not Indian</option>
                     <option value="nri">NRI</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="course">Select Your Course</label>
+                <select name="" id="course">
+                    <optgroup label="Computer Science Courses">
+                        <option value="ce">Computer Eng</option>
+                        <option>Software Eng</option>
+                        <option>Civil Eng</option>
+                    </optgroup>
+                    <optgroup label="Marketing Courses">
+                        <option>YT mark</option>
+                        <option>FB marketing</option>
+                        <option>SEO</option>
+                    </optgroup>
+                    <optgroup label="Finance Course">
+                        <option>rbi</option>
+                        <option>stock</option>
+                        <option>loan</option>
+                    </optgroup>
                 </select>
             </div>
 
@@ -304,7 +354,30 @@
 
     <br>
 
-    <!-- Entities to write symbols &____ -->
+    <!-- text formatting -->
+    <small>Hi</small>
+    <sup>superscript</sup>
+    yo
+    <sub>subscript</sub>
+    <mark>mark</mark>
+    <q>qquoted</q>
+    <cite>cited</cite>
+    <del>deleted</del>
+    <blockquote>blockquote</blockquote>
+    <meter min="10" max="100" value="50">mmeter</meter>
+    <progress></progress>
+    <!-- customizing progress bar -->
+    <progress max="100" value="50"></progress>
+    <details>I am the Details</details>
+    <!-- customizing details -->
+    <details>
+        <summary>Account Details</summary>
+        I am accoun detals
+    </details>
+
+
+    <!-- html advanced emojis and entities -->
+    https://www.science.co.il/internet/html/Smileys.php &#128565; &#128519; 😅
     <p>
         For extra space: nbsp &nbsp; |
         Paragraph symbol: lt &lt; |

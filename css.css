@@ -61,202 +61,184 @@ root is the global variable here, Any custom properties written in the root vari
 /* ------------------------------------------------------------------------------ */
 /* IMPORTING A WEB FONT FROM GOOGLE - copy font's stylesheet link in the head tag of html and then USE teh font-family name wherever required*/
 
-
 :root {
-    --light-color: brown;
-    --dark-color: #410914;
-    --text-color: white;
-    /* to use these variables we use background-color: var(--light-color); */
+  --light-color: brown;
+  --dark-color: #410914;
+  --text-color: white;
+  /* to use these variables we use background-color: var(--light-color); */
 }
 
 * {
-    font-family: 'Cabin', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', Helvetica, 'Neue', sans-serif;
-    /* font-weight: bold;*/
-    /* bold font-weight means 700 */
-    /* font-style: italic; */
-    font-weight: 600;
-    font-size: 17px;
-    /* line-height is distance between two lines */
-    line-height: 43px;
+  font-family: "Cabin", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    Helvetica, "Neue", sans-serif;
+  /* font-weight: bold;*/
+  /* bold font-weight means 700 */
+  /* font-style: italic; */
+  font-weight: 600;
+  font-size: 17px;
+  /* line-height is distance between two lines */
+  line-height: 43px;
 
-    /* Border box- when you add padding the length of padding keeps adding to the width of container. But if you don't want to change the width with padding you can use border-box , it keeps the width constant irrespective of padding and margin */
-    box-sizing: border-box;
+  /* Border box- when you add padding the length of padding keeps adding to the width of container. But if you don't want to change the width with padding you can use border-box , it keeps the width constant irrespective of padding and margin */
+  box-sizing: border-box;
 }
-
-
 
 body {
-
-    background-color: black;
-    background-color: rgb(0, 0, 0);
-    background-color: #000000;
-    color: white;
+  background-color: black;
+  background-color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: white;
 }
 
-
-
-
-
 .subhead {
-    text-align: center;
-    /* width: 244px; */
-    margin: auto;
+  text-align: center;
+  /* width: 244px; */
+  margin: auto;
 
-    /* rem- TIMES THE ROOT ELEMENT (HTML) */
-    /* font-size: 2rem; */
+  /* rem- TIMES THE ROOT ELEMENT (HTML) */
+  /* font-size: 2rem; */
 
-    /* em-  TIMES THE PARENT ELEMENT */
-    font-size: 2em;
-
+  /* em-  TIMES THE PARENT ELEMENT */
+  font-size: 2em;
 }
 
 /* HEADER SECTION */
 
 header {
-    position: sticky;
-    top: 3px;
-    /* z-index  will work only for position: relative, absolute, fixed , sticky. Not for static. larger z value covers smaller*/
-    z-index: 1;
+  position: sticky;
+  top: 3px;
+  /* z-index  will work only for position: relative, absolute, fixed , sticky. Not for static. larger z value covers smaller*/
+  z-index: 1;
 }
 
 .navbar {
-
-    background-color: #100f0f;
-    border-radius: 34px;
-    height: 70px;
-    width: 100%;
-
+  background-color: #100f0f;
+  border-radius: 34px;
+  height: 70px;
+  width: 100%;
 }
 
 .navbar ul {
-    overflow: auto;
-    /* adds scrollbar when box overflows  */
+  overflow: auto;
+  /* adds scrollbar when box overflows  */
 }
 
 .navbar h1 {
-
-    position: absolute;
-    /* relative to the positon of its first parent i.e. navbar? */
-    left: 60px;
-    margin: 12px;
-    float: left;
-    font-size: 2rem;
-    border-radius: 10px;
-    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
-    /* box-shadow: inset 0px 1px 24px 5px #410914; */
-    box-shadow: 0px 1px 24px 5px #987a80;
+  position: absolute;
+  /* relative to the positon of its first parent i.e. navbar? */
+  left: 60px;
+  margin: 12px;
+  float: left;
+  font-size: 2rem;
+  border-radius: 10px;
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+  /* box-shadow: inset 0px 1px 24px 5px #410914; */
+  box-shadow: 0px 1px 24px 5px #987a80;
 }
 
 .navbar li {
-    float: right;
-    list-style: none;
-    margin: 13px 20px;
+  float: right;
+  list-style: none;
+  margin: 13px 20px;
 }
 
 .search {
-    margin: 0px 19px;
-    float: right;
-    color: white;
-    margin: 10px;
-
+  margin: 0px 19px;
+  float: right;
+  color: white;
+  margin: 10px;
 }
 
 #logo {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
 }
 
 .navbar input {
-    border: 1px solid rgb(62, 58, 58);
-    border-radius: 14px;
-    padding: -1px 9px;
-    width: 163px;
+  border: 1px solid rgb(62, 58, 58);
+  border-radius: 14px;
+  padding: -1px 9px;
+  width: 163px;
 }
 
-
 header nav li {
-    list-style: none;
+  list-style: none;
 }
 
 header nav li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 header nav li a:hover {
-    color: brown;
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 28px;
-    padding: 6px;
+  color: brown;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 28px;
+  padding: 6px;
 }
 
 header nav li a:visited {
-    color: rgb(194, 123, 123);
+  color: rgb(194, 123, 123);
 }
 
 header nav li a:active {
-    background-color: darkred;
+  background-color: darkred;
 }
-
 
 section #image_to_hide {
-    /* display: none; */
-    /* this completely removes an HTML tag from the web page like it was never there. */
-    visibility: hidden;
-    /* this makes the tag invisible but will not remove the element, and it will still occupy the space on the page */
+  /* display: none; */
+  /* this completely removes an HTML tag from the web page like it was never there. */
+  visibility: hidden;
+  /* this makes the tag invisible but will not remove the element, and it will still occupy the space on the page */
 }
-
-
 
 /* ABOUT SECTION */
 
-
 .about {
-    padding: 34px;
+  padding: 34px;
 
-    text-align: center;
-    position: relative;
-    /* relative to its normal positon */
-    top: 30px;
-    width: 97vw;
-    /* vw-  the 1/100 times of the viewport width */
-    background-image: url("https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
-    /* background-repeat: repeat-x; */
-    /* background-repeat: repeat-y; */
-    background-repeat: no-repeat;
-    /* background-position: top center; */
-    background-position: center;
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    z-index: -1;
+  text-align: center;
+  position: relative;
+  /* relative to its normal positon */
+  top: 30px;
+  width: 97vw;
+  /* vw-  the 1/100 times of the viewport width */
+  background-image: url("https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  /* background-position: top center; */
+  background-position: center;
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  z-index: -1;
 }
-
 
 /* link */
 /* link with target set to blank */
 a[target] {
-    font-size: 1em;
-    color: violet;
+  font-size: 1em;
+  color: violet;
 }
 
 /* link with target set to self */
-a[target='_self'] {
-    font-size: 14px;
-    color: rgb(13, 22, 151);
+a[target="_self"] {
+  font-size: 14px;
+  color: rgb(13, 22, 151);
 }
-
 
 /* list PROJECTS SECTION */
 
 .project h3 {
-    /* x y blur */
-    text-shadow: 6px -3px 2px rgb(72, 32, 32);
+  /* x y blur */
+  text-shadow: 6px -3px 2px rgb(72, 32, 32);
 }
 
 /* using nth child pseudo selector */
 li:nth-child(2) {
-    color: cyan;
+  color: cyan;
 }
 
 /* li:nth-child(3n+3){
@@ -269,61 +251,58 @@ li:nth-child(odd){
     color: orangered;
 } */
 
-
-
 /* WORK SECTION */
 .work table {
-    border: 4px solid rgb(190, 89, 89);
-    /* border-style: solid; */
-    border-radius: 34px;
-    padding: 34px;
-    margin: 34px;
-    /* margin: auto; */
+  border: 4px solid rgb(190, 89, 89);
+  /* border-style: solid; */
+  border-radius: 34px;
+  padding: 34px;
+  margin: 34px;
+  /* margin: auto; */
 }
 
+.work td {
+  background-color: #100f0f;
+  opacity: 0.9;
+}
 /* GRID SECTION */
 
 .gridcontainer {
-    background-color: var(--light-color);
+  background-color: var(--light-color);
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  /* Grid is default in rows form     grid-template-rows: repeat(5, auto); */
+  /* grid-template-columns: 300px 100px 100px; */
+  /* grid-template-columns: 300px 100px auto; */
+  /* grid-template-columns: 1fr 4fr 1fr;   */
+  /* @divided width in 1+4+1= 6 parts? */
+  grid-template-columns: repeat(5, auto);
 
-    display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
-    /* Grid is default in rows form     grid-template-rows: repeat(5, auto); */
-    /* grid-template-columns: 300px 100px 100px; */
-    /* grid-template-columns: 300px 100px auto; */
-    /* grid-template-columns: 1fr 4fr 1fr;   */
-    /* @divided width in 1+4+1= 6 parts? */
-    grid-template-columns: repeat(5, auto);
+  /* Making responsive grid */
+  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-columns: repeat(4, 2fr);
 
-
-
-    /* Making responsive grid */
-    grid-template-rows: 1fr 1fr 4fr;
-    grid-template-columns: repeat(4, 2fr);
-    
-
-    /* autofix and minmax: The benefit of auto-fit is that it will repeat the number of times it is necessary. The minmax will decide the minimum width given to any rows.*/
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* autofix and minmax: The benefit of auto-fit is that it will repeat the number of times it is necessary. The minmax will decide the minimum width given to any rows.*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/* Spanning multiple rows/columns */
+.griditem:first-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 2;
 
-    /* Spanning multiple rows/columns */
-.griditem:first-child{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 2;
-
-    /* THESE BOTH WILL WORK THE SAME, span means how many grids to cover after start position */
-    /* grid-column: 5 / span 4;
+  /* THESE BOTH WILL WORK THE SAME, span means how many grids to cover after start position */
+  /* grid-column: 5 / span 4;
     grid-row: 2 / span 4; */
 }
-.griditem{
-    background-color: var(--dark-color);
-    border-radius: 20px;
-    margin: 9px;
-    padding: 6px;
+.griditem {
+  background-color: var(--dark-color);
+  border-radius: 20px;
+  margin: 9px;
+  padding: 6px;
 }
 
 /* Two more topics in grid-
@@ -342,168 +321,151 @@ grid-template-areas:
         
         */
 
-    /* One of the most confusion which now arises is what amongst floats, flexbox or grids should we use? The simple answer is, you are free to use any three of them irrespective of your website should look good and responsive and you should be comfortable with the development. You must always try to give the best user experience because it’s the most important part of SEO. */
+/* One of the most confusion which now arises is what amongst floats, flexbox or grids should we use? The simple answer is, you are free to use any three of them irrespective of your website should look good and responsive and you should be comfortable with the development. You must always try to give the best user experience because it’s the most important part of SEO. */
 
-
-
-    
 /* WRITE TO ME SECTION */
 .write {
-    float: none;
-
+  float: none;
 }
 
-
 .write form {
-    /* Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block */
-    /* display: inline-block;       
+  /* Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block */
+  /* display: inline-block;       
 
     height: 800px;
     width: 100%; */
-    color: #100f0f;
-    background-image: url(https://19ykrv2pihpqm7ibg13ucgmb-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/How-to-Write-Constructive-Feedback-Tht-Actually-Works-900x446.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px 0px;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.2em;
-    line-height: 12px;
-    padding: 34px 20px 34px 34px;
-    /* top right bottom left */
-    margin: 40px;
+  color: #100f0f;
+  background-image: url(https://19ykrv2pihpqm7ibg13ucgmb-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/How-to-Write-Constructive-Feedback-Tht-Actually-Works-900x446.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.2em;
+  line-height: 12px;
+  padding: 34px 20px 34px 34px;
+  /* top right bottom left */
+  margin: 40px;
 
+  border-style: solid;
+  border-top: 7px solid rgb(111, 25, 25);
+  border-bottom: 5px solid rgb(185, 143, 143);
+  border-left: 20px solid rgb(173, 118, 118);
+  border-right: 7px solid rgb(73, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 271px;
+  border-bottom-left-radius: 74px;
+  border-bottom-right-radius: 0px;
 
-    border-style: solid;
-    border-top: 7px solid rgb(111, 25, 25);
-    border-bottom: 5px solid rgb(185, 143, 143);
-    border-left: 20px solid rgb(173, 118, 118);
-    border-right: 7px solid rgb(73, 30, 30);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 271px;
-    border-bottom-left-radius: 74px;
-    border-bottom-right-radius: 0px;
-
-    height: 150vh;
-    /* vh- 1/100th times of height of browser */
-    /* float: left;
+  height: 150vh;
+  /* vh- 1/100th times of height of browser */
+  /* float: left;
     width: 20%; */
 }
 
 /* Using nth child pseudo selector */
-input[type='email'] {
-    font-style: italic;
+input[type="email"] {
+  font-style: italic;
 }
 
-
-
 .write form .box {
-    display: inline;
-    /* width: 400px; */
-    margin-right: 60px;
-
+  display: inline;
+  /* width: 400px; */
+  margin-right: 60px;
 }
 
 .write form input,
 select {
-    font-family: 'Cabin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    background-color: #6d1022;
-    color: white;
-    padding: 0px 6px 6px 6px;
-    border: none;
-    cursor: pointer;
-    font-size: 21px;
-    margin: auto;
-    height: 36px;
-    border-radius: 14px;
+  font-family: "Cabin", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  background-color: #6d1022;
+  color: white;
+  padding: 0px 6px 6px 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 21px;
+  margin: auto;
+  height: 36px;
+  border-radius: 14px;
 }
 
-
 .write form textarea {
-
-    font-family: 'Cabin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    background-color: #6d1022;
-    color: white;
-    border: none;
-    font-size: 21px;
-    margin: auto;
-    border-radius: 14px;
+  font-family: "Cabin", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  background-color: #6d1022;
+  color: white;
+  border: none;
+  font-size: 21px;
+  margin: auto;
+  border-radius: 14px;
 }
 
 .write form input:hover {
-    font-weight: 900;
-    background-color: #9f8e92;
-    color: rgb(49, 17, 17);
-
-
+  font-weight: 900;
+  background-color: #9f8e92;
+  color: rgb(49, 17, 17);
 }
 
 /* CONTACTS SECTION FLEXBOX SECTION */
 
 .container {
-
-    display: flex;
-    height: 200px;
-    width: 100%;
-    background-color: #6d1022;
-    border: 2px black solid;
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: #6d1022;
+  border: 2px black solid;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .item {
-    border: 2px solid black;
-    border-radius: 9px;
-    background-color: #410914;
-    padding: 6px;
-    /* ANIMATION  */
-    /* cumpolsary for animation is relatiev position? */
-    position: relative;
-    animation-name: dancing;
-    animation-duration: 1s;
-    animation-iteration-count: 7;
-    animation-fill-mode: alternate;
-    animation-timing-function: ease-in-out;
+  border: 2px solid black;
+  border-radius: 9px;
+  background-color: #410914;
+  padding: 6px;
+  /* ANIMATION  */
+  /* cumpolsary for animation is relatiev position? */
+  position: relative;
+  animation-name: dancing;
+  animation-duration: 1s;
+  animation-iteration-count: 7;
+  animation-fill-mode: alternate;
+  animation-timing-function: ease-in-out;
 
-    /* TRANSITION */
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: .1s;
+  /* TRANSITION */
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
 
-    /* Transition short hand property in one line */
-    /* this is---> transition: background-color 1s ease-in-out 2s; */
-    /* transition: all 1s ease-in-out .3s; */
+  /* Transition short hand property in one line */
+  /* this is---> transition: background-color 1s ease-in-out 2s; */
+  /* transition: all 1s ease-in-out .3s; */
 }
 
 .item:hover {
-    background-color: #d72044;
-    cursor: pointer;
+  background-color: #d72044;
+  cursor: pointer;
 
-    /* TRANSFORM */
+  /* TRANSFORM */
 
-    background-color: pink;
-    /* transform: rotate(-45deg); */
-    border-radius: 200px;
-    /* transform: skew(40deg); */
-    transform: scale(1.1);
-    /* the box will grow 1.1 times the initial size */
-    /* transform: translateX(123px);
+  background-color: pink;
+  /* transform: rotate(-45deg); */
+  border-radius: 200px;
+  /* transform: skew(40deg); */
+  transform: scale(1.1);
+  /* the box will grow 1.1 times the initial size */
+  /* transform: translateX(123px);
             transform: translateY(123px); */
-    /* transform: translate(123px, 123px); */
-
+  /* transform: translate(123px, 123px); */
 }
 
 /* now for the animation name mentioned above giving the actions */
 @keyframes dancing {
-
-    /* 0% {
+  /* 0% {
         top: 0px;
         left: 0px;
     }
@@ -522,37 +484,36 @@ select {
         top: 0px;
         left: 250px;
     } */
-    from {
-        width: 140px;
-    }
+  from {
+    width: 140px;
+  }
 
-    to {
-        width: 109px;
-    }
+  to {
+    width: 109px;
+  }
 }
 
 #item-1 {
-    /* order: 2; */
-    /* flex-grow: 12;
+  /* order: 2; */
+  /* flex-grow: 12;
     flex-shrink: 30; */
-    /* flex-basis: 200px; */
-    /* flex: 2 1 2000px;*/
-    /* flex-grow flex-shrink flex-basis */
-    /* align-self: flex-start; */
-    /* align-self: flex-end; */
-    /* align-self: center; */
+  /* flex-basis: 200px; */
+  /* flex: 2 1 2000px;*/
+  /* flex-grow flex-shrink flex-basis */
+  /* align-self: flex-start; */
+  /* align-self: flex-end; */
+  /* align-self: center; */
 }
-
 
 /* footer */
 footer {
-    font-size: small;
-    border: 1px solid #9f8e92;
-    border-top-left-radius: 34px;
-    background-color: #6d1022;
-    padding-left: 10px;
-    position: fixed;
-    bottom: -10px;
-    right: 0px;
-    opacity: 20%;
+  font-size: small;
+  border: 1px solid #9f8e92;
+  border-top-left-radius: 34px;
+  background-color: #6d1022;
+  padding-left: 10px;
+  position: fixed;
+  bottom: -10px;
+  right: 0px;
+  opacity: 20%;
 }
