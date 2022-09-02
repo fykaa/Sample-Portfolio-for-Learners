@@ -129,12 +129,13 @@ header {
   /* relative to the positon of its first parent i.e. navbar? */
   left: 60px;
   margin: 12px;
+  padding: 5px 12px 80px 16px;
   float: left;
   font-size: 2rem;
   border-radius: 10px;
   /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
   /* box-shadow: inset 0px 1px 24px 5px #410914; */
-  box-shadow: 0px 1px 24px 5px #987a80;
+  box-shadow: 0px 1px 24px 5px #322528;
 }
 
 .navbar li {
@@ -197,15 +198,17 @@ section #image_to_hide {
 /* ABOUT SECTION */
 
 .about {
+  border-radius: 3px;
   padding: 34px;
-
   text-align: center;
   position: relative;
   /* relative to its normal positon */
   top: 30px;
   width: 97vw;
   /* vw-  the 1/100 times of the viewport width */
-  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://img.freepik.com/free-photo/sunshine-clouds-sky-during-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1094.jpg?w=996&t=st=1662131648~exp=1662132248~hmac=d231d69f4c7244c08f3521832d0c2282ab68111be98d87fcc871dd7fa2aff212");
+
+  color: #100f0f;
   /* background-repeat: repeat-x; */
   /* background-repeat: repeat-y; */
   background-repeat: no-repeat;
@@ -220,7 +223,7 @@ section #image_to_hide {
 /* link with target set to blank */
 a[target] {
   font-size: 1em;
-  color: violet;
+  color: rgb(42, 12, 42);
 }
 
 /* link with target set to self */
