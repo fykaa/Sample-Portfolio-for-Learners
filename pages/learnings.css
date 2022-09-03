@@ -85,9 +85,11 @@ root is the global variable here, Any custom properties written in the root vari
 }
 
 body {
-  background-color: black;
+  background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
+
+  /* background-color: black;
   background-color: rgb(0, 0, 0);
-  background-color: #000000;
+  background-color: #000000; */
   color: white;
 }
 
@@ -188,7 +190,7 @@ header nav li a:active {
   background-color: darkred;
 }
 
-section #image_to_hide {
+#image_to_hide {
   /* display: none; */
   /* this completely removes an HTML tag from the web page like it was never there. */
   visibility: hidden;
@@ -223,13 +225,13 @@ section #image_to_hide {
 /* link with target set to blank */
 a[target] {
   font-size: 1em;
-  color: rgb(42, 12, 42);
+  color: rgb(255, 0, 255);
 }
 
 /* link with target set to self */
 a[target="_self"] {
   font-size: 14px;
-  color: rgb(13, 22, 151);
+  color: rgb(178, 181, 233);
 }
 
 /* list PROJECTS SECTION */
@@ -245,14 +247,14 @@ li:nth-child(2) {
 }
 
 /* li:nth-child(3n+3){
-    color: pink;
-}
-li:nth-child(even) {
-    background-color: rgb(255, 72, 0);
-}
-li:nth-child(odd){
-    color: orangered;
-} */
+      color: pink;
+  }
+  li:nth-child(even) {
+      background-color: rgb(255, 72, 0);
+  }
+  li:nth-child(odd){
+      color: orangered;
+  } */
 
 /* WORK SECTION */
 .work table {
@@ -299,7 +301,7 @@ li:nth-child(odd){
 
   /* THESE BOTH WILL WORK THE SAME, span means how many grids to cover after start position */
   /* grid-column: 5 / span 4;
-    grid-row: 2 / span 4; */
+      grid-row: 2 / span 4; */
 }
 .griditem {
   background-color: var(--dark-color);
@@ -309,20 +311,20 @@ li:nth-child(odd){
 }
 
 /* Two more topics in grid-
-1) Grid in Layout i.e.
-grid-template-areas: 
-        'navbar navbar navbar navbar' 
-        'section section section aside'
-        'footer footer footer footer '; 
-        
-2) media queries in grid:
-@media only screen and (max-width: 300px) section
-{ 
-    display:none;
-}
-
-        
-        */
+  1) Grid in Layout i.e.
+  grid-template-areas: 
+          'navbar navbar navbar navbar' 
+          'section section section aside'
+          'footer footer footer footer '; 
+          
+  2) media queries in grid:
+  @media only screen and (max-width: 300px) section
+  { 
+      display:none;
+  }
+  
+          
+          */
 
 /* One of the most confusion which now arises is what amongst floats, flexbox or grids should we use? The simple answer is, you are free to use any three of them irrespective of your website should look good and responsive and you should be comfortable with the development. You must always try to give the best user experience because it’s the most important part of SEO. */
 
@@ -334,9 +336,9 @@ grid-template-areas:
 .write form {
   /* Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block */
   /* display: inline-block;       
-
-    height: 800px;
-    width: 100%; */
+  
+      height: 800px;
+      width: 100%; */
   color: #100f0f;
   background-image: url(https://19ykrv2pihpqm7ibg13ucgmb-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/How-to-Write-Constructive-Feedback-Tht-Actually-Works-900x446.png);
   background-repeat: no-repeat;
@@ -363,7 +365,7 @@ grid-template-areas:
   height: 150vh;
   /* vh- 1/100th times of height of browser */
   /* float: left;
-    width: 20%; */
+      width: 20%; */
 }
 
 /* Using nth child pseudo selector */
@@ -462,31 +464,31 @@ select {
   transform: scale(1.1);
   /* the box will grow 1.1 times the initial size */
   /* transform: translateX(123px);
-            transform: translateY(123px); */
+              transform: translateY(123px); */
   /* transform: translate(123px, 123px); */
 }
 
 /* now for the animation name mentioned above giving the actions */
 @keyframes dancing {
   /* 0% {
-        top: 0px;
-        left: 0px;
-    }
-
-    25% {
-        top: 250px;
-        left: 0px;
-    }
-
-    75% {
-        top: 250px;
-        left: 250px;
-    }
-
-    100% {
-        top: 0px;
-        left: 250px;
-    } */
+          top: 0px;
+          left: 0px;
+      }
+  
+      25% {
+          top: 250px;
+          left: 0px;
+      }
+  
+      75% {
+          top: 250px;
+          left: 250px;
+      }
+  
+      100% {
+          top: 0px;
+          left: 250px;
+      } */
   from {
     width: 140px;
   }
@@ -499,7 +501,7 @@ select {
 #item-1 {
   /* order: 2; */
   /* flex-grow: 12;
-    flex-shrink: 30; */
+      flex-shrink: 30; */
   /* flex-basis: 200px; */
   /* flex: 2 1 2000px;*/
   /* flex-grow flex-shrink flex-basis */

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- characters that are used will be of UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- website to open in the highest compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- to make your website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To add a description, we have to write the above statement  -->
+    <meta name="description" content="This is description">
+
+    <!-- Keywords are those special words through which a user reach any website -->
+    <meta name="keywords" content="html, html tutorials, web development">
+
+    <!-- If we want our website to be indexed in Google or other search engines and bots should follow all the links present on the website, then we have to write -->
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <title>My Learnings</title>
+
+    <!-- This is how you include external css -->
+    <link rel="stylesheet" href="./learnings.css">
+
+    <!-- This is how you include external JavaScript -->
+    <script src="javascript.js"></script>
+
+    <!-- Adding Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- INTERNAL CSS -->
+
+    <style>
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1>Learnings</h1>
+            <ul>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus>
+                </div>
+                <li><a href="">Entities</a></li>
+                <li><a href="">Tables</a></li>
+                <li><a href="">Forms</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- To add a break in line -->
+        <br><br><br>
+        <!-- To open a link in a new tab we add target -->
+        <a href="https://www.linkedin.com/in/faeka/" target="_blank">LinkedIn (Blank - new tab)</a>
+        <a href="https://github.com/fykaa" target="_self">GitHub (Self - same tab)</a>
+
+        <!-- Lists -->
+        <div class="project">
+
+            <h3 class="subhead">&rAarr;List of My Projects&lAarr;</h3>
+            <ul type="circle">
+                <h2>Skills in tech Stack</h3>
+                    <li>This is the first item of my unordered list</li>
+                    <li>This is the second item of my unordered list</li>
+                    <ul type="square">
+                        <li>Another one</li>
+                        <li>Another two</li>
+                        <li>Another three</li>
+                    </ul>
+            </ul>
+            <ol type="a">
+                <li>This is first item of my ordered list</li>
+                <li>This is second item of my ordered list</li>
+                <li>This is third item of my ordered list</li>
+            </ol>
+
+        </div>
+
+
+        <div class="work">
+
+            <!-- Tables -->
+            <h3 class="subhead">&rAarr;Table of All my work&lAarr;</h3>
+            <table style="width: 95%;">
+                <thead style="border: 2px solid black;">
+                    <tr>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Project Name</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Details</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Duration</th>
+                        <th style="border: 1px solid rgb(173, 44, 44);">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>Portfolio Page</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
+                            cumque a
+                            deserunt minima illo odit necessitatibus hic facere voluptatibus, veritatis numquam veniam
+                            possimus
+                            ab nesciunt. Sunt?</td>
+                        <td>2 mos</td>
+                        <td>#</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Food delivery website</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque. Vel unde voluptates
+                            cumque a
+                            deserunt minima illo odit necessitatibus hic facere voluptatibus, veritatis numquam veniam
+                            possimus
+                            ab nesciunt. Sunt?</td>
+                        <td>4 mos</td>
+                        <td>#</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+<h2 style="text-align: center;">Grid of vaarious technologies and keys I learnt in web development</h2>
+        <div class="gridcontainer">
+            
+            <div class="griditem">This is grid item 1</div>
+            <div class="griditem">This is grid item 2</div>
+            <div class="griditem">This is grid item 3</div>
+            <div class="griditem">This is grid item 4</div>
+            <div class="griditem">This is grid item 5</div>
+            <div class="griditem">This is grid item 6</div>
+            <div class="griditem">This is grid item 7</div>
+            <div class="griditem">This is grid item 8</div>
+            <div class="griditem">This is grid item 9</div>
+            <div class="griditem">This is grid item 10</div>
+            <div class="griditem">This is grid item 11</div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="write">
+
+        <h3 class="subhead">&rAarr; Write to me &lAarr;</h3>
+
+        <!-- Forms -->
+
+        <form class="write" action="backend.php">
+
+            <div class="box">
+                <label
+                contenteditable="true"
+                spellcheck="true" 
+                class="name" for="name">Name : </label>
+                <!-- To get the input as text type="text" -->
+                <input 
+                value="First Last"
+                type="text"
+                placeholder="Enter Your Name here" 
+                autofocus
+                id="name" name="">
+                
+            </div>
+            <br>
+            <div class="box" id="email">
+                Email : <input type="email" name="myEmail">
+            </div>
+            <br>
+            <!-- HTML Forms Validation - required, min maxlength, pattern -->
+            <div>
+                <label for="country_code">Country code:</label>
+                <input type="text" id="country_code" name="country_code" 
+                pattern="[A-Za-z]{3}"
+                required
+                minlength="2" 
+                maxlength="4" title="Three letter country code">
+
+            </div>
+
+            <!-- The <span> is an in-line element 
+            <div> is a block element. Which means, if we use two separate div tags for different inputs, then all the inputs will come on different lines. 
+            Till we learn we will use the <br> tags for breaking a line -->
+
+            <div>
+                <label for="caste">Caste: </label>
+                <input
+                type="text" 
+                disabled
+                name="" id="">
+            </div>
+            <div class="box" id="number">
+                Number : <input type="number" name="">
+            </div>
+            
+            <br>
+            <div class="box" id="color">
+                House Color: <input type="color" name="">
+            </div>
+
+            <div class="box">
+                <!-- for="elig" means: if any element with ID elig is clicekd direct input box select hojayegaa -->
+                <label for="elig">Are you Eligible: </label><input type="checkbox" name="myEligibility" id="elig"
+                    checked>
+            </div>
+
+            <div class="box">
+                Feedback: Positive <input type="radio" name="myFeedback"> Negative <input type="radio"
+                    name="myFeedback"> Both <input type="radio" name="myFeedback">
+            </div>
+
+            <div>
+                <label for="nation">
+                    Your nationality:
+                </label>
+                <select name="" id="nation">
+                    <option value="indian" selected>Indian</option>
+                    <option value="not indian">Not Indian</option>
+                    <option value="nri">NRI</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="course">Select Your Course</label>
+                <select name="" id="course">
+                    <optgroup label="Computer Science Courses">
+                        <option value="ce">Computer Eng</option>
+                        <option>Software Eng</option>
+                        <option>Civil Eng</option>
+                    </optgroup>
+                    <optgroup label="Marketing Courses">
+                        <option>YT mark</option>
+                        <option>FB marketing</option>
+                        <option>SEO</option>
+                    </optgroup>
+                    <optgroup label="Finance Course">
+                        <option>rbi</option>
+                        <option>stock</option>
+                        <option>loan</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!-- TEXT BOX -->
+            <div>
+                Write Your Feedback: <br> <textarea name="" cols="25" rows="5"></textarea>
+            </div>
+
+            <div>
+                Completed? <input type="submit" value="Submit Now">
+            </div>
+            <br>
+
+            <div>
+                Reset? <input type="reset" value="Reset Now">
+            </div>
+
+        </form>
+    </div>
+
+
+    <!-- CONTACTS SECTION -->
+    <!-- FLEXBOX -->
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+
+    <!-- Inline Block Elements -->
+    <!-- Examples of inline elements: <a> <strong> , <em> , <b> , <i> , <q>, <mark> <span>
+        Examples of block elements:li, <p> and <div> -->
+
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, atque!</p>
+    <p>This is anothr p tag but on the same line prooving p is block</p>
+
+    <br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate ipsam laboriosam harum ex ut? Eos
+        minus expedita magni nemo</span> <span> This is another span tag but on saem line prooving span is inline</span>
+
+    <!-- IDs and Classes -->
+    <!-- One Id is unique to only one element using # -->
+    <!-- One Class can be given to multiple elements using . -->
+
+    <br>
+
+    <!-- text formatting -->
+    <small>Hi</small>
+    <sup>superscript</sup>
+    yo
+    <sub>subscript</sub>
+    <mark>mark</mark>
+    <q>qquoted</q>
+    <cite>cited</cite>
+    <del>deleted</del>
+    <blockquote>blockquote</blockquote>
+    <meter min="10" max="100" value="50">mmeter</meter>
+    <progress></progress>
+    <!-- customizing progress bar -->
+    <progress max="100" value="50"></progress>
+    <details>I am the Details</details>
+    <!-- customizing details -->
+    <details>
+        <summary>Account Details</summary>
+        I am accoun detals
+    </details>
+
+
+    <!-- html advanced emojis and entities -->
+    https://www.science.co.il/internet/html/Smileys.php &#128565; &#128519; 😅
+    <p>
+        For extra space: nbsp &nbsp; |
+        Paragraph symbol: lt &lt; |
+        Pound symbol: pound &pound; |
+        Copyright: copy &copy; |
+        Arrow: rAarr &rAarr; |
+        Empty character : #8203 &#8203; |
+    </p>
+    <hr>
+    <!-- To add an image -->
+    I am a hidden image <img src="https://source.unsplash.com/200x110/?nature,water" alt="remote image" width="233" height="100"
+    id="image_to_hide"> 
+    <br>
+    <hr>
+    <!-- To add a VIDEO -->
+    Adding a Video
+    <video width="400px" height="315" controls>
+        <source src="../assets/butterfly.mp4" type="video/mp4"/>
+    </video>
+    <br>
+    <hr>
+    
+    <!-- To add an AUDIO -->
+    Adding an Audio
+    <audio controls>
+        <source src="../assets/tyd.mp3" type="audio/mp3" />
+    </audio>
+    <br>
+    <hr>
+
+    
+    <!-- To play Youtube Videos iframe tag -->
+    Adding a Youtube Video
+    <iframe width="400px" height="315" src="https://www.youtube.com/embed/EFHeeRIDAsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+    
+
+    <!-- Semantic tags -->
+    <!-- Semantics are used to give proper meaning to the websites and help search engines to analyze it properly . very important structure for ranking in SEO-->
+
+    <!-- <header> <nav> <section> <article> <footer> -->
+    <footer>
+        Copyright &copy; reserved w Fyka Ansar &nbsp;
+    </footer>
+
+</body>
+
+</html>

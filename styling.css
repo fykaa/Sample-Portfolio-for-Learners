@@ -1,0 +1,264 @@
+:root {
+  --light-color: brown;
+  --dark-color: #410914;
+  --text-color: white;
+  --link-color: rgb(194, 123, 123);
+}
+
+* {
+  font-family: "Cabin", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    Helvetica, "Neue", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 43px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: white;
+}
+
+.subhead {
+  text-align: center;
+  /* margin: auto; */
+  font-size: 2em;
+}
+
+/* HEADER SECTION */
+
+header {
+  position: sticky;
+  top: 3px;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: #100f0f;
+  border-radius: 34px;
+  height: 70px;
+  width: 100%;
+}
+
+.navbar ul {
+  overflow: auto;
+}
+
+.navbar h1 {
+  position: absolute;
+  left: 60px;
+  margin: 12px;
+  /* padding: 5px 12px 80px 16px; */
+  float: left;
+  font-size: 2rem;
+  /* border-radius: 10px; */
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+  /* box-shadow: inset 0px 1px 24px 5px #410914; */
+  /* box-shadow: 0px 1px 24px 5px #322528; */
+}
+
+.navbar li {
+  animation-name: slider;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: alternate;
+  animation-timing-function: ease-in-out;
+  float: right;
+  list-style: none;
+  margin: 13px 20px;
+}
+
+@keyframes slider {
+  from {
+    transform: translateY(-40%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.search {
+  margin: 0px 19px;
+  float: right;
+  color: white;
+  margin: 10px;
+}
+
+#logo {
+  width: 64px;
+  height: 64px;
+}
+
+.navbar input {
+  border: 1px solid rgb(62, 58, 58);
+  border-radius: 14px;
+  padding: -1px 9px;
+  width: 163px;
+}
+
+header nav li {
+  list-style: none;
+}
+
+header nav li a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+header nav li a:active {
+  color: #410914;
+}
+
+section #image_to_hide {
+  visibility: hidden;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  /* background-position: top center; */
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.1; */
+  z-index: -1;
+  width: 97vw;
+  border-radius: 3px;
+}
+
+.about .about-data {
+  padding: 34px;
+  text-align: center;
+  position: relative;
+  color: var(--text-color);
+}
+
+/* Projects section */
+.project h3 {
+  text-shadow: 6px -3px 2px rgb(72 32 32);
+}
+
+/* WORK/Contribution SECTION */
+
+.work h3 {
+  text-shadow: 6px -3px 2px rgb(72 32 32);
+}
+
+.work table {
+  border: 4px solid rgb(190, 89, 89);
+  /* border-style: solid; */
+  border-radius: 34px;
+  padding: 34px;
+  margin: 34px;
+  /* margin: auto; */
+}
+
+.work td {
+  background-color: #100f0f;
+  opacity: 0.9;
+}
+
+/* CONTACTS SECTION FLEXBOX SECTION */
+
+.flexbox {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: #6d1022;
+  border: 2px black solid;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexbox .item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.flexbox .item a:hover {
+  text-decoration: underline;
+}
+
+.item {
+  width: 109px;
+  border: 2px solid black;
+  border-radius: 9px;
+  background-color: #410914;
+  padding: 6px;
+  /* ANIMATION  */
+  /* cumpolsary for animation is relatiev position? */
+  position: relative;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: alternate;
+  animation-timing-function: ease-in-out;
+
+  /* TRANSITION */
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.item:hover {
+  background-color: #d72044;
+  cursor: pointer;
+  background-color: pink;
+  transform: skew(40deg);
+  transform: scale(1.1);
+}
+
+/* now for the animation name mentioned above giving the actions */
+@keyframes slidein {
+  from {
+    transform: translateY(-70%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* footer */
+
+footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer a {
+  color: var(--light-color);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .floating-footer {
+  font-size: small;
+  border: 1px solid #9f8e92;
+  border-top-left-radius: 34px;
+  background-color: #6d1022;
+  padding-left: 10px;
+  position: fixed;
+  bottom: -10px;
+  right: 0px;
+  opacity: 20%;
+}
