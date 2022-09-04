@@ -16,16 +16,24 @@
 }
 
 body {
-  background-color: black;
-  background-color: rgb(0, 0, 0);
-  background-color: #000000;
+  background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
+  background-position: center;
   color: white;
 }
 
 .subhead {
+  font-weight: 600;
+  font-size: 30px;
   text-align: center;
   /* margin: auto; */
-  font-size: 2em;
+  /* font-size: 2em; */
+}
+.subhead h2 {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  /* margin: auto; */
+  /* font-size: 2em; */
 }
 
 /* HEADER SECTION */
@@ -123,22 +131,49 @@ section #image_to_hide {
 }
 
 /* ABOUT SECTION */
+
+section .about {
+  padding: 1px 60px 0px 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentbox h3 {
+  font-size: 20px;
+}
+
+.w50 {
+  margin-bottom: 20px;
+}
+
+.w75 {
+  width: 700px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.imgIM {
+  float: right;
+  border-radius: 50%;
+  width: 450px; /* width of image (px or % or auto) */
+  height: auto;
+}
+
 .about {
-  background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
-  /* background-repeat: repeat-x; */
-  /* background-repeat: repeat-y; */
-  background-repeat: no-repeat;
-  /* background-position: top center; */
-  background-position: center;
-  background-size: cover;
-  /* opacity: 0.1; */
+  background-color: #000000;
   z-index: -1;
   width: 97vw;
   border-radius: 3px;
 }
 
 .about .about-data {
-  padding: 34px;
   text-align: center;
   position: relative;
   color: var(--text-color);
