@@ -32,6 +32,14 @@
 
     <!-- Adding Font Family -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Adding favions -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+    <!-- using favicon in title bar -->
+    <link rel="icon" type="image/x-icon" href="../assets/learnings.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="../assets/Circle-icons-easel.svg-removebg-preview.png"> -->
+
+
     <!-- INTERNAL CSS -->
 
     <style>
@@ -50,13 +58,17 @@
 
             <h1>Learnings</h1>
             <ul>
+                <!-- Linking Pages(Navigation) - Internal, Bookmark and Button -->
                 <div class="search">
                     <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus>
                 </div>
-                <li><a href="">Entities</a></li>
-                <li><a href="">Tables</a></li>
-                <li><a href="">Forms</a></li>
+
+                <!-- Bookmarking Navigation using ids # -->
+                <li><a href="#entities">Entities</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
                 <li><a href="../index.html">Home</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -66,6 +78,14 @@
         <!-- To open a link in a new tab we add target -->
         <a href="https://www.linkedin.com/in/faeka/" target="_blank">LinkedIn (Blank - new tab)</a>
         <a href="https://github.com/fykaa" target="_self">GitHub (Self - same tab)</a>
+
+        <!-- Button for Navigation -->
+        <button onclick="document.location='../index.html'">
+                Button Navigation
+        </button>
+
+        <!-- How to download a file -->
+        <a href="../assets/girl.jpg">Click To Download</a>
 
         <!-- Lists -->
         <div class="project">
@@ -89,11 +109,11 @@
 
         </div>
 
-
-        <div class="work">
+        <!-- TABLE -->
+        <div class="work" id="tables">
 
             <!-- Tables -->
-            <h3 class="subhead">&rAarr;Table of All my work&lAarr;</h3>
+            <h3 class="subhead" >&rAarr;Table of All my work&lAarr;</h3>
             <table style="width: 95%;">
                 <thead style="border: 2px solid black;">
                     <tr>
@@ -128,7 +148,8 @@
             </table>
         </div>
         
-<h2 style="text-align: center;">Grid of vaarious technologies and keys I learnt in web development</h2>
+        <!-- GRID -->
+        <h2 style="text-align: center;">Grid of vaarious technologies and keys I learnt in web development</h2>
         <div class="gridcontainer">
             
             <div class="griditem">This is grid item 1</div>
@@ -145,16 +166,10 @@
         </div>
     </section>
 
-
-
-
-
-    <div class="write">
+    <!-- FORMS -->
+    <div class="write"  id="forms">
 
         <h3 class="subhead">&rAarr; Write to me &lAarr;</h3>
-
-        <!-- Forms -->
-
         <form class="write" action="backend.php">
 
             <div class="box">
@@ -268,7 +283,6 @@
     </div>
 
 
-    <!-- CONTACTS SECTION -->
     <!-- FLEXBOX -->
     <div class="container">
         <div class="item" id="item-1">First Box</div>
@@ -317,7 +331,9 @@
         <summary>Account Details</summary>
         I am accoun detals
     </details>
+    <hr>
 
+    <h2 id="entities">Entities</h2>
 
     <!-- html advanced emojis and entities -->
     https://www.science.co.il/internet/html/Smileys.php &#128565; &#128519; 😅
@@ -361,6 +377,37 @@
     <!-- Semantics are used to give proper meaning to the websites and help search engines to analyze it properly . very important structure for ranking in SEO-->
 
     <!-- <header> <nav> <section> <article> <footer> -->
+
+
+    <hr>
+    <div class="favicons">
+        <a href="./learnings/icons.html">Favicons</a>
+        Icons
+    <br />
+
+    Adding Icons and Favicons
+    <p>
+      CDN - content delivery network - can be used to display icons from other;s
+      server
+    </p>
+    <ul>
+      <li>Lineicons</li>
+      <li>Fontawesome</li>
+    </ul>
+    <i class="lni lni-angellist" style="font-size: 300px; color: pink;"></i>
+    Adding favicon to title bar!
+    using
+    https://favicon.io/favicon-converter/
+    just select the image <br>
+    download the zip
+    <br>
+    and use this .icon link in the title bar
+     this is the ideal way of using favicon in the title bar
+
+    </div>
+       
+
+
     <footer>
         Copyright &copy; reserved w Fyka Ansar &nbsp;
     </footer>
