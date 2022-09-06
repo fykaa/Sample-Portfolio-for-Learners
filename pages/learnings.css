@@ -510,6 +510,65 @@ select {
   /* align-self: center; */
 }
 
+/* CSS SELECTORS */
+
+div > p {
+  /* decendent selector */
+}
+
+div p {
+  /* child selector */
+}
+
+div + p {
+  /* adjacent sibling selector */
+}
+div ~ p {
+  /* general sibling selector */
+}
+
+/* pseudo classes */
+input:disabled{
+  background-color: crimson;
+}
+input:required{
+  background-color: violet;
+}
+input:placeholder-shown{
+  background-color: rgb(47, 17, 23);
+}
+input:read-only{
+  background-color: rgb(87, 61, 87);
+}
+input:invalid{
+  background-color: rgb(255, 0, 0);
+}
+input:valid{
+  border: 4px solid green;
+}
+input:in-range{
+  color: green;
+}
+input:out-of-range{
+  color: rgb(128, 0, 0);
+}
+
+/* user action pseudo classes */
+li > button:hover{
+  background-color: cornflowerblue;
+  cursor:crosshair;
+}
+li > button:active{
+  background-color: sienna;
+  cursor:crosshair;
+}
+li > button:focus{
+  background-color:#410914;
+  cursor:crosshair;
+}
+
+
+
 /* footer */
 footer {
   font-size: small;
