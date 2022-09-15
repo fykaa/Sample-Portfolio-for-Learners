@@ -1,0 +1,23 @@
+.container{
+    background-color: salmon;
+    border: 2px solid rgb(80, 39, 48);
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-items{
+    background-color: crimson;
+    border: 2px solid rgb(24, 1, 6);
+    border-radius: 20px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.flex-items:hover{
+    color: honeydew;
+    border: 4px solid crimson;
+    transition-duration: .4s;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="../learnings.css">
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <h2>Operators- arithenatic, logical comparison</h2>
+    <h3>Logical Operators and or not</h3>
+    <ul>
+        <h4>
+            False if -
+        </h4>
+        <li>undefined</li>
+        <li>null</li>
+        <li>0</li>
+        <li>"</li>
+        <li>false</li>
+        <p>All other are true</p>
+    </ul>
+    <h3>FUNCTIONS - declare and invoke(call)</h3>
+    <h4>way of creating a function 1 - function Declaration</h4>
+    <ol>
+        <li>funcion keyword</li>
+        <li>fun name </li>
+        <li>parameter</li>
+        <li>body</li>
+        <li>EXAMPLE - function fnName(parameter){body}</li>
+    </ol>
+    <h4>way of creating a function 2 - function EXpression</h4>
+    <ol>
+        <li>keyword - let/var</li>
+        <li>variable name</li>
+        <li>function keyword- function</li>
+        <li>parameter</li>
+        <li>body</li>
+        <li>EXAMPLE - let fnName = function(parameter){body}</li>
+    </ol>
+    <h4>Funcion - Parameters and Arguments</h4>
+    <h4>Return Keyword</h4>
+    <p>Let's say that I want to display the result of my function into the main webpage!
+
+        We haven't talked about Dom manipulation, so spare me with that.
+
+        I'm going to give you some some scenarios why this function is not performing the way we want it.
+
+        That's the scenario, number one.
+
+        And also, what about say that?
+
+        Oh, no, I don't want this play my result into the page, but instead I want to display it inside an
+
+        elect.
+
+        How can we do that?
+
+        In that way, we need what is called the return keyword, because a function with no return and only consol.log is
+        not giving out anything.
+
+        Its just printing the thing in console tab. <br> So the return keyword is used to exit a function and return a
+        value to the caller.
+
+        Here comes.
+
+        So one point of return is it is used to exit a function.
+
+        And then if a value is present in the return, it is going to give out to the variable we assign a function to
+
+        The return keyword is essential for creating functions that return value.
+
+        So without return keyword, function will only be able to perform actions but not return values to the caller.
+
+        This would limit the usefulness of a functions and make them much less powerful.
+
+        so when you return sommething from teh function, now you can use the returned value anywhere in the javascript
+        to display on screen,lets say alert(fnName(argument)) and you can displlay the returned value in alert section
+        of website. Thsts amazing
+    </p>
+    <h3>STRINGS</h3>
+    <h4>Ways of creating a string</h4>
+    <ol>
+        <li>using string literal "" or '' </li>
+        <li>using the constructor function i.e. <br> const name = new String("something"); <br> this will return a way
+            different form of string proved in the javascript code snippet below:</li>
+        <p>const myName = "John";<br>const firstName = new String("John");<br>const result = myName === firstName;<br>
+            console.log(result);<br>This code will give false!!!Yeass, though John and John are similar, due to they are
+            different forms of string literals! . but if you did <br>const result = myName == firstName;<br> instead the
+            answer will be TRUE! because now the datatypes of "John" will not be matched instead just the string.</p>
+    </ol>
+    <h3>String Concatenation</h3>
+    <ol>
+        <li>using + operator : str1+str2</li>
+        <li>using concat method : const result = str1.concat(str2);</li>
+    </ol>
+    <h3>JS Template Literals</h3>
+    <ol>
+        <li>String literals "" </li>
+        <li>back tick literals- this is multiline string that is all the enters will be considered ``</li>
+        <li>template string</li>
+        <li>INTERPOLATION - to use a variable inside the string
+            <ul>
+                <li>Using ${} between strings <br> const welcome = "Good Morning ${name}";</li>
+                <li>Using + Operator <br>const welcome = "Good morning" + name ;</li>
+            </ul>
+        </li>
+    </ol>
+    <h3>String length - it takes white spaces into consideration!</h3>
+    <p>const str = "Hell ";<br> str.length;<br> this will give 12</p>
+    <h3>Some String functions</h3>
+    <ol>
+        <li>trim - to remove white spacings</li>
+        <li>toUpperCase</li>
+        <li>toLowerCase</li>
+        <li>indexOf</li>
+        <li>split(ch,3) - to split every charachter in the string w a specific characther ch example: <br> str =
+            "hobnbkbsf"; str.split("b"); <br>this will give ['ho', 'n', 'k', 'sf'] i.e. all b are splitted</li>
+        <li>str.join("b");</li>
+        <li>str.reverse(); - to reverse an array. <br> if you want ot reverse a string, 1) split it into array 2)
+            reverse it 3) join it into a string!</li>
+        <li>str.repeat(n); to repeat a str n number of times </li>
+        <li>str.startsWith(ch); - to check if str starts with ch</li>
+        <li>str.endsWith();</li>
+        <li>str.includes(ch); - to check if str contains ch</li>
+        <li>str.slice(n,m); takes n to m charachetes from str</li>
+    </ol>
+    <h3>String Comparison</h3>
+    <ul>
+        <li>true == 1</li>
+        <li>a>z</li>
+        <li>a>A</li>
+        <li>a>1</li>
+        <li></li>
+    </ul>
+    <h3>Arrays</h3>
+    <h4>Methods of cerating Array</h4>
+    <ul>
+        <li>Using new keyword: <br>const arr_name = new Array();</li>
+        <li>Using Array literal <br>const arr_name = [];</li>
+    </ul>
+
+    <li>Array can take any type of data type value</li>
+    <h3>Array Methods</h3>
+    <ol>
+        <li>arr.push(); - add to the end</li>
+        <li>arr.pop(); - remove from the end</li>
+        <li>arr.unshift(); - add to the beginning</li>
+        <li>arr.shift(); remove from the beginning</li>
+        <li>arr.indexOf();</li>
+        <li>arr.lastindexOf();</li>
+        <li>arr.include() </li>
+        <li>arr.reverse()</li>
+        <li>Reduce Method - </li>
+        <li>Find Method</li>
+        <li>Filter Method</li>
+    </ol>
+</body>
+
+</html>
