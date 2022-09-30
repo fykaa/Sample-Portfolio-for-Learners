@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <script src="javascript.js"></script>
     <link rel="stylesheet" href="../learnings.css">
 </head>
 
 <body>
     <h1>JavaScript</h1>
+    <a href="../learnings.html">Home</a>
+    <a href="#foot">Footer</a>
     <h2>Operators- arithenatic, logical comparison</h2>
+
     <h3>Logical Operators and or not</h3>
     <ul>
         <h4>
@@ -42,7 +46,7 @@
         <li>body</li>
         <li>EXAMPLE - let fnName = function(parameter){body}</li>
     </ol>
-    <h4>Funcion - Parameters and Arguments</h4>
+    <h4>Function - Parameters and Arguments</h4>
     <h4>Return Keyword</h4>
     <p>Let's say that I want to display the result of my function into the main webpage!
 
@@ -155,11 +159,184 @@
         <li>arr.lastindexOf();</li>
         <li>arr.include() </li>
         <li>arr.reverse()</li>
-        <li>Reduce Method - </li>
-        <li>Find Method</li>
-        <li>Filter Method</li>
+        <li>Reduce Method -
+            <ol>
+                <li>A function that accepts upto 4 arguments, the reduce method calls the callbackfn function one time
+                    for each element in the array</li>
+                <li>Calls the specified callback function for all the elements in the array</li>
+                <li>The return value of the callback function is the accumulated result, and is provided as an argument
+                    in the next call to the callback function</li>
+                <li>Return a single value</li>
+                <li>Doesn't mutates the original array</li>
+                <li>Syntax- <br>
+                    arr.reduce(function(acc,currVal,currIdx,arr){},initialVal);</li>
+                <li>const callback = (accumulator, currentValue, index) => { <br>
+                    &nbsp; // return something here
+                    <br> } <br>
+                    const result = array.reduce(callback, initialValue)
+                </li>
+                <li>The previous return value is used as the next accumulator</li>
+                <li>initialValue is the value you want to start with.
+                    <br>accumulator is the value returned from the previous iteration. <br>It will be initialValue for
+                    the first iteration. <br>
+                    currentValue is array item in the current iteration.
+                </li>
+            </ol>
+        </li>
+        <li>Find Method
+            <ol>
+                <li>(method) Array(number).find(predicate: (value: number, index: number, obj: number[]) => unknown,
+                    thisArg?: any): number | undefined (+1 overload)</li>
+                <li>Returns the value of the first element in the array where predicate is true, and undefined
+                    otherwise.</li>
+
+                <li>@param predicate
+                    find calls predicate once for each element of the array, in ascending order, until it finds one
+                    where
+                    predicate returns true. If such an element is found, find immediately returns that element value.
+                    Otherwise, find returns undefined.</li>
+
+                <li>@param thisArg
+                    If provided, it will be used as the this value for each invocation of predicate. If it is not
+                    provided,
+                    undefined is used instead.</li>
+                <li>array.find(function(currentValue, index, arr),thisValue)
+                <li>currentValue Required.
+                    The value of the current element.</li>
+                <li>thisValue Optional. Default undefined.
+                    A value passed to the function as its this valu</li>
+        </li>
+
     </ol>
-    <p>Checking if this line causes conflicts with the master branch on pullinh.</p>
+    </li>
+    <li>Filter Method
+        <p>same as find, but this returns an array of answers not just first outcome</p>
+    </li>
+    <p>Example <br>
+
+        const arri = [2, 4, 5, 2, 4]; <br>
+
+        const reduce = arri.reduce(function (acc, currVal) {<br>
+        return acc + currVal + currVal;<br>
+        }, 0);<br>
+
+        const find = arri.find(function(elements){<br>
+        return elements>4;<br>
+        })<br>
+
+        const filter = arri.filter(function(element){<br>
+        return element> 2;<br>
+        })</p>
+    Answers <br>
+    reduce = 34, find = 5, filter = [4,5,4]
+    </ol>
+    <h2>Objects</h2>
+    <h3>Accessing Object Properties</h3>
+    <p>const person = { name: 'johny', salary: 45452, hobby: ['dance','cooking']}; </p>
+    <ol>
+        <li>Using dot notation i.e. person.name </li>
+        <li>Using Bracket notation i.e. person["name"]</li>
+    </ol>
+    <h3>Updating Object property</h3>
+    <p>person.name = "whateve"</p>
+    <p>person['name'] = 'wahhah' -> used widely since it is more dynamic
+        <br>
+        for example
+        <br>
+        let printObj = function(obj){
+        for(let key in obj){
+        console.log(`${key}: ${obj[key]}`);
+        }
+        }
+        <br>
+        is better than
+        <br>
+        let printObj = function(obj){
+        for(let key in obj){
+        console.log(`${key}: ${obj.name}`);
+        console.log(`${key}: ${obj.age}`);
+        <!-- ... and so on -->
+        }
+        }
+    </p>
+
+    <h3>
+        Deleting Object property
+    </h3>
+    <p>use <br>
+        delete person.name <br>
+        that is it, done!
+    </p>
+
+    <h3>this keyword</h3>
+    <p>in javasctipt 'this' keyword refers to immediate or parent object</p>
+    <p>if you do console.log(this); randomly it will show global object that is Window </p>
+
+    <h3>Iterating Over Objects</h3>
+    <ol>
+        <li>for in loop - for(let key in objectName){} <br>for(let key in person){
+            console.log(key);
+            }</li>
+        <li>object.keys let ans = Object.keys(objectName); <br>let keys_array = Object.keys(person);
+            console.log(keys_array); </li>
+        <li>forEach - <br>keys_array.forEach(function(element){
+            console.log(element)
+            })
+        </li>
+        <li>object.values - Object.values(person)</li>
+        <li>object.entries - Object.entries(person) <br>
+            Example <br>
+            let objentries = Object.entries(person);
+            objentries.forEach(function([key,value]){
+            console.log(`${key}: ${value}`);
+            })</li>
+    </ol>
+
+    <h3>Math Objects</h3>
+    <ol>
+        <li>abs</li>
+        <li>round</li>
+        <li>ceil - upper val</li>
+        <li>floor - removes decimal no.s</li>
+        <li>sqrt</li>
+        <li>pow</li>
+        <li>min</li>
+        <li>max</li>
+        <li>random</li>
+        <li>Formula for Random Number between two values: <br> Math.random() * (max-min + 1) + min</li>
+    </ol>
+
+    <h2>Data Mutation</h2>
+    <h3>Array Methods</h3>
+    <ol>
+        <li>arr.forEach(function(item,index,array){})</li>
+        <li></li>
+    </ol>
+    <h2>Array of Objects</h2>
+    <p>An array made up of objects, hence the methods of this are different</p>
+    <h3>functions:</h3>
+    <ol>
+        <li>forEach</li>
+        <li>push(object)</li>
+        <li>map()</li>
+        <li>filter()</li>
+        <li>reduce()</li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+    <div id="foot">
+
+        Footer
+    </div>
+
 </body>
 
 </html>
