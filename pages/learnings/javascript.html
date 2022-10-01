@@ -355,8 +355,161 @@
         into a single element</p>
 
 
+    <h2>Javascript History</h2>
+    <ul>
+        <li>JavaScript was created in 1995 by Brendan Eich </li>
+        <li>In 1997, JavaScript was standardized by ECMA International in the ECMAScript
 
+            language specification.</li>
+        <li>It was originally named Mocha -> LiveScript ---> JavaScript.
+        </li>
+        <li> In 1997, JavaScript was standardised by in the ECMAScript language specification.
+        </li>
+        <li>In the early 2000s, Ajax were developed that use JavaScript to create dynamic applications
+        </li>
+        <li>JavaScripts syntax is heavily inspired by C++ and Java.
+        </li>
+        <li>JavaScript is an interpreted language, not a compiled language(like Java, which is executed by a compiler,
+            whereas javascript is interpreted line by line and then run)
+        </li>
+        <li>JavaScript is named after Java, and many of its concepts are borrowed from the Java language </li>
+    </ul>
 
+    <h3>console</h3>
+    <p>It is a command line interface that runs js on your js engine</p>
+
+    <p>REPL - READ EVALUATE PRINT LOOP is the loop that console runs</p>
+
+    <p>if you do console.log('helo') on console, you'll get helo undefined</p>
+    <p>
+        the helo is result of evaluating our program, the undefined is returned function of the funcction, and the
+        console log is returning undefined unless specified
+    </p>
+
+    <h3>Characteristics of Javascript</h3>
+
+    <ol>
+        <li>Its is interpreted language not compiled</li>
+        <li>It is a single threaded language - executes code line by line (this doesnt decrease performance, will prove
+            ahead how)</li>
+        <li>
+            It is dynamically typed language - i.e. type of a variable can change during the program execution (if you
+            dont want this you can use a language called Typescript)
+        </li>
+        <li>Object Oriented Language - it is a programming paradigm which uses objects as the primary way of
+            representing data which uses Prototypal inheritance (like push pop methods etc)</li>
+        <li>It is called a garbage collector - process that frees up memory by removing objects that are no longer used
+            in the program and it is called garbage collection</li>
+        <li>It is a client side language - using js in browser i.e chrome edge mozilla safari</li>
+        <li>It is a server side language - using js on server ie. nodejs</li>
+        <li>It is a non blocking - it is a code that runs concurrently in the background with the help of <b> event
+                loop</b> for example - setTimeout(()=>{}, );
+            <code>
+                console.log("before");
+                setTimeout(function (){
+                console.log(500);
+                }, 2000);
+                console.log("after");
+
+                This wont print before 500 after, instead this will print before after 500 . so this way we can run
+                concurrent codes using event loop.
+            </code>
+        </li>
+        <li>It is a high level language - resource management are done automatically</li>
+        <li>Multi Paradigm Language - i.e. we have difference style of approach how we can structure our code <code>This
+                is a coding approach to structure code- <ul>
+                    <li>Functional Programming</li>
+                    <li>Object Oriented Prog</li>
+                    <li>Procedural Programming</li>
+                </ul></code> </li>
+    </ol>
+
+    <h3>Javascript Engine</h3>
+    <p>is a computer program that runs js code, since computer understands only machine language i.e. 0 and 1 . All
+        browsers have a built in javascript engine</p>
+    <ul>
+        <li>Chrome - V8</li>
+        <li>Firefox Mozilla - Spider Monkey</li>
+        <li>Internet Explorer - Chikara opera or Presto </li>
+    </ul>
+
+    <p>code execution process/p>
+    <ul>
+        <li>source code - jo we wrote</li>
+        <li>through parser -> AST (abstract syntax tree)</li>
+        <li>through compilation -> machine code</li>
+        <li>through interpreter -> browser</li>
+    </ul>
+
+    <h3>Javascript Runtime (Browser) </h3>
+    <p>in a laymans language means a box containing all the things we need to run our code.</p>
+    <p>The components- </p>
+    <ul>
+        <li>
+            Javascript Engine -
+            <ol>
+                <li>Call Stack </li>
+                <li>Heap</li>
+            </ol>
+        </li>
+        <li>WEB APIs
+            <ol>
+                <li>DOM</li>
+                <li>Timers - setTimeout/setInterval</li>
+            </ol>
+        </li>
+        <li>Callback Que - contains all the callbacks that are waiting to be executed </li>
+        <li>Event Loop - Event Loop helps us to implement non-blocking code and concurrent code.</li>
+    </ul>
+
+    <p>Javascript Callstack - A call stack is a data structure that is used to track the execution of function calls.
+        It is used to
+
+        keep track of the order in which function calls are made.</p>
+
+    <h2>Advanced Functions</h2>
+    <h3>Types of Scope</h3>
+    <h3>Global scope</h3>
+    <h3>Block Scope</h3>
+    <h3>Function Scope</h3>
+    <h3>Lexical Scope</h3>
+    <h3>First Class citizens - <ol>
+            <li>
+                function returning function <code>
+                    function fcc()
+                    {
+                    return function (a,b)
+                    { return a+b;
+                    };
+                    }
+                    To call - fcc()(3,4);</code>
+            </li>
+            <li>assigning function to a variable -
+                <code> function smt(){
+                    console.log("helo");
+                    }
+                    const jk = smt;
+                    jk();
+                    smt()</code>
+
+            </li>
+            <li>store function inside an array</li>
+        </ol>
+    </h3>
+    <h3>High order functions HOF - functions accepting functions as arguments also called as callback functions
+        <ol>
+            <li>most common - </li>
+            <li>reduce</li>
+            <li>find</li>
+            <li>filter</li>
+            <li>map</li>
+        </ol>
+    </h3>
+    <h3>Function returning a function
+
+    </h3>
+    <h3>immediately Invoked Function Expression IIFE - - A FUNCTION that is gona be executed as soon as your page loads
+    </h3>
 
 
     <div id="foot">
