@@ -444,3 +444,27 @@
 // OR
 
 (a => a + 2)(4);
+
+
+// spread Operator
+console.log(..."Hello");
+
+// commbining arrays
+const arr1 = [2, 4, 5, 6, 5];
+const arr2 = [4, 26, 7, 7];
+console.log(arr1.concat(arr2)); //traditional way
+console.log(...arr1, ...arr2);  //modern way using spread operator
+
+// Separating objects
+const obj1 = {
+    name: "shaks",
+    age: 23,
+    country: "obj1 ka"
+};
+const obj2 = {
+    country: "indis",
+    place: "ny",
+};
+
+const newObj = Object.assign({}, obj1, obj2); //traditional way
+const newObj2 = { ...obj1, ...obj2 };
