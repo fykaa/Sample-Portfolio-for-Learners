@@ -1,3 +1,77 @@
+//--------
+//Array of objects
+//--------
+
+//Mutation
+// const arr = [1, 2, 3, 4, 5];
+
+// //add new data into original data
+
+// arr.push(6);
+
+// arr.pop();
+
+// arr.shift();
+
+// console.log(arr);
+
+//------
+//Array methods
+//------
+
+//1. ForEach();
+
+// const students = [
+//   { name: "John", age: 20 },
+//   { name: "Mary", age: 26 },
+//   { name: "Peter", age: 22 },
+//   { name: "Sally", age: 23 },
+// ];
+
+// students.forEach(user => {
+//   console.log("name", user.name);
+//   console.log("age", user.age);
+// });
+
+//1. map();
+
+// const newStudents = students.map(user => {
+//   return user.name;
+// });
+
+// newStudents.push("Emmanuel");
+// console.log(newStudents);
+// console.log(students);
+
+//1. filter();
+// const students = [
+//   { name: "John", age: 20, debt: false },
+//   { name: "Mary", age: 26, debt: false },
+//   { name: "Peter", age: 22, debt: true },
+//   { name: "Sally", age: 23, debt: true },
+// ];
+
+// const debtStudents = students.filter(student => {
+//   return student.age < 26;
+// });
+
+// // console.log(debtStudents);
+
+// //1. reduce();
+// const products = [
+//     { name: "banana", price: 1 },
+//     { name: "orange", price: 2 },
+//     { name: "apple", price: 3 },
+//     { name: "pear", price: 4 },
+//   ];
+
+//   const sum = products.reduce(function (total, product) {
+//     return total + product.price;
+//   }, 0);
+
+//   console.log(sum);
+
+
 // var fnName = function (str, n) {
 //     return 'a' > '1';
 // }
@@ -170,16 +244,203 @@
 
 
 // One object
-const std1 = {
-    name: 'shakira',
-    age: 34
-}
+// const std1 = {
+//     name: 'shakira',
+//     age: 34
+// }
 // array of objects
-const students = [
-    {name: 'shakira', age:34},
-    {name: 'hafsa', age:21},
-    {name: 'hj', age:28},
-]
+// const students = [
+//     {name: 'shakira', age:34},
+//     {name: 'hafsa', age:21},
+//     {name: 'hj', age:28},
+// ]
 
-students.push(keerat,34);
-console.log(students)
+// students.push(keerat,34);
+// console.log(students)
+
+//Array Destructuring
+// const arr = [2, 4, 5, 2, 1];
+// const [a, d, g, s, v] = arr;
+//so if you enter g youll get 5
+
+// Object Detructuring
+// const obj = {
+//     name: 'SharedArrayBuffer',
+//     age: 34,
+// };
+// const { name, age: umar } = obj
+
+// destructuring with default values - adding values for property that doesnt exist in the object, like jagah here. Remeber it can only work for property that doesnt exits.
+// const obj = {
+//     naam: "kashmir",
+//     umar: 1000,
+//     something: undefined,
+// };
+
+// const {naam = "kuch aur", umar:age, jagah = "India", something = "now this will destructure value since it was undefined"} = obj;
+
+// destructuring Parameters
+
+// const obj = {
+// naam: "kashmir",
+//     umar: 1000,
+//     something: undefined,
+// };
+
+// function findinObj1(user){
+//     console.log("First Name - ", user.naam);
+//     console.log("agers: ", user.umar)
+// }
+
+// function findinObj2({naam, umar}){
+//     console.log("First Name - ", naam);
+//     console.log("agers: ", umar)
+// }
+// findinObj2(obj);
+
+// Rest Parameters - one function can take only one rest parameter
+
+// const addNo = function (a, b, ...rest) {
+//     console.log('Arguments - ' , a, b)
+//     console.log('Rest Parameters-', rest)  //takes all the rest in one argument creating an array of rest parameters
+//     console.log('Rest Parameters-', ...rest) //takes rest of the argumeents separately each.
+// }
+// addNo(2, 4,3333,555,3232)
+
+// const maxNo = function(...more){
+//     console.log(Math.max(...more));
+// };
+
+// maxNo(3,4,6,2,2,3,6,8)
+
+// Array Function
+
+// function sum1(a,b){
+//     return a+b;
+// }
+// let sum2 = (a,b) => {
+//     return a+b;
+// }
+// sum2(3,4)
+
+// Limitations of Array function
+
+// Do not have this keyword
+
+
+
+
+
+// Do not have Arguments
+
+// const carObj = {
+//     name: "BMw",
+//     year : 2002,
+//     getName : ()=>{
+//         console.log(this.name);
+//     },
+// };
+
+// const arrfn = ()=>{
+//     console.log(arguments);
+// };
+// function tradfn(){
+//     console.log(arguments)
+// }
+// arrfn()
+// tradfn()
+
+
+// Cannot use as a constructor
+
+// const person = (name) => {
+//     this.name = name;
+// };
+
+// const ben = new person("Ben Joe");
+
+// console.log(ben);
+
+
+//Proporties
+
+// Only one parameter and one statement
+
+// const fn1 = a => a;
+// console.log(fn1(2));
+
+//multiple parameters with simple expressions
+// const fn2 = (a,b) => a+b;
+// console.log(fn2(4,2))
+
+//multiple statements
+// const fn3 = a => {
+//     let b = 11;
+//     return a+b;
+// }
+// console.log(fn3(1))
+
+// multiple statemetns and multiple paramtes
+// const fn4 = (a,c) => {
+//     let b = 11;
+//     return a+b+c;
+// }
+// console.log(fn4(1,2))
+
+// immediately return object literal
+
+// const obj = {
+//     name:"shakier",
+//     age:23,
+// };
+
+// function userInfo(user){
+//     return{
+//         name:user.name,
+//         age:user.age,
+//     };
+// }
+
+// const userInfo = user=>{
+//     return{
+//         name:user.name,
+//         age:user.age,
+//     };
+// }
+
+//OR
+
+// const userInfo = user=> ({
+//     name:user.name,
+//     age: user.age,
+// });
+// console.log(userInfo(obj))
+
+//destructuring obj with array function
+
+// const obj = {
+//     name:"shakier",
+//     age:23,
+// };
+
+// const displayUser = ({name, age})=>{
+//     return `Yuor name is ${name}, and age is ${age}`;
+// }
+// const user = displayUser(obj);
+// console.log(user);
+// const displayUser = ([name,age] = ["John", 50]) => `${name} ${age}`;
+
+// const add9 = (a,b= 20) => a+b;
+
+// const ans = add9(2);
+// console.log(ans)
+
+// anonymous function
+
+(function (a) {
+    return a + 2
+})(234);
+
+// OR
+
+(a => a + 2)(4);
