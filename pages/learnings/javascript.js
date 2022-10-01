@@ -447,24 +447,140 @@
 
 
 // spread Operator
-console.log(..."Hello");
+// console.log(..."Hello");
 
 // commbining arrays
-const arr1 = [2, 4, 5, 6, 5];
-const arr2 = [4, 26, 7, 7];
-console.log(arr1.concat(arr2)); //traditional way
-console.log(...arr1, ...arr2);  //modern way using spread operator
+// const arr1 = [2, 4, 5, 6, 5];
+// const arr2 = [4, 26, 7, 7];
+// console.log(arr1.concat(arr2)); //traditional way
+// console.log(...arr1, ...arr2);  //modern way using spread operator
 
 // Separating objects
-const obj1 = {
-    name: "shaks",
-    age: 23,
-    country: "obj1 ka"
-};
-const obj2 = {
-    country: "indis",
-    place: "ny",
-};
+// const obj1 = {
+//     name: "shaks",
+//     age: 23,
+//     country: "obj1 ka"
+// };
+// const obj2 = {
+//     country: "indis",
+//     place: "ny",
+// };
 
-const newObj = Object.assign({}, obj1, obj2); //traditional way
-const newObj2 = { ...obj1, ...obj2 };
+// const newObj = Object.assign({}, obj1, obj2); //traditional way
+// const newObj2 = { ...obj1, ...obj2 };
+
+
+// EVENT LOOP
+// console.log("before");
+// setTimeout(function () {
+//     console.log(500);
+// }, 2000);
+// console.log("after");
+
+
+// FUNCTION SCOPES
+// GLOBAL SCOPE
+// const ong = {
+//     name: 'fdf',
+//     age: 2,
+// };
+
+// console.log(` ${ong.name} is ${ong.age} yo `);
+
+// //mutating is possible in global scoping
+// function chane(user) {
+//     user.name = 'fssf';
+//     user.age = 32;
+// }
+// chane(ong)
+// console.log(` ${ong.name} is ${ong.age} yo `);
+
+// LOCAL SCOPE
+
+// FUNCTION SCOPE
+// const fxn = () => {
+//     let tex = "printed fsdfsdfs";
+//     console.log(tex);
+// };
+// fxn()
+// console.log(tex);// not possible
+// BLOCK SCOPE
+
+// let afe = 34;
+// if (afe < 44) {
+//     let mess = "hi there";
+// }
+// console.log(mess) //not possible
+
+// LEXIMAL SCOPE
+//inner functions have access to variables and functions declared in the outer function but not vice versa
+
+
+//FIRST CLASS CITIZENS
+
+//function returning a function
+
+// function fcc() {
+//     return function (a, b) {
+//         return a + b;
+//     };
+// }
+// console.log(fcc()(3, 4));
+
+//assigning function to a variable
+// function smt() {
+//     console.log("helo");
+// }
+// const jk = smt;
+// jk();
+// smt()
+
+//store function inside an array
+// function sayhi() {
+//     console.log("hiiiiii");
+// }
+// function sayhelo() {
+//     console.log("hello");
+// }
+// const arrao = [sayhi, sayhelo];
+// arrao[0]()
+// arrao[1]()
+
+
+// High order functions HOF
+//HOF functions accepting functions as arguments,  also called as callback functions
+
+//reduce/find/filter/map
+// const calc = function(qty, prixe){
+//     return qty*prixe;
+// }
+// const disp = function(callbackfn){
+//     console.log(callbackfn);
+// }
+
+// disp(calc(2,434))
+
+
+//function returning function
+// function addNo(a,b){
+//     return function (){
+//         console.log("I am cool");
+//     }; //returning function
+// }
+
+// const firstFn = addNo(); //storing funcction
+// console.log(typeof firstFn);
+// addNo()//wont return 
+// addNo()()//will return 
+
+//IIFE - immediately Invoked Function Expression IIFE
+//- A FUNCTION that is gona be executed as soon as your page loads
+
+//Syntax -> (()=>{})();
+(function name() {
+    console.log("heloe");
+})();
+// OR
+(() => {
+    console.log("I AM IIFE");
+})();
