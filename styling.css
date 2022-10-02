@@ -296,22 +296,6 @@ section .about {
 }
 
 /* footer */
-/* 
-footer {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-footer a {
-  color: var(--light-color);
-  font-size: 22px;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-} */
 
 footer .floating-footer {
   font-size: small;
@@ -326,17 +310,27 @@ footer .floating-footer {
 }
 
 
-
-/*  */
-
 footer {
   position: relative;
   width: 100%;
-  background-color: #111827;
+  /* background-color: #111827; */
   color: white;
   box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
   padding: 15px 0px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+footer a {
+  color: var(--light-color);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer p {
@@ -410,7 +404,6 @@ footer p {
 }
 
 .icons ul li:nth-child(4) a:before {
-  background: red;
+  background: rgb(197, 24, 111);
 }
-
 
