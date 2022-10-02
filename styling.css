@@ -26,27 +26,22 @@ body {
 /* commonly used media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
 
 .subhead {
@@ -122,6 +117,9 @@ header {
   float: right;
   color: white;
   margin: 10px;
+}
+#search {
+  padding: 0 0.5rem;
 }
 
 #logo {
@@ -260,6 +258,7 @@ section .about {
   border: 2px solid black;
   border-radius: 9px;
   background-color: #410914;
+  text-align: center;
   padding: 6px;
   /* ANIMATION  */
   /* cumpolsary for animation is relatiev position? */
