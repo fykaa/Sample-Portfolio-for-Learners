@@ -309,7 +309,6 @@ footer .floating-footer {
   opacity: 20%;
 }
 
-
 footer {
   position: relative;
   width: 100%;
@@ -327,7 +326,6 @@ footer a {
   font-size: 22px;
   text-decoration: none;
 }
-
 
 footer a:hover {
   text-decoration: underline;
@@ -407,3 +405,8 @@ footer p {
   background: rgb(197, 24, 111);
 }
 
+@media only screen and (max-width: 950px) {
+  nav li {
+    display: none;
+  }
+}
