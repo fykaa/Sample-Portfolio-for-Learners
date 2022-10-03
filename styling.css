@@ -23,26 +23,7 @@ body {
   color: white;
 }
 
-/* commonly used media queries */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 
 .subhead {
   font-weight: 600;
@@ -62,6 +43,7 @@ body {
 /* HEADER SECTION */
 
 header {
+  display: flex;
   position: sticky;
   top: 3px;
   z-index: 1;
@@ -99,7 +81,7 @@ header {
   animation-timing-function: ease-in-out;
   float: right;
   list-style: none;
-  margin: 13px 20px;
+  margin: 0px 20px;
 }
 
 @keyframes slider {
@@ -155,6 +137,51 @@ header nav li a:active {
 section #image_to_hide {
   visibility: hidden;
 }
+
+.menu{
+  width: 25px; 
+  height:25px;
+  display: none;
+}
+
+.mobile-nav-list a{
+  color: rgb(194, 123, 123);
+  text-decoration: none;
+}
+
+.mobile-nav-list  li a:hover {
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-list  li a:active {
+  color: #410914;
+}
+
+.mobile-nav-list li{
+  list-style:  none;
+}
+.mobile-nav-display{
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-nav{
+  
+  justify-content: center;
+  background-color: black;
+  position: fixed;
+  right: 10px;
+  height: 100vh;
+  width: 50vw;
+  z-index: 100;
+}
+
+.mobile-nav-display{
+  display: none;
+}
+
+
 
 /* ABOUT SECTION */
 
@@ -407,3 +434,63 @@ footer p {
   background: rgb(197, 24, 111);
 }
 
+/* commonly used media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .work table{
+    padding: 10px;
+    margin: 5px;
+  }
+  .work th{
+    font-size: 14px;
+  }
+  .work td{
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  section .content{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section .img-responsive{
+    height: 100px;
+    width: 100px;
+  }
+  section .w50{
+    width: fit-content;
+  }
+
+  section p{
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .navbar h1{
+    left: 10px;
+    font-size: 1.5rem;
+  }
+ 
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 920px) {
+  .navbar ul{
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
