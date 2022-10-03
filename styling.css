@@ -272,6 +272,11 @@ section .about {
 
 /* WORK/Contribution SECTION */
 
+.project {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
 .work h3 {
   text-shadow: 6px -3px 2px rgb(72 32 32);
 }
@@ -282,12 +287,28 @@ section .about {
   border-radius: 34px;
   padding: 34px;
   margin: 34px;
+  width: 95%;
   /* margin: auto; */
 }
 
 .work td {
   background-color: #100f0f;
   opacity: 0.9;
+}
+
+tbody td {
+  font-size: 14px;
+  line-height: 30px;
+}
+@media (max-width: 998px) {
+  .work table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 34px 5px;
+    margin: 34px 0;
+  }
 }
 
 /* CONTACTS SECTION FLEXBOX SECTION */
