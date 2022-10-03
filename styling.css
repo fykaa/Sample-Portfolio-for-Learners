@@ -48,6 +48,7 @@ body {
   font-weight: 600;
   font-size: 30px;
   text-align: center;
+  padding-top: 20px;
   /* margin: auto; */
   /* font-size: 2em; */
 }
@@ -55,7 +56,7 @@ body {
   font-weight: 600;
   font-size: 30px;
   text-align: center;
-  /* margin: auto; */
+  margin: auto;
   /* font-size: 2em; */
 }
 
@@ -159,16 +160,51 @@ section #image_to_hide {
 /* ABOUT SECTION */
 
 section .about {
-  padding: 1px 60px 0px 60px;
+  width: 100%;
+  background: transparent;
+  padding-top: 60px;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1196px;
+  margin: 0 auto;
+  background-color: #191919;
+  border-radius: 10px;
+  padding: 20px 30px;
 }
 
 .contentbox h3 {
-  font-size: 20px;
+  font-size: 18px;
+  margin: auto;
+  padding: auto;
+  font-weight: 200;
+}
+.contentbox h1 {
+  font-size: 50px;
+  margin: auto;
+  padding: auto;
+  font-weight: 900;
+}
+.contentbox p {
+  font-size: 15px;
+  margin: auto;
+  padding: auto;
+  line-height: 30px;
+  font-weight: 100;
+  color: rgb(212, 212, 212);
+}
+.about_btn {
+  margin: 10px 0;
+}
+.about_self {
+  padding: 20px 0;
+}
+.about_hobby {
+  padding-bottom: 20px;
 }
 
 .w50 {
@@ -185,11 +221,35 @@ section .about {
   height: auto;
 }
 
+.about_img {
+  width: 60%;
+}
+
 .imgIM {
   float: right;
-  border-radius: 50%;
-  width: 450px; /* width of image (px or % or auto) */
+  /* border-radius: 50%; */
+  width: 100%;
   height: auto;
+}
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column-reverse;
+    max-width: 840px;
+  }
+  .about_img {
+    width: 90%;
+  }
+}
+@media (max-width: 960px) {
+  .content {
+    flex-direction: column-reverse;
+    max-width: 576px;
+  }
+}
+@media (max-width: 608px) {
+  .content {
+    max-width: 365px;
+  }
 }
 
 .about {
@@ -309,7 +369,6 @@ footer .floating-footer {
   opacity: 20%;
 }
 
-
 footer {
   position: relative;
   width: 100%;
@@ -327,7 +386,6 @@ footer a {
   font-size: 22px;
   text-decoration: none;
 }
-
 
 footer a:hover {
   text-decoration: underline;
@@ -406,4 +464,3 @@ footer p {
 .icons ul li:nth-child(4) a:before {
   background: rgb(197, 24, 111);
 }
-
