@@ -6,6 +6,12 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 ---
 
 ## Contributing through HACKTOBERFEST 👩‍💻🏆👨‍💻
+Steps for adding your name -
+
+    1. Star this repo
+    2. Create a Valid Pull Request
+    3. Wait for PR to be Merged
+    4. Yayy you're done!
 <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
