@@ -23,8 +23,6 @@ body {
   color: white;
 }
 
-
-
 .subhead {
   font-weight: 600;
   font-size: 30px;
@@ -138,36 +136,42 @@ section #image_to_hide {
   visibility: hidden;
 }
 
-.menu{
-  width: 25px; 
-  height:25px;
+.menu {
+  width: 25px;
+  height: 25px;
   display: none;
+  cursor: pointer;
 }
 
-.mobile-nav-list a{
+.mobile-nav-list a {
   color: rgb(194, 123, 123);
   text-decoration: none;
 }
 
-.mobile-nav-list  li a:hover {
+.mobile-nav-list li a:hover {
   color: var(--light-color);
   transition: color 0.3s ease;
 }
 
-.mobile-nav-list  li a:active {
+.mobile-nav-list li a:active {
   color: #410914;
 }
 
-.mobile-nav-list li{
-  list-style:  none;
+.mobile-nav-list li {
+  list-style: none;
 }
-.mobile-nav-display{
+
+.mobile-nav-display-hide {
+  display: none;
+  /* justify-content: center; */
+}
+
+.mobile-nav-display {
   display: flex;
   justify-content: center;
 }
 
-.mobile-nav{
-  
+.mobile-nav {
   justify-content: center;
   background-color: black;
   position: fixed;
@@ -177,11 +181,9 @@ section #image_to_hide {
   z-index: 100;
 }
 
-.mobile-nav-display{
+.mobile-nav-display {
   display: none;
 }
-
-
 
 /* ABOUT SECTION */
 
@@ -336,7 +338,6 @@ footer .floating-footer {
   opacity: 20%;
 }
 
-
 footer {
   position: relative;
   width: 100%;
@@ -354,7 +355,6 @@ footer a {
   font-size: 22px;
   text-decoration: none;
 }
-
 
 footer a:hover {
   text-decoration: underline;
@@ -437,41 +437,39 @@ footer p {
 /* commonly used media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .work table{
+  .work table {
     padding: 10px;
     margin: 5px;
   }
-  .work th{
+  .work th {
     font-size: 14px;
   }
-  .work td{
+  .work td {
     font-size: 14px;
     line-height: 25px;
   }
 
-  section .content{
+  section .content {
     display: flex;
     flex-direction: column-reverse;
   }
-  section .img-responsive{
+  section .img-responsive {
     height: 100px;
     width: 100px;
   }
-  section .w50{
+  section .w50 {
     width: fit-content;
   }
 
-  section p{
+  section p {
     font-size: 16px;
     line-height: 35px;
   }
-  .navbar h1{
+  .navbar h1 {
     left: 10px;
     font-size: 1.5rem;
   }
- 
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -479,10 +477,10 @@ footer p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 920px) {
-  .navbar ul{
+  .navbar ul {
     display: none;
   }
-  .menu{
+  .menu {
     display: flex;
   }
 }

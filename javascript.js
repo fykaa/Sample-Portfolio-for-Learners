@@ -3,8 +3,12 @@ document.getElementById("search").addEventListener("keypress", (e) => {
 });
 
 function handleMenu() {
-  
-  let nav = document.getElementById("mobile-nav-display");
-
-  nav.classList.toggle("mobile-nav-display");
+  window.addEventListener("click", function (e) {
+    let nav = document.getElementById("mobile-nav-display");
+    if (document.getElementById("menu").contains(e.target)) {
+      nav.classList.remove("mobile-nav-display");
+    } else {
+      nav.classList.add("mobile-nav-display");
+    }
+  });
 }
