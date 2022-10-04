@@ -29,20 +29,12 @@
     <script src="javascript.js"></script>
   </head>
 
-  <body>
+  <body >
     <header>
-      <nav class="navbar">
+      <nav class="navbar" style="display: flex; justify-content: end; " >
         <h1>Portfolio</h1>
         <ul>
-          <div class="search">
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Search my Portfolio"
-              autofocus
-            />
-          </div>
+          
 
           <li><a href="#work"> Contributions</a></li>
           <li><a href="#project"> Projects</a></li>
@@ -52,8 +44,41 @@
           </li>
           <li><a href="#about"> About</a></li>
         </ul>
+        <div style="display: flex; align-items: center; " >
+
+          <div class="search">
+            <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search my Portfolio"
+            autofocus
+            />
+          </div>
+          <img onclick="handleMenu()" id="menu" class="menu"  src="./assets/menu.png" alt="menu">
+        </div>
+        
       </nav>
     </header>
+
+    <div class="mobile-nav-display" id="mobile-nav-display">
+
+      
+      <div class="mobile-nav " id="mobile-nav" >
+        <ul class="mobile-nav-list" id="mobile-nav-list"  >
+          
+          
+          <li><a href="#about"> About</a></li>
+          <li>
+            <a href="./pages/learnings.html" target="_blank"> Learnings</a>
+          </li>
+          <li><a href="#contact"> Contact</a></li>
+          <li><a href="#project"> Projects</a></li>
+          <li><a href="#work"> Contributions</a></li>
+        </ul>
+        
+      </div>
+    </div>
 
     <section>
       <section class="about" id="about">
@@ -79,7 +104,7 @@
               >reading books 📖<br />
               >photography; 📸<br />
               >sketching/painting!; 🎮<br />
-              >Networking is <3 lets connect🙋‍♂️
+              >Networking is  &#60 3 lets connect🙋‍♂️
             </p>
           </div>
           <div aling="right" class="w50">
@@ -117,7 +142,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr align="center">
+            <tr >
               <td>Education</td>
               <td>
                 I've been a part of various ed led communities, where i am
@@ -127,7 +152,7 @@
               <td>2 mos</td>
               <td>#</td>
             </tr>
-            <tr align="center">
+            <tr >
               <td>Politics</td>
               <td>
                 On the great saying
@@ -142,7 +167,7 @@
               <td>4 mos</td>
               <td>#</td>
             </tr>
-            <tr align="center">
+            <tr >
               <td>Art</td>
               <td>
                 I've been interested in art since my kindergartin where I first
@@ -154,7 +179,7 @@
               <td>4 mos</td>
               <td>#</td>
             </tr>
-            <tr align="center">
+            <tr >
               <td>Social Contributions</td>
               <td>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
