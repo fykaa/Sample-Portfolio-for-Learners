@@ -45,20 +45,81 @@ body {
 }
 
 .subhead {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 30px;
   text-align: center;
+
   /* margin: auto; */
   /* font-size: 2em; */
 }
 .subhead h2 {
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: lighter;
+  font-size: 100px;
   text-align: center;
+  text-decoration-line: underline;
+  /* background-color: white;
+  color: black; */
   /* margin: auto; */
   /* font-size: 2em; */
 }
 
+.about-me-intrest{
+  font-size: 60px;
+  text-decoration: underline;
+}
+.about-me-title {
+  font-size: 70px;
+}
+
+.about-me{
+  padding: .5rem;
+  background-color: #55acee;
+  border-radius: 1.5rem;
+}
+
+.skill-1{
+  background-color: #225073;
+}
+.skill-2{
+  background-color: green;
+}
+.skill-3{
+  background-color: rgb(146, 3, 3);
+}
+
+.about-me-p{
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: justify;
+  font-style: italic;
+}
+
+.my-intrest li{
+  font-size: 2rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.project-link{
+  text-decoration: none;
+	color: white;
+	font-size: 3rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: crimson;
+}
+
+.project-update{
+  font-size: 2rem;
+}
+
+.subhead h3{
+  font-size: 4rem;
+  text-decoration: underline;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
 /* HEADER SECTION */
 
 header {
@@ -168,7 +229,7 @@ section .about {
 }
 
 .contentbox h3 {
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .w50 {
