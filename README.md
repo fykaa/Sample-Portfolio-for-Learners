@@ -8,7 +8,7 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 ## Contributing through HACKTOBERFEST 👩‍💻🏆👨‍💻
 Steps for adding your name -
 
-    1. Star this repo
+    1. Star this repo ⭐
     2. Create a Valid Pull Request
     3. Wait for PR to be Merged
     4. Yayy you're done!
