@@ -31,11 +31,10 @@
 
   <body >
     <header>
+      <h1><img src="dark theme icon/moon.png" id="icon"></h1>
       <nav class="navbar" style="display: flex; justify-content: end; " >
         <h1>Portfolio</h1>
         <ul>
-          
-
           <li><a href="#work"> Contributions</a></li>
           <li><a href="#project"> Projects</a></li>
           <li><a href="#contact"> Contact</a></li>
@@ -57,17 +56,17 @@
           </div>
           <img onclick="handleMenu()" id="menu" class="menu"  src="./assets/menu.png" alt="menu">
         </div>
-        
+
       </nav>
     </header>
 
     <div class="mobile-nav-display" id="mobile-nav-display">
 
-      
+
       <div class="mobile-nav " id="mobile-nav" >
         <ul class="mobile-nav-list" id="mobile-nav-list"  >
-          
-          
+
+
           <li><a href="#about"> About</a></li>
           <li>
             <a href="./pages/learnings.html" target="_blank"> Learnings</a>
@@ -76,7 +75,7 @@
           <li><a href="#project"> Projects</a></li>
           <li><a href="#work"> Contributions</a></li>
         </ul>
-        
+
       </div>
     </div>
 
@@ -122,8 +121,8 @@
             style="text-decoration: none; color: crimson"
             >Check Out My Learnings</a
           >
-          <br />
-          --to be updated--
+          <br/>
+          <p class = "update"> --to be updated-- </p>
         </p>
       </div>
 
@@ -134,7 +133,7 @@
         </h3>
         <table style="width: 95%">
           <thead style="border: 2px solid black">
-            <tr>
+            <tr class = "tr">
               <th style="border: 1px solid rgb(173, 44, 44)">Project Name</th>
               <th style="border: 1px solid rgb(173, 44, 44)">Details</th>
               <th style="border: 1px solid rgb(173, 44, 44)">Duration</th>
@@ -197,7 +196,7 @@
 
     <!-- FLEXBOX -->
     <div class="flexbox" id="contact">
-      <div class="item" id="item-1"><a href="">GitHub </a>fsf</div>
+      <div class="item" id="item-1"><a href="">GitHub </a></div>
       <div class="item" id="item-2"><a href="">LinkedIn </a></div>
       <div class="item" id="item-3"><a href="">NewsLetter </a></div>
       <div class="item" id="item-4"><a href="">Medium </a></div>
@@ -206,7 +205,7 @@
     </div>
 
     <footer>
-    <div>
+    <div id="text">
       Handcrafted by
       <a href="https://www.linkedin.com/in/faeka/" target="_blank">
         Fyka </a> and Open Source ♥
@@ -237,7 +236,7 @@
               </li>
             </ul>
           </div>
-    
+
         </div>
     </div>
 
@@ -246,5 +245,15 @@
     </span>
   </footer>
     <script src="./javascript.js"></script>
+    <script>
+      var icon = document.getElementById(`icon`);
+      icon.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains(`dark-theme`))
+            icon.src = "dark theme icon/sun.png";
+          else
+            icon.src = "dark theme icon/moon.png";
+      }
+    </script>
   </body>
 </html>
