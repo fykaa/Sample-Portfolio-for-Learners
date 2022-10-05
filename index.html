@@ -7,108 +7,94 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is description" />
-    <meta name="keywords" content="html, html tutorials, web development" />
-    <meta name="robots" content="INDEX, FOLLOW" />
-    <title>Portfolio</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/favicon_io/favicon.ico"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-    <link rel="stylesheet" href="./styling.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="javascript.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is description" />
+  <meta name="keywords" content="html, html tutorials, web development" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico" />
+  <link rel="stylesheet" href="./styling.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="javascript.js"></script>
+</head>
 
-  <body >
-    <header>
-      <h1><img src="dark theme icon/moon.png" id="icon"></h1>
-      <nav class="navbar" style="display: flex; justify-content: end; " >
-        <h1>Portfolio</h1>
-        <ul>
-          <li><a href="#work"> Contributions</a></li>
-          <li><a href="#project"> Projects</a></li>
-          <li><a href="#contact"> Contact</a></li>
-          <li>
-            <a href="./pages/learnings.html" target="_blank"> Learnings</a>
-          </li>
-          <li><a href="#about"> About</a></li>
-        </ul>
-        <div style="display: flex; align-items: center; " >
+<body>
+  <header>
+    <nav class="navbar" style="display: flex; justify-content: end; ">
+      <h1>Portfolio</h1>
+      <ul>
 
-          <div class="search">
-            <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search my Portfolio"
-            autofocus
-            />
-          </div>
-          <img onclick="handleMenu()" id="menu" class="menu"  src="./assets/menu.png" alt="menu">
+        <li><a href="#work"> Contributions</a></li>
+        <li><a href="#project"> Projects</a></li>
+        <li><a href="#contact"> Contact</a></li>
+        <li>
+          <a href="./pages/learnings.html" target="_blank"> Learnings</a>
+        </li>
+        <li><a href="#about"> About</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; ">
+
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus />
         </div>
-
-      </nav>
-    </header>
-
-    <div class="mobile-nav-display" id="mobile-nav-display">
-
-
-      <div class="mobile-nav " id="mobile-nav" >
-        <ul class="mobile-nav-list" id="mobile-nav-list"  >
-
-
-          <li><a href="#about"> About</a></li>
-          <li>
-            <a href="./pages/learnings.html" target="_blank"> Learnings</a>
-          </li>
-          <li><a href="#contact"> Contact</a></li>
-          <li><a href="#project"> Projects</a></li>
-          <li><a href="#work"> Contributions</a></li>
-        </ul>
-
+        <img onclick="handleMenu()" id="menu" class="menu" src="./assets/menu.png" alt="menu">
       </div>
+
+    </nav>
+  </header>
+
+  <div class="mobile-nav-display" id="mobile-nav-display">
+
+
+    <div class="mobile-nav " id="mobile-nav">
+      <ul class="mobile-nav-list" id="mobile-nav-list">
+
+
+        <li><a href="#about"> About</a></li>
+        <li>
+          <a href="./pages/learnings.html" target="_blank"> Learnings</a>
+        </li>
+        <li><a href="#contact"> Contact</a></li>
+        <li><a href="#project"> Projects</a></li>
+        <li><a href="#work"> Contributions</a></li>
+      </ul>
+
     </div>
+  </div>
 
-    <section>
-      <section class="about" id="about">
-        <div class="subhead">
-          <h2>About me</h2>
+  <section>
+    <section class="about" id="about">
+      <div class="subhead">
+        <h2>About me</h2>
+      </div>
+      <div class="content">
+        <div class="contentbox w50 w75">
+          <h3>I'm a Developer.</h3>
+          <p>
+            🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
+            Photographer .
+          </p>
+
+          <p>
+            I love programming and making random web-based applications for
+            fun. I am a future full-stack developer, currently I'm focusing on
+            the backend.
+          </p>
+          <h3>My Interests</h3>
+          <p>
+            Apart from coding! <br /><br />
+            >reading books 📖<br />
+            >photography; 📸<br />
+            >sketching/painting!; 🎮<br />
+            >Networking is &#60 3 lets connect🙋‍♂️
+          </p>
         </div>
-        <div class="content">
-          <div class="contentbox w50 w75">
-            <h3>I'm a Developer.</h3>
-            <p>
-              🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
-              Photographer .
-            </p>
-
-            <p>
-              I love programming and making random web-based applications for
-              fun. I am a future full-stack developer, currently I'm focusing on
-              the backend.
-            </p>
-            <h3>My Interests</h3>
-            <p>
-              Apart from coding! <br /><br />
-              >reading books 📖<br />
-              >photography; 📸<br />
-              >sketching/painting!; 🎮<br />
-              >Networking is  &#60 3 lets connect🙋‍♂️
-            </p>
-          </div>
-          <div aling="right" class="w50">
-            <img src="./assets/girl.jpg" class="img-responsive imgIM" />
-          </div>
+        <div aling="right" class="w50">
+          <img src="./assets/girl.jpg" class="img-responsive imgIM" />
         </div>
       </section>
 
@@ -206,6 +192,7 @@
 
     <footer>
     <div id="text">
+
       Handcrafted by
       <a href="https://www.linkedin.com/in/faeka/" target="_blank">
         Fyka </a> and Open Source ♥
@@ -238,8 +225,8 @@
           </div>
 
         </div>
-    </div>
 
+    </div>
     <span class="floating-footer">
       Copyright &copy; reserved w Fyka Ansar &nbsp;
     </span>
@@ -255,5 +242,6 @@
             icon.src = "dark theme icon/moon.png";
       }
     </script>
-  </body>
+  <script src="./javascript.js"></script>
+</body>
 </html>

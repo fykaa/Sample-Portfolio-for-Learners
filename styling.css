@@ -38,6 +38,24 @@ body {
 .tr {
   color: white;
 }
+
+
+/* commonly used media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
 .subhead {
   color: white;
   font-weight: 600;
@@ -46,6 +64,7 @@ body {
   /* margin: auto; */
   /* font-size: 2em; */
 }
+
 .subhead h2 {
   font-weight: 600;
   font-size: 30px;
@@ -115,6 +134,7 @@ header {
   color: var(--primary-color);
   margin: 10px;
 }
+
 #search {
   padding: 0 0.5rem;
   color: var(--primary-color);
@@ -236,7 +256,8 @@ section .about {
 .imgIM {
   float: right;
   border-radius: 50%;
-  width: 450px; /* width of image (px or % or auto) */
+  width: 450px;
+  /* width of image (px or % or auto) */
   height: auto;
 }
 
@@ -301,6 +322,7 @@ section .about {
   text-decoration: none;
   color: var(--text-color);
 }
+
 .flexbox .item a:hover {
   text-decoration: underline;
 }
@@ -385,6 +407,7 @@ footer a:hover {
 
 footer p {
   margin: 0;
+
 }
 
 .footer-wrapper {
@@ -464,9 +487,11 @@ footer p {
     padding: 10px;
     margin: 5px;
   }
+
   .work th {
     font-size: 14px;
   }
+
   .work td {
     font-size: 14px;
     line-height: 25px;
@@ -476,10 +501,12 @@ footer p {
     display: flex;
     flex-direction: column-reverse;
   }
+
   section .img-responsive {
     height: 100px;
     width: 100px;
   }
+
   section .w50 {
     width: fit-content;
   }
@@ -488,6 +515,7 @@ footer p {
     font-size: 16px;
     line-height: 35px;
   }
+
   .navbar h1 {
     left: 10px;
     font-size: 1.5rem;
@@ -495,23 +523,93 @@ footer p {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 920px) {
   .navbar ul {
     display: none;
   }
+
   .menu {
     display: flex;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2rem 0;
+    gap: 0.3rem;
+  }
+
+  .icons ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .icons ul li {
+    list-style: none;
+  }
+
+  .icons ul li a {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    border: 3px solid #fff;
+  }
+
+  .icons ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+
+  .icons ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+
+  .icons ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #55acee;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  .icons ul li a:hover:before {
+    top: 0;
+  }
+
+  .icons ul li:nth-child(2) a:before {
+    background: black;
+  }
+
+  .icons ul li:nth-child(4) a:before {
+    background: #bf324e;
+  }
 }

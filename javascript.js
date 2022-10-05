@@ -1,4 +1,8 @@
 document.getElementById("search").addEventListener("keypress", (e) => {
+<<<<<<< HEAD
+    if (e.key == "Enter") window.find(e.target.value);
+});
+=======
   if (e.key == "Enter") window.find(e.target.value);
 });
 
@@ -12,3 +16,4 @@ function handleMenu() {
     }
   });
 }
+>>>>>>> a2faec26c9f0a6bcb1d8934941272149949b9092
