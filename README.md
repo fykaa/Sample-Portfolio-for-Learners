@@ -29,8 +29,6 @@ Steps for successful Merge PR -
 </table>
 
 ## Thanks to all Contributors🏆
-
-Thanks a lot! Keep contributing!
 [![Contributors](https://contrib.rocks/image?repo=fykaa/Sample-Portfolio-for-Learners)](https://github.com/fykaa/Sample-Portfolio-for-Learners/graphs/contributors)
 
 ## Support 🙏 
