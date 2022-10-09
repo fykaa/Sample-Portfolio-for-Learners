@@ -1,0 +1,133 @@
+*{
+    --input-padding: 8px;
+    --normal-padding: 10px;
+    --extra-padding: 20px;
+    --normal-margin: 10px;
+    --extra-margin: 20px;
+    --normal-font: 1rem;
+    --heavy-font: 1.5rem;
+    --very-heavy-margin: 40px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    position: relative;
+}
+
+.hero{
+    margin-top: var(--extra-margin);
+    word-break: keep-all;
+    border: 2px solid red;
+    padding: var(--extra-padding);
+    box-shadow: 10px 10px  10px orangered;
+    top: 40%;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .profile-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .profile-img img{
+    height: 170px;
+    width: 170px;
+}
+
+
+.container{
+    font-size: var(--heavy-font);
+}
+
+p{
+    font-size: var(--heavy-font);
+    border: 2px solid black;
+    padding: var(--input-padding);
+    background-color: white;
+    box-shadow: 5px 5px 10px orangered;
+    
+}
+
+.last-name p{
+    font-size: var(--heavy-font);
+    padding: var(--input-padding);
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.email p{
+    font-size: var(--heavy-font);
+    padding: var(--input-padding);
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.country p{
+    font-size: var(--heavy-font);
+    padding: var(--input-padding);
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.prefered-lan p{
+    font-size: var(--heavy-font);
+    padding: var(--input-padding);
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.social-links img{
+    height: 50px;
+    width: 50px;
+    padding: var(--normal-padding);
+    row-gap: var(--normal-margin);
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(163, 240, 128);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        padding: var(--extra-padding);
+    }
+
+  }
+
+
+
+
+
