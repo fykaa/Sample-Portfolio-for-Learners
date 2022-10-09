@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<%- include('./partials/head')  %> 
+<body>
+    <%- include('./partials/nav')%>
+
+    <div class="content index">
+        <h2><%= customer.name %></h2>
+        <h3>Balance: <%= customer.balance %> </h3>
+
+        <form action="/customers" method="POST">
+
+            <label for="target">Transfer to:</label>
+            <select name="target" required>
+                <option value="">--Select a customer--</option>
+                <% customers.forEach((customer) => { %> 
+                    <option value="<%= customer._id %>"><%= customer.name %> </option>
+                <% }) %> 
+            </select><br>
+
+            <label for="amount">Amount to transfer</label>
+            <input name="amount" type="number" placeholder="0000" required>
+            <input type="hidden" name="source" value="<%= customer._id %>">
+            <div>
+                <button type="submit">Transfer</button>
+            </div>
+
+        </form>
+    </div>
+
+    <%- include('./partials/footer') %> 
+</body>
+</html>
