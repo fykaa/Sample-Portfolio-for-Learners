@@ -1,0 +1,41 @@
+*{
+    font-family:"poppins",sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+   background-image: url(../images/Deep\ Space.jpg);
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    
+}
+.head{
+    background-color: black;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+}
+li{
+    list-style: none;
+
+    padding: 20px;
+}
+ul{
+display: flex;
+padding-right: 20px;
+
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.name{
+    color: white;
+    display: flex;
+    justify-content: left;
+}
