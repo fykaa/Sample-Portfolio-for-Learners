@@ -80,7 +80,7 @@ header {
 }
 
 .navbar ul {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .navbar h1 {
@@ -187,14 +187,13 @@ section #image_to_hide {
   list-style: none;
 }
 
-.mobile-nav-display-hide {
-  display: none;
-  /* justify-content: center; */
-}
+
+
 
 .mobile-nav-display {
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 .mobile-nav {
@@ -205,10 +204,6 @@ section #image_to_hide {
   height: 100vh;
   width: 50vw;
   z-index: 100;
-}
-
-.mobile-nav-display {
-  display: none;
 }
 
 /* ABOUT SECTION */
@@ -554,6 +549,10 @@ footer p {
   .work td {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  section >section.about{
+    padding: 1px 3vw ;
   }
 
   section .content {
