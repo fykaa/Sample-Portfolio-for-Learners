@@ -250,6 +250,10 @@ section .about {
 
 .about_btn {
   margin: 10px 0;
+  border-radius: 25px;
+  cursor:pointer;
+  color: #9f8e92;
+  background-color: #d6e73c;
 }
 
 .about_self {
