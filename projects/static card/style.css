@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: black;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(187,187,187,1) 42%, rgba(0,0,0,1) 99%); */
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 570px;
+    border-radius: 30px;
+    background-color: gray;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    background-color: gray;
+    /* background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 41%, rgba(187,187,187,1) 70%, rgba(0,0,0,1) 99%); */
+}
+
+#avatar{
+    display: flex;
+    justify-content: center;
+    padding: 0% 0px 0% 0px;
+    width: 100%;
+    height: 30%;
+}
+
+#avatar img{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.icon{
+    color: white;
+    font-size: 40px;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, serif;
+}
+
+#header h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+} 
+#header h4{
+    margin-top: 8px;
+} 
+
+#social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#social img{
+    width: 40px;
+}
+
+#info{
+    word-wrap: break-word;
+}
+
+#info p{
+    font-size: 20px;
+    text-align: center;
+}
