@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* user-select: none; */
+    color: white;
+}
+
+::selection{
+    color: black;
+    background-color: yellow;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #131417;;
+}
+
+.main{
+    width: 55%;
+    border: 2px solid #AED2B8;
+    /* border-top: 0;
+    border-bottom: 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 100px;
+    row-gap: 25px;
+}
+
+
+
+#header > h1{
+    /* font-family: 'Times New Roman', Times, serif; */
+    --font-sofia: sofia-pro, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
+    position: relative;
+}
+
+#info{
+    /* font-size: 100%; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.2rem;
+    row-gap: 15px;
+
+    line-height: 1.5;
+}
+
+#info .infoText{
+    font-family: "urw-din",sans-serif;
+}
+
+#info li{
+    margin: 0 0 0 20px;
+    line-height: 1.58;
+    font-family: "urw-din",sans-serif;
+}
+
+#calculator{
+    border: 2px solid rgb(208, 255, 0);
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+textarea{
+    color: #131417;
+    font-family: Georgia, serif;
+}
+
+#inOutBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#inputBox,
+#outputBox{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px 10px 0 10px;
+    width:45%;
+}
+#inputText,
+#outputText{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 300px;
+    /* margin: 10px; */
+    /* resize: none; */
+    position: relative;
+
+    font-size: 25px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+#encryptButton,
+#decryptButton{
+    /* width: 100%; */
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+#keyBox{
+    display: flex;
+    justify-content: center;
+}
+
+#key{
+    width: 93%;
+    height: 40px;
+    resize: none;
+    font-size: 25px;
+}
+
+
+
+@media (max-width: 900px) {
+    body{
+        padding: 50px;
+    }
+    .main{
+        width: 100%;
+    }
+    #calculator{
+        border: 2px solid rgb(208, 255, 0);
+        padding: 20px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    #inOutBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #keyBox{
+        width: 80%;
+    }
+    #key{
+        width: 100%
+    }
+
+    #inputBox,
+    #outputBox{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid white; */
+        /* padding: 2px; */
+        width:80%;
+    }
+
+    #encryptButton,
+    #decryptButton{
+        width: 100%;
+        /* height: 30px; */
+    }
+
+    
+}
