@@ -3,6 +3,8 @@
   --dark-color: #410914;
   --text-color: white;
   --link-color: rgb(194, 123, 123);
+  --primary-color : black;
+  --secondary-color : white;
 }
 
 * {
@@ -15,11 +17,25 @@
   box-sizing: border-box;
 }
 
+.dark-theme {
+  --primary-color : white;
+  --secondary-color : black;
+}
+
 body {
   background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
 
   background-position: center;
   background-size: contain;
+  color: var(--primary-color);
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+
+}
+.tr {
   color: white;
 }
 
@@ -47,6 +63,7 @@ html{
 @media only screen and (min-width: 1200px) {}
 
 .subhead {
+  color: white;
   font-weight: 600;
   font-size: 30px;
   text-align: center;
@@ -58,6 +75,7 @@ html{
   font-weight: 600;
   font-size: 30px;
   text-align: center;
+  color: var(--primary-color);
   /* margin: auto; */
   /* font-size: 2em; */
 }
@@ -72,7 +90,7 @@ header {
 }
 
 .navbar {
-  background-color: #100f0f;
+  background-color: var(--secondary-color);
   border-radius: 34px;
   height: 70px;
   width: 100%;
@@ -119,12 +137,14 @@ header {
 .search {
   margin: 0px 19px;
   float: right;
-  color: white;
+  color: var(--primary-color);
   margin: 10px;
 }
 
 #search {
   padding: 0 0.5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 #logo {
@@ -198,7 +218,7 @@ section #image_to_hide {
 
 .mobile-nav {
   justify-content: center;
-  background-color: black;
+  background-color: var(--secondary-color);
   position: fixed;
   right: 10px;
   height: 100vh;
@@ -248,7 +268,7 @@ section .about {
 }
 
 .about {
-  background-color: #000000;
+  background-color: var(--secondary-color);
   z-index: -1;
   width: 97vw;
   border-radius: 3px;
@@ -258,6 +278,10 @@ section .about {
   text-align: center;
   position: relative;
   color: var(--text-color);
+}
+.update {
+  text-align: center;
+  color: white;
 }
 
 /* Projects section */
@@ -281,7 +305,7 @@ section .about {
 }
 
 .work td {
-  background-color: #100f0f;
+  background-color: var(--secondary-color);
   opacity: 0.9;
 }
 
@@ -292,7 +316,7 @@ section .about {
   height: 200px;
   width: 100%;
   background-color: #6d1022;
-  border: 2px black solid;
+  border: 2px var(--secondary-color) solid;
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
   flex-wrap: wrap;
@@ -311,7 +335,7 @@ section .about {
 
 .item {
   width: 109px;
-  border: 2px solid black;
+  border: 2px solid var(--secondary-color);
   border-radius: 9px;
   background-color: #410914;
   text-align: center;
@@ -455,7 +479,7 @@ footer p {
 }
 
 .icons ul li:nth-child(2) a:before {
-  background: black;
+  background: var(--secondary-color);
 }
 
 .icons ul li:nth-child(4) a:before {
