@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music for everyone - Spotify</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="header-logo">
+          <img src="https://cloud-r0hv26v0x-hack-club-bot.vercel.app/0screenshot__715_-removebg-preview.png" />
+        </div>
+        <!-- This is the menu that will be shown on mobile devices -->
+        <nav class="nav-mobile">
+          <!-- Profile -->
+          <div class="profile">
+            <svg viewBox="0 0 1024 1024" class="profile-icon">
+              <path
+                d="M730.06 679.64q-45.377 53.444-101.84 83.443t-120 29.999q-64.032 0-120.75-30.503t-102.6-84.451q-40.335 13.109-77.645 29.747t-53.948 26.722l-17.142 10.084Q106.388 763.84 84.96 802.41t-21.428 73.107 25.461 59.242 60.754 24.705h716.95q35.293 0 60.754-24.705t25.461-59.242-21.428-72.603-51.679-57.225q-6.554-4.033-18.907-10.84t-51.427-24.453-79.409-30.755zm-221.84 25.72q-34.285 0-67.561-14.873t-60.754-40.335-51.175-60.502-40.083-75.124-25.461-84.451-9.075-87.728q0-64.032 19.915-116.22t54.452-85.964 80.67-51.931 99.072-18.151 99.072 18.151 80.67 51.931 54.452 85.964 19.915 116.22q0 65.04-20.167 130.58t-53.948 116.72-81.426 83.443-98.568 32.268z"
+              ></path>
+            </svg>
+          </div>
+          <!-- Hamburger menu -->
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger-menu"><div></div></div>
+          <div class="menu">
+            <div class="background-overlay"></div>
+            <div class="menu-overlay">
+              <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Download</a></li>
+                <li role="separator"></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+              <div class="menu-overlay-logo">
+                <img src="https://cloud-ll1jl178l-hack-club-bot.vercel.app/0spotify-logo.svg" />
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- This is the menu that will be shown on Desktop -->
+        <nav class="nav-desktop">
+          <!-- Site menu -->
+          <ul>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Download</a></li>
+            <li role="separator"></li>
+          </ul>
+          <!-- Profile menu -->
+          <div class="profile-container">
+            <input type="checkbox" class="dropdown-menu-toggler" />
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </div>
+            <div class="profile">
+              <svg viewBox="0 0 1024 1024" class="profile-icon">
+                <path
+                  d="M730.06 679.64q-45.377 53.444-101.84 83.443t-120 29.999q-64.032 0-120.75-30.503t-102.6-84.451q-40.335 13.109-77.645 29.747t-53.948 26.722l-17.142 10.084Q106.388 763.84 84.96 802.41t-21.428 73.107 25.461 59.242 60.754 24.705h716.95q35.293 0 60.754-24.705t25.461-59.242-21.428-72.603-51.679-57.225q-6.554-4.033-18.907-10.84t-51.427-24.453-79.409-30.755zm-221.84 25.72q-34.285 0-67.561-14.873t-60.754-40.335-51.175-60.502-40.083-75.124-25.461-84.451-9.075-87.728q0-64.032 19.915-116.22t54.452-85.964 80.67-51.931 99.072-18.151 99.072 18.151 80.67 51.931 54.452 85.964 19.915 116.22q0 65.04-20.167 130.58t-53.948 116.72-81.426 83.443-98.568 32.268z"
+                ></path>
+              </svg>
+            </div>
+            <ul>
+              <li>Profile</li>
+              <li>
+                <svg viewBox="0 0 1024 1024" class="profile-arrow">
+                  <path
+                    d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Go Premium. Be happy.</h1>
+          <button class="hero-button">GET SPOTIFY PREMIUM</button>
+          <div class="terms">
+            <span>*</span>
+            <a href="#" class="hero-terms-link">Terms and conditions</a
+            ><span>apply.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="albums">
+      <div class="albums-container">
+        <div class="albums-content">
+          <h2>Looking for music?</h2>
+          <p>Start listening to the best new releases.</p>
+          <button>LAUNCH WEB PLAYER</button>
+        </div>
+        <div class="albums-cards-container">
+          <!-- Travis Scott -->
+          <div class="album travis-scott">
+            <img src="https://static.toiimg.com/thumb/msid-87564128,imgsize-28908,width-400,resizemode-4/87564128.jpg" />
+            <div class="album-info">
+              <h2>FRANCHISE (feat. Young Thug & M.I.A.)</h2>
+              <h4>Travis Scott</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+          <!-- ZAYN -->
+          <div class="album zayn">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2017%2F05%2Fzayn-mm-press-2-1.jpg&q=60" />
+            <div class="album-info">
+              <h2>Better</h2>
+              <h4>ZAYN</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+          <!-- Joji -->
+          <div class="album joji">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Joji_-_Nectar.png" />
+            <div class="album-info">
+              <h2>Nectar</h2>
+              <h4>Joji</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+          <!-- Jennifer Lopez -->
+          <div class="album jennifer-lopez">
+            <img src="https://assets.vogue.in/photos/62aacdc27728f1a84834d9b5/4:3/w_1080,h_810,c_limit/Jennifer%20Lopez.jpg" />
+            <div class="album-info">
+              <h2>Pa Ti + Lonely</h2>
+              <h4>Jennifer Lopez</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+          <!-- Machine Gun Kelly -->
+          <div class="album machine-gun-kelly">
+            <img src="https://i.scdn.co/image/ab6761610000e5eb1fd54eb6e30d0bc8f633621e" />
+            <div class="album-info">
+              <h2>Tickets To My Downfall</h2>
+              <h4>Machine Gun Kelly</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+          <!-- Cold -->
+          <div class="album machine-gun-kelly">
+            <img src="https://www.udiscovermusic.com/wp-content/uploads/2020/02/Chris-Stapleton-GettyImages-612093410.jpg" />
+            <div class="album-info">
+              <h2>Cold</h2>
+              <h4>Chris Stapleton</h4>
+              <a href="#">PLAY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav class="footer-nav">
+        <div class="logo-footer">
+          <a href="#"><img src="https://cloud-r0hv26v0x-hack-club-bot.vercel.app/0screenshot__715_-removebg-preview.png" /></a>
+        </div>
+        <div class="top-links">
+          <div class="company-links">
+            <ul>
+              <li>COMPANY</li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+          <div class="communities-links">
+            <ul>
+              <li>COMMUNITIES</li>
+              <li><a href="#">For Artists</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Vendors</a></li>
+            </ul>
+          </div>
+          <div class="useful-links">
+            <ul>
+              <li>USEFUL LINKS</li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Web Player</a></li>
+              <li><a href="#">Free Mobile App</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="#"><img src="https://cloud-5qzs6cb8i-hack-club-bot.vercel.app/0instagram-icon.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://cloud-6gjq0bx1c-hack-club-bot.vercel.app/0twitter-icon.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://cloud-6urrfddys-hack-club-bot.vercel.app/0facebook-icon.svg" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="country">
+          <a href="#"><span>India</span><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" /></a>
+        </div>
+        <div class="bottom-links">
+          <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About Ads</a></li>
+            <li><a href="#">Additional CA Privacy Disclosures</a></li>
+          </ul>
+          <span>© 2020 Spotify AB</span>
+        </div>
+      </nav>
+    </footer>
+  </body>
+  <!-- Load script.js -->
+  <script src="./js/script.js"></script>
+</html>

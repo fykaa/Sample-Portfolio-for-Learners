@@ -1,12 +1,12 @@
 # Sample Portfolio for Anyone looking for Ideas
 This Webpage will implement a to-go site for all the crazy little ideas that can be implemented in someone's portfolio. This will also do a guide for beginner developers who are looking forward to create a portfolio page.
 
-Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-for-Learners).
+Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-for-Learners)
 
 ---
 
 ## Contributing through HACKTOBERFEST 👩‍💻🏆👨‍💻
-Steps for adding your name -
+Steps for successful Merge PR -
 
     1. Star this repo ⭐
     2. Create a Valid Pull Request
@@ -29,8 +29,7 @@ Steps for adding your name -
 </table>
 
 ## Thanks to all Contributors🏆
-
-Thanks a lot! Keep contributing!
+[![Contributors](https://contrib.rocks/image?repo=fykaa/Sample-Portfolio-for-Learners)](https://github.com/fykaa/Sample-Portfolio-for-Learners/graphs/contributors)
 
 ## Support 🙏 
 

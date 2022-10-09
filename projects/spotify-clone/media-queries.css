@@ -1,0 +1,278 @@
+/* These styles will be applied to screens that have a width of at least 768px */
+@media screen and (min-width: 768px) {
+    /* HERO */
+    .hero-container {
+      padding-top: 0;
+      min-height: 64rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(
+        ellipse at center,
+        #f6cb6c 0%,
+        #f3c65d 0%,
+        #f2ae54 100%
+      );
+    }
+  
+    .hero-title {
+      font-size: 6.5rem;
+      line-height: 8rem;
+      letter-spacing: -0.4rem;
+    }
+  
+    .hero-button {
+      margin-bottom: 0;
+    }
+  
+    .terms {
+      position: absolute;
+      bottom: 1.2rem;
+    }
+  
+    /* ALBUMS */
+    .albums-container {
+      width: 75rem;
+      margin: 0 auto;
+    }
+  
+    .albums-cards-container {
+      flex-wrap: wrap;
+      overflow: visible;
+      padding: 5rem 0;
+    }
+  
+    .album {
+      min-width: 0;
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 0.8rem;
+      position: relative;
+    }
+  
+    .album:first-child,
+    .album:last-child {
+      padding: 0.8rem;
+    }
+  
+    .album > img {
+      height: 100%;
+    }
+  
+    .albums-content {
+      padding-bottom: 0;
+    }
+  
+    /* Looking for music? */
+    .albums-content h2 {
+      font-size: 4rem;
+    }
+  
+    .album-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      justify-content: center;
+      opacity: 0;
+      margin: 0.8rem;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+  
+    .album-info h4 {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+    }
+  
+    .album-info a {
+      position: relative;
+      bottom: -2rem;
+    }
+  
+    .album-info:hover {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.8);
+    }
+  
+    .album-info:hover > h2 {
+      color: var(--white);
+      white-space: normal;
+      overflow: initial;
+      text-overflow: initial;
+    }
+  
+    /* FOOTER */
+    .footer-nav {
+      width: 75rem;
+    }
+  
+    .top-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .bottom-links ul li {
+      font-size: 1.16rem;
+    }
+  
+    .country span,
+    .bottom-links span {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* These styles will be applied to screens that have a width of at least 992px */
+  @media screen and (min-width: 992px) {
+    /* HEADER */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      height: 8rem;
+    }
+  
+    .header-container {
+      max-width: 97rem;
+    }
+  
+    .header-logo img {
+      width: 13rem;
+    }
+  
+    .nav-desktop {
+      display: flex;
+    }
+  
+    .nav-mobile {
+      display: none;
+    }
+  
+    /* Circle around the profile icon */
+    .profile {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    /* Profile icon */
+    .profile svg {
+      width: 2rem;
+    }
+  
+    /* HERO */
+    .hero-title {
+      font-size: 8rem;
+      margin-bottom: 0;
+    }
+  
+    .hero-content {
+      width: 70%;
+    }
+  
+    .hero-button {
+      position: relative;
+      top: 6rem;
+    }
+  
+    /* ALBUMS */
+    .albums-container {
+      width: 97rem;
+    }
+  
+    .albums-cards-container {
+      padding-top: 7rem;
+      padding-bottom: 13rem;
+    }
+  
+    /* Looking for music? */
+    .albums-content h2 {
+      font-size: 4.5rem;
+    }
+  
+    .album-info {
+      padding: 0 1rem;
+    }
+  
+    .album-info h2 {
+      font-size: 2.5rem;
+    }
+  
+    .album-info h4 {
+      font-size: 1.6rem;
+    }
+  
+    /* FOOTER */
+    footer {
+      padding-top: 8rem;
+      padding-bottom: 5rem;
+    }
+  
+    .footer-nav {
+      width: 97rem;
+      position: relative;
+    }
+  
+    .logo-footer,
+    .top-links,
+    .social-icons {
+      vertical-align: top;
+    }
+  
+    .logo-footer {
+      display: inline-block;
+      width: 16.66666667%;
+    }
+  
+    .logo-footer img {
+      width: 13rem;
+    }
+  
+    .top-links {
+      display: inline-flex;
+      width: 50%;
+    }
+  
+    .social-icons {
+      display: inline-block;
+      margin: 0 1.5rem 0 auto;
+      padding-top: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+    .social-icons ul li {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* These styles will be applied to screens that have a width of at least 1200px */
+  @media screen and (min-width: 1200px) {
+    /* HEADER */
+    .header-container {
+      max-width: 117rem;
+    }
+  
+    /* HERO */
+    .hero-button {
+      top: 5rem;
+    }
+  
+    /* ALBUMS */
+    .albums-container {
+      width: 117rem;
+    }
+  
+    .album-info h2 {
+      font-size: 3rem;
+    }
+  
+    .album-info h4 {
+      font-size: 1.8rem;
+    }
+  
+    /* FOOTER */
+    .footer-nav {
+      width: 117rem;
+    }
+  }

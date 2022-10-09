@@ -25,6 +25,12 @@ body {
 }
 
 
+/* for smooth scrolling effect  */
+html{
+  scroll-behavior: smooth;
+}
+
+
 /* commonly used media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

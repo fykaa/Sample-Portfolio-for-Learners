@@ -1,0 +1,787 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+:root {
+    --blue: #2d46b9;
+    --white: #ffffff;
+    --black: #000000;
+    --green1: #1ed760;
+    --green2: #1db954;
+    --gray1: #c1c3c6;
+    --gray2: #919496;
+    --gray3: #616467;
+    --hero-bg-color: #ffc362;
+    --hero-terms-link: #efefef;
+  }
+  
+  /* Overwrite browser defaults */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /********** 
+   * HEADER *
+   **********/
+  header {
+    height: 5.5rem;
+    background: var(--black);
+    width: 100%;
+    background: var(--black);
+    position: fixed;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 76.5rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .header-logo img {
+    width: 9rem;
+  }
+  
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile {
+    border: 2px solid white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .profile svg {
+    width: 1.6rem;
+    fill: var(--white);
+  }
+  
+  .profile:hover {
+    border-color: var(--green1);
+  }
+  
+  .profile:hover > svg {
+    fill: var(--green1);
+  }
+  
+  /* Menu */
+  .toggler {
+    width: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  .hamburger-menu {
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hamburger-menu div {
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger menu lines */
+  .hamburger-menu div,
+  .hamburger-menu div:before,
+  .hamburger-menu div:after {
+    content: "";
+    height: 0.3rem;
+    width: 100%;
+    background: var(--white);
+    border-radius: 1rem;
+  }
+  
+  /* Top hamburger menu line */
+  .hamburger-menu div:before {
+    position: absolute;
+    top: -0.7rem;
+  }
+  
+  /* Bottom hamburger menu line */
+  .hamburger-menu div:after {
+    position: absolute;
+    top: 0.7rem;
+  }
+  
+  /* Rotate the hamburger menu when it is clicked */
+  .toggler:checked + .hamburger-menu > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Rotates the top and bottom lines in the hamburger menu
+    This code will turn these lines from horizontal --- to vertical | */
+  .toggler:checked + .hamburger-menu > div:before,
+  .toggler:checked + .hamburger-menu > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Menu overlay */
+  .menu-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    height: 100%;
+    background: var(--black);
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    visibility: hidden;
+    padding: 4rem;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    width: 1000rem;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  
+  .toggler:checked + .hamburger-menu + .menu > .background-overlay {
+    display: initial;
+  }
+  
+  .toggler:checked + .hamburger-menu + .menu > .menu-overlay {
+    visibility: visible;
+    width: 44.7rem;
+    max-width: 100vw;
+    opacity: 1;
+  }
+  
+  /* This will put the toggler(checkbox) on top of the hamburger menu */
+  .toggler:checked {
+    z-index: 1001;
+  }
+  
+  /* This line puts the hamburger menu on top of the overlay menu */
+  .toggler:checked + .hamburger-menu {
+    z-index: 1000;
+  }
+  
+  .menu-overlay li,
+  .menu-overlay-logo {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+  
+  .menu-overlay li {
+    color: var(--white);
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .toggler:checked + .hamburger-menu + .menu > .menu-overlay li,
+  .toggler:checked + .hamburger-menu + .menu > .menu-overlay .menu-overlay-logo {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* This will make the li items to slide from right to left */
+  .menu-overlay li:nth-child(1) {
+    transition: transform 0.1s ease;
+  }
+  
+  .menu-overlay li:nth-child(2) {
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-overlay li:nth-child(3) {
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-overlay li:nth-child(4) {
+    transition: transform 0.4s ease;
+  }
+  
+  .menu-overlay li:nth-child(5) {
+    transition: transform 0.5s ease;
+  }
+  
+  .menu-overlay li:nth-child(6) {
+    transition: transform 0.6s ease;
+  }
+  
+  .menu-overlay-logo {
+    transition: transform 0.6s ease;
+  }
+  
+  /* Change links color on hover */
+  .menu-overlay li a:hover {
+    color: var(--blue);
+  }
+  
+  /* Separator */
+  .menu-overlay li:nth-child(4) {
+    width: 2rem;
+    height: 0.15rem;
+    margin: 4rem 0;
+    background: var(--white);
+  }
+  
+  /* Selects last two li elements */
+  .menu-overlay li:nth-last-child(-n + 2) {
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+  
+  .menu-overlay li:last-child {
+    margin: 2rem 0;
+  }
+  
+  .menu-overlay-logo img {
+    width: 9rem;
+    cursor: pointer;
+  }
+  
+  /* Menu on Desktop */
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+  
+  .nav-desktop ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-desktop ul li {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 3rem;
+    font-weight: 700;
+  }
+  
+  .nav-desktop > ul li:last-child {
+    width: 1.7rem;
+    height: 0.1rem;
+    background: var(--white);
+    transform: rotate(90deg);
+  }
+  
+  .nav-desktop ul li a:hover {
+    color: var(--blue);
+  }
+  
+  .profile-container {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* These lines will change the profile container elements color on hover and on checked */
+  .profile-container:hover .profile,
+  .dropdown-menu-toggler:checked + .dropdown-menu + .profile {
+    border-color: var(--blue);
+  }
+  
+  .profile-container:hover .profile svg,
+  .profile-container:hover ul li:last-child svg,
+  .dropdown-menu-toggler:checked + .dropdown-menu + .profile svg,
+  .dropdown-menu-toggler:checked
+    + .dropdown-menu
+    + .profile
+    + ul
+    li:last-child
+    svg {
+    fill: var(--blue);
+  }
+  
+  .profile-container:hover > ul li:first-child,
+  .dropdown-menu-toggler:checked + .dropdown-menu + .profile + ul li:first-child {
+    color: var(--blue);
+  }
+  
+  /* Selects the li with text 'Profile' */
+  .profile-container ul li:first-child {
+    margin-right: 1rem;
+  }
+  
+  /* Selects the li that contains the arrow */
+  .profile-container ul li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Selects the arrow */
+  .profile-arrow {
+    width: 1.2rem;
+    fill: var(--white);
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    width: 16rem;
+    height: 8rem;
+    position: absolute;
+    background: var(--white);
+    bottom: -9.5rem;
+    right: -2rem;
+    border-radius: 0.4rem;
+    visibility: hidden;
+  }
+  
+  /* Input of type check that will be used to open and close the dropdown menu */
+  .dropdown-menu-toggler {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* This code will create the triangle that is on top of the dropdown menu */
+  .dropdown-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -1.3rem;
+    right: 1rem;
+    border-left: 1.6rem solid transparent;
+    border-right: 1.6rem solid transparent;
+    border-bottom: 1.6rem solid var(--white);
+  }
+  
+  .dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  
+  /* Dropdown menu 'Account' link */
+  .dropdown-menu ul li:first-child {
+    margin-bottom: 1rem;
+    color: var(--black);
+  }
+  
+  /* Dropdown menu 'Log out' link */
+  .dropdown-menu ul li:last-child {
+    margin-bottom: 1rem;
+    color: var(--gray2);
+  }
+  
+  /* This line will show the dropdown menu when the user clicks on 'Profile' */
+  .dropdown-menu-toggler:checked + .dropdown-menu {
+    visibility: visible;
+  }
+  
+  /* This line will change the rotation of the arrow when the dropdown menu is opened */
+  .dropdown-menu-toggler:checked
+    + .dropdown-menu
+    + .profile
+    + ul
+    li:last-child
+    svg {
+    transform: rotate(180deg);
+  }
+  
+  /******** 
+   * HERO *
+   ********/
+  
+  .hero {
+    background: var(--hero-bg-color);
+    position: relative;
+  }
+  
+  .hero-container {
+    padding: 24.5rem 1.5rem 0 1.5rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    line-height: 5rem;
+    letter-spacing: -0.3rem;
+  }
+  
+  .hero-button {
+    padding: 2rem 6rem;
+    border: none;
+    border-radius: 3rem;
+    color: var(--white);
+    background: var(--green2);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-button:hover {
+    background: var(--green1);
+  }
+  
+  .terms {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-terms-link,
+  .hero-terms-link + span,
+  .terms > span {
+    font-size: 1.2rem;
+    color: var(--hero-terms-link);
+  }
+  
+  .hero-terms-link,
+  .terms > span {
+    margin-right: 0.2rem;
+  }
+  
+  .hero-terms-link {
+    text-decoration: underline;
+    transition: all 0.6s ease;
+  }
+  
+  .hero-terms-link:hover {
+    color: var(--white);
+  }
+  
+  /********** 
+   * ALBUMS *
+   **********/
+  
+  /* Container for 'Looking for music?' heading, 'Start listening to the best new releases' paragraph
+  and 'launch web player' button */
+  .albums-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1.5rem;
+  }
+  
+  /* 'Looking for music?' heading */
+  .albums-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 0.1rem var(--black);
+  }
+  
+  /* 'Start listening to the best new releases' paragraph */
+  .albums-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* 'launch web player' button */
+  .albums-content button {
+    padding: 1.5rem 4.5rem;
+    border-radius: 3rem;
+    outline: none;
+    background: var(--white);
+    color: var(--gray3);
+    font-weight: 700;
+    border-color: var(--gray3);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .albums-content button:hover {
+    background: var(--gray3);
+    color: var(--white);
+  }
+  
+  .albums-content button:active {
+    background: var(--black);
+    border-color: var(--black);
+  }
+  
+  .albums-cards-container {
+    display: flex;
+    overflow: auto;
+    padding-bottom: 8rem;
+  }
+  
+  /* Removes the horizontal scrollbar */
+  .albums-cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Container for the album image and the album info */
+  .album {
+    min-width: 50%;
+    padding-left: 3.5rem;
+    box-sizing: content-box;
+  }
+  
+  .album:last-child {
+    padding-right: 1.5rem;
+  }
+  
+  .album:first-child {
+    padding-left: 1.5rem;
+  }
+  
+  .album img {
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 1.6rem -0.2rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .album img:hover {
+    cursor: pointer;
+  }
+  
+  /* Container for the song title, artist name and play now button */
+  .album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Song title and artist name */
+  /* This code will avoid text from wrapping to the next line
+  and it will add an ellipsis at the end */
+  .album-info h2,
+  .album-info h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  
+  /* Song title */
+  .album-info h2 {
+    font-size: 1.75rem;
+    color: var(--gray2);
+    padding-top: 2rem;
+  }
+  
+  /* Artist name */
+  .album-info h4 {
+    font-size: 1.5rem;
+    color: var(--gray1);
+    margin: 1rem 0;
+  }
+  
+  .album-info h2,
+  .album-info h4 {
+    cursor: pointer;
+  }
+  
+  /* Play now button */
+  .album-info a {
+    font-size: 1.5rem;
+    color: var(--green2);
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+  }
+  
+  .album-info a:hover {
+    color: var(--green1);
+  }
+  
+  /********** 
+   * FOOTER *
+   **********/
+  footer {
+    background: var(--black);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .footer-nav {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .logo-footer {
+    padding-bottom: 5rem;
+  }
+  
+  .logo-footer img {
+    width: 9rem;
+  }
+  
+  .company-links,
+  .communities-links {
+    margin-bottom: 6rem;
+  }
+  
+  .company-links li,
+  .communities-links li,
+  .useful-links li {
+    color: var(--white);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .company-links li a:hover,
+  .communities-links li a:hover,
+  .useful-links li a:hover {
+    color: var(--green1);
+  }
+  
+  .company-links li:first-child,
+  .communities-links li:first-child,
+  .useful-links li:first-child {
+    color: var(--gray2);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-nav li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .social-icons {
+    padding-top: 14rem;
+    padding-bottom: 1rem;
+  }
+  
+  .social-icons ul {
+    display: flex;
+  }
+  
+  .social-icons ul li {
+    margin-right: 1.5rem;
+    padding: 1rem;
+    background: #222326;
+    border-radius: 50%;
+  }
+  
+  .social-icons img {
+    width: 2.3rem;
+    background: var(--white);
+    display: block;
+  }
+  
+  .social-icons img:hover {
+    background: var(--green1);
+  }
+  
+  .country {
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  
+  .country a {
+    display: inline-block;
+  }
+  
+  .country a:hover > span {
+    color: var(--green1);
+  }
+  
+  .country span {
+    color: var(--gray2);
+    vertical-align: super;
+  }
+  
+  .country img {
+    width: 2.5rem;
+    margin-left: 1rem;
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bottom-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  .bottom-links ul li {
+    margin-right: 2.6rem;
+    padding: 1rem 0;
+  }
+  
+  .bottom-links span {
+    padding: 1rem 0;
+  }
+  
+  .bottom-links a,
+  .bottom-links span {
+    color: var(--gray2);
+  }
+  
+  .bottom-links a:hover {
+    color: var(--green1);
+  }
