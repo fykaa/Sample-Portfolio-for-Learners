@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+    </style>
+    <title>Interactive card</title>
+</head>
+<body>
+    <div class="main">
+        <img class= "img" src="bg-main-desktop.png" alt="">
+        <div class="fimg">
+            <img src="bg-card-front.png" alt="" width="400" height="225">
+        </div>
+        <div class="bimg">
+            <img  src="bg-card-back.png" alt="" width="400" height="225">
+        </div>
+        
+        
+        <div class="details">
+            <form action="">
+                <label for="Name">CARDHOLDER NAME</label> <br>
+                <input type="Name"> <br>
+                <label for="Card-Number">CARD NUMBER</label> <br>
+                <input type="Card-Number" maxlength="16"> 
+                <div class="exp-date">
+                    <div class="mon">
+                        <label for="Exp-date">Exp-date(MM-YY)</label> <br>
+                        <input type="month"> 
+                    </div>
+                    <div class="cvvv">
+                        <label for="number">CVV</label> <br>
+                        <input type="cvv" maxlength="3">
+                    </div>
+                    
+                </div>
+            </form>
+            <button><a href="" target="_blank"></a>Confirm</button>
+        </div>
+    </div>
+</body>
+</html>
