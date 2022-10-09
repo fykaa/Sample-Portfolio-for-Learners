@@ -29,6 +29,7 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 </table>
 
 ## Thanks to all Contributors🏆
+
 [![Contributors](https://contrib.rocks/image?repo=fykaa/Sample-Portfolio-for-Learners)](https://github.com/fykaa/Sample-Portfolio-for-Learners/graphs/contributors)
 
 ## Support 🙏 
