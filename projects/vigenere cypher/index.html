@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere Cypher</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assests/hacker.png">
+</head>
+<body>
+    <div class="main">
+
+        <div id="header">
+            <h1>VIGENERE CYPHER</h1>
+        </div>
+
+        <div id="info">
+            <p class="infoText">
+                Vigenere Cipher is a method of encrypting alphabetic text. 
+                It uses a simple form of polyalphabetic substitution. 
+                A polyalphabetic cipher is any cipher based on substitution, using multiple substitution alphabets. 
+                The encryption of the original text is done using the Vigenère square or Vigenère table.
+            </p>
+            <div id="bullets" class="infoText">
+                <ul>
+                    <li>The table consists of the alphabets written out 26 times in different rows, 
+                        each alphabet shifted cyclically to the left compared to the previous alphabet, 
+                        corresponding to the 26 possible Caesar Ciphers.
+                    </li>
+                    <li>
+                        At different points in the encryption process, the cipher uses a different alphabet from one of the rows.
+                    </li>
+                    <li>
+                        The alphabet used at each point depends on a repeating keyword.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="calculator">
+            <div id="keyBox">
+                <textarea name="key" id="key" placeholder="key"></textarea>
+            </div>
+            <div id="inOutBox">
+                <div id="inputBox">
+                    <textarea name="input" id="inputText" placeholder="ORIGINAL MESSAGE"></textarea>
+                    <button name="encrypt button" id="encryptButton" class="btn">ENCRYPT</button>
+                </div>
+                
+                <div id="outputBox">
+                    <textarea name="output" id="outputText" placeholder="CYPHER TEXT"></textarea>
+                    <button name="decrypt button" id="decryptButton" class="btn">DECRYPT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
