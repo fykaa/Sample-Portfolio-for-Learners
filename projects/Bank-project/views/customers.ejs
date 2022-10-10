@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<%- include('./partials/head')  %> 
+<body>
+    <%- include('./partials/nav')%>
+
+    <div class="content">
+        <h2>Customers</h2> <br>
+        <ul class="customers">
+            <% if (customers.length > 0) { %>
+                <% customers.forEach(customer => { %>  
+                    <li class="customer">
+                        <a href="/customers/<%= customer._id %>">
+                            <h3 id="customer-name">
+                                <%= customer.name %>
+                            </h3>
+                            <h3 id="customer-balance">
+                                <%= customer.balance %>
+                            </h3>
+                        </a>
+                    </li>
+                <% }) %> 
+            <% } %>  
+        </ul>
+    </div>
+
+    <%- include('./partials/footer') %> 
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<%- include('./partials/head')  %> 
+<body>
+    <%- include('./partials/nav')%>
+
+    <div class="content">
+        <h2>Transactions history</h2>
+        <% if(process.length === 0) { %>
+            <h2>No transactions yet!</h2>
+        <% } else { %> 
+            <table>
+                <tr>
+                    <th>Sender</th>
+                    <th>Receiver</th>
+                    <th>Amount</th>
+                </tr>
+                <% process.forEach((transaction) => { %>
+                    <tr>
+                        <td><%= transaction.source %> </td>
+                        <td><%= transaction.target %> </td>
+                        <td><%= transaction.amount %> </td>
+                    </tr>
+                <% }) %>  
+            </table>
+        <% } %> 
+
+    </div>
+
+    <%- include('./partials/footer') %> 
+</body>
+</html>

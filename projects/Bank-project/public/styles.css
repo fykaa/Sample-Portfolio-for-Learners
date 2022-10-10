@@ -1,0 +1,127 @@
+body {
+    background-image: url("images/gringotts2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: #888;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Noto Serif', serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p, h1, h2, h3, a, ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(233, 226, 198);
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(177, 164, 164);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.content {
+    margin: 0 80px;
+}
+
+.index, .index h3 {
+    padding: 0 200px;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-right: #888;
+
+
+    margin: 0;
+    padding: 0 auto;
+}
+
+.customer {
+    width: 300px;
+    padding: 18%; 
+    margin: 2%; 
+    border: 1px solid #888;
+    justify-content: center;
+    
+    
+    display: flex;
+    align-items: center;
+    counter-increment: index; 
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer {
+    color: #888;
+    border-top: 1px solid rgb(199, 192, 192);
+    text-align: center;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+input {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888;
+    background: transparent ;
+    color: white;
+    padding: 8px;
+    font-weight: 600;
+}
+
+table, th, td {
+    width: 60%;
+    margin: 0 auto;
+    /* border: 1px solid #888; */
+    border-collapse: collapse;
+    color: #ddd;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    width: 33%;
+    border-bottom: 1px solid #ddd;
+}
+
