@@ -10,7 +10,7 @@
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     Helvetica, "Neue", sans-serif;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 43px;
   box-sizing: border-box;
 }
@@ -72,10 +72,12 @@ header {
 }
 
 .navbar {
-  background-color: #100f0f;
+  background-color: rgb(40 37 42 / 60%);
   border-radius: 34px;
   height: 70px;
   width: 100%;
+  backdrop-filter: blur(3px);
+}
 }
 
 .navbar ul {
@@ -125,6 +127,7 @@ header {
 
 #search {
   padding: 0 0.5rem;
+  background: transparent;
 }
 
 #logo {
