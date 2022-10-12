@@ -6,17 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../learnings.css">
+    <!-- <link rel="stylesheet" href="../learnings.css"> -->
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 
 <body>
-    <h1 class="text-danger">FORMS</h1>
+    <!-- <h1 class="text-danger">FORMS</h1> -->
     <div class="write" id="forms">
 
-        <h3 class="subhead">&rAarr; Write to me &lAarr;</h3>
         <form class="write" action="backend.php">
+            
+            <div class="parts-wrapper">
+            <div class="part-1">
+            <h3 class="subhead">Write to me &#9997;</h3>
 
             <div class="box">
                 <label contenteditable="true" spellcheck="true" class="name" for="name">Name : </label>
@@ -24,11 +31,12 @@
                 <input value="First Last" type="text" placeholder="Enter Your Name here" autofocus id="name" name="">
 
             </div>
-            <br>
+            
             <div class="box" id="email">
-                Email : <input type="email" name="myEmail">
+                <label for="email">Email : </label>
+                 <input type="email" id="email" name="myEmail">
             </div>
-            <br>
+           
             <!-- HTML Forms Validation - required, min maxlength, pattern -->
             <div>
                 <label for="country_code">Country code:</label>
@@ -46,25 +54,14 @@
                 <input type="text" disabled name="" id="">
             </div>
             <div class="box" id="number">
-                Number : <input type="number" name="">
+                <label for="number">Number : </label>
+                 <input type="number" id="number" name="">
             </div>
 
-            <br>
-            <div class="box" id="color">
-                House Color: <input type="color" name="">
             </div>
-
-            <div class="box">
-                <!-- for="elig" means: if any element with ID elig is clicekd direct input box select hojayegaa -->
-                <label for="elig">Are you Eligible: </label><input type="checkbox" name="myEligibility" id="elig"
-                    checked>
-            </div>
-
-            <div class="box">
-                Feedback: Positive <input type="radio" name="myFeedback"> Negative <input type="radio"
-                    name="myFeedback"> Both <input type="radio" name="myFeedback">
-            </div>
-
+            <div class="vertical-line"></div>
+            <div class="part-2">
+            
             <div>
                 <label for="nation">
                     Your nationality:
@@ -97,20 +94,43 @@
                 </select>
             </div>
 
+             <div class="box house-color" id="color">
+                <label for="color">House Color</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+           
+
             <!-- TEXT BOX -->
+            <div class="box label">
+                <p>Feedback:</p>
+                <label for="positive">Positive</label>
+                <input type="radio" id="positive" name="myFeedback">
+                <br/>
+                <label for="negative">Negative</label>
+                <input type="radio" id="negative" name="myFeedback" >
+                <br/>
+                <label for="neutral">Neutral</label>
+                <input type="radio" id="neutral" name="myFeedback">
+            </div>
+
             <div>
                 Write Your Feedback: <br> <textarea name="" cols="25" rows="5"></textarea>
             </div>
 
-            <div>
-                Completed? <input type="submit" value="Submit Now">
-            </div>
-            <br>
-
-            <div>
-                Reset? <input type="reset" value="Reset Now">
+             <div class="box label">
+                <!-- for="elig" means: if any element with ID elig is clicekd direct input box select hojayegaa -->
+                <label class="elig" for="elig">Are you Eligible? </label>
+                <input type="checkbox" name="myEligibility" id="elig"
+                    checked>
             </div>
 
+            <div class="buttons-wrapper">
+                <input class="reset-btn" type="reset" value="Reset ">
+                 <input class="submit-btn" type="submit" value="Submit">
+            </div>
+            </div>
+            </div>
         </form>
 
 
