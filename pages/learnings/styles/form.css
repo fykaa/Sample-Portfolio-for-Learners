@@ -1,0 +1,105 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 238, 238);
+    
+}
+label,p{
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input,textarea,select{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    font-size: .9rem;
+    color: rgb(52, 52, 52);
+    resize:none;
+    background-color: rgb(244, 244, 244);
+    border: .5px solid rgb(184, 184, 184);
+}
+.write{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2em;
+}
+.subhead{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.buttons-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    gap:1em;
+}
+.buttons-wrapper > input{
+    width: 10em;
+    padding: 5px;
+    height: 2.5em;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.label > label {
+    display: inline-block;
+    width: 10em;
+    font-size: .9rem;
+}
+.label > input{
+    display: inline-block;
+    width: .9em;
+    height: .9em;
+    border: none;
+    outline:none;
+    
+}   
+input[type="color"]{
+    width: 4em;
+    height: 2.5em;
+    margin-top: .3em;
+}
+
+.vertical-line{
+    border: .1px solid black;
+    
+}
+.parts-wrapper{
+    display:flex;
+    background-color: white;
+    width: 80vw;
+    /* padding: 2em; */
+    padding-top:1em;
+    padding-bottom: 1em;
+    border-radius: 20px;
+    height: 90vh;
+    
+}
+.part-1 , .part-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1em;
+    padding: 3em;
+    
+}
+.submit-btn{
+    background-color: #24CD43;
+}
+.reset-btn{
+    background-color: #CD4324;
+}
+.elig{
+    display:inline-block;
+}
