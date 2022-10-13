@@ -51,16 +51,12 @@ html{
   font-weight: 600;
   font-size: 30px;
   text-align: center;
-  /* margin: auto; */
-  /* font-size: 2em; */
 }
 
 .subhead h2 {
   font-weight: 600;
   font-size: 30px;
   text-align: center;
-  /* margin: auto; */
-  /* font-size: 2em; */
 }
 
 /* HEADER SECTION */
@@ -87,16 +83,11 @@ header {
   position: absolute;
   left: 60px;
   margin: 12px;
-  /* padding: 5px 12px 80px 16px; */
   float: left;
   font-size: 2rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--text-color);
-  /* border-radius: 10px; */
-  /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
-  /* box-shadow: inset 0px 1px 24px 5px #410914; */
-  /* box-shadow: 0px 1px 24px 5px #322528; */
 }
 
 .navbar li {
@@ -190,9 +181,6 @@ section #image_to_hide {
 .mobile-nav-list li {
   list-style: none;
 }
-
-
-
 
 .mobile-nav-display {
   display: flex;
@@ -413,9 +401,7 @@ section .about {
 
 .imgIM {
   float: right;
-  /* border-radius: 50%; */
   width: 100%;
-  /* width of image (px or % or auto) */
   height: auto;
 }
 
@@ -445,11 +431,9 @@ section .about {
 
 .work table {
   border: 4px solid rgb(190, 89, 89);
-  /* border-style: solid; */
   border-radius: 34px;
   padding: 34px;
   margin: 34px;
-  /* margin: auto; */
 }
 
 .work td {
@@ -465,8 +449,6 @@ section .about {
   width: 100%;
   background-color: #6d1022;
   border: 2px black solid;
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -621,8 +603,6 @@ fieldset {
  color:#888;
 } 
 
-
-
 /* footer */
 
 footer .floating-footer {
@@ -640,7 +620,6 @@ footer .floating-footer {
 footer {
   position: relative;
   width: 100%;
-  /* background-color: #111827; */
   color: white;
   box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
   padding: 15px 0px;
