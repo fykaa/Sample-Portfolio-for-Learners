@@ -90,6 +90,9 @@ header {
   /* padding: 5px 12px 80px 16px; */
   float: left;
   font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
   /* border-radius: 10px; */
   /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
   /* box-shadow: inset 0px 1px 24px 5px #410914; */
