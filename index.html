@@ -20,12 +20,35 @@
   <link rel="stylesheet" href="./styling.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Bodoni&family=Playfair+Display:wght@400;500&family=Tapestry&display=swap" rel="stylesheet">
+     
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
   <script src="javascript.js"></script>
 </head>
 
 <body>
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+
+
   <header>
-    <nav class="navbar" style="display: flex; justify-content: end; ">
+    
+    <nav class="navbar">
       <a href="index.html"><h1> Portfolio</h1></a>
       <ul>
 
@@ -36,14 +59,14 @@
           <a href="./pages/learnings.html" target="_blank"> Learnings</a>
         </li>
         <li><a href="#about"> About</a></li>
+      
+        <li>
+        <!-- <div class="search"> -->
+          <!-- <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus /> -->
+        <!-- </div> -->
+        <!-- <img onclick="handleMenu()" id="menu" class="menu" src="./assets/menu.png" alt="menu"></li> -->
       </ul>
-      <div style="display: flex; align-items: center; ">
-
-        <div class="search">
-          <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus />
-        </div>
-        <img onclick="handleMenu()" id="menu" class="menu" src="./assets/menu.png" alt="menu">
-      </div>
+    
 
     </nav>
   </header>
@@ -73,34 +96,42 @@
       <!-- <div class="subhead">
         <h2>About me</h2>
       </div> -->
-      <div class="content">
-        <div class="contentbox w50">
-          <h3>Hello there, I am</h3>
-          <h1>Karl Vegan</h1>
-          <div class="about_self">
-            <h3>I'm a Developer.</h3>
-            <p>
-              🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
-              Photographer.<br />
-              I love programming and making random web-based applications for
-              fun. I am a future full-stack developer, currently I'm focusing
-              on the backend.
-            </p>
+      
+      <div class="about_content container-fluid">
+        <div class="row">
+          <div class="col-lg-6"> 
+            <div class="contentbox w50 ">
+              <h3>Hello there, I am</h3>
+              <h1> Karl Vegan</h1>
+              <div class="about_self">
+                <h3>I'm a <u>Developer.</u></h3>
+                <p>
+                  🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
+                  Photographer.<br />
+                  I love programming and making random web-based applications for
+                  fun. I am a future full-stack developer, currently I'm focusing
+                  on the backend.
+                </p>
+              </div>
+              <div class="about_hobby">
+                <h3>My Interests apart from coding</h3>
+                <p>
+                  📖 reading books<br />
+                  📸 photography<br />
+                  🎨 sketching/painting!<br />
+                </p>
+              </div>
+              <button class="custom-btn btn-3"><span>Let's connect</span></button>
+            </div>
+            </div>
+          
+          <div class="col-lg-6">
+            <div aling="right" class="w50 about_img">
+            <img src="./assets/girl.jpg" class="img-responsive imgIM" />
+            </div>
           </div>
-          <div class="about_hobby">
-            <h3>My Interests apart from coding</h3>
-            <p>
-              📖 reading books<br />
-              📸 photography<br />
-              🎨 sketching/painting!<br />
-            </p>
-          </div>
-          <button class="custom-btn btn-3"><span>Let's connect</span></button>
-        </div>
-        <div aling="right" class="w50 about_img">
-          <img src="./assets/girl.jpg" class="img-responsive imgIM" />
-        </div>
       </div>
+    </div>
     </section>
 
     <div class="project" id="project">
