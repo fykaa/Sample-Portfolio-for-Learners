@@ -2,15 +2,12 @@
 Inline: directly to element                     <div style="color: pink; background-color: blue;"></div>           
 Internal: inside head tag in style tag          <style> div{ color:color: pink; background-color: blue;} </style>
 External: in a css stylesheet 
-
 PRIORITY: EXTERNAL > INLINE > INTERNAL
-
 Types of CSS Selectors:
 -CSS element Selector           
 -CSS id Selector                #id
 -CSS class Selector             .class
 -The CSS grouping Selector      div, span, footer{}
-
 Types Of Position Property :
 There are five types of position property :
  -static-- default
@@ -18,10 +15,8 @@ There are five types of position property :
  -absolute--relative to the positon of its first parent
  -fixed--relative to the browser window;
  -sticky--relative to the users scroll position
-
 Flexbox- flexible box
 We create flexbox using display none
-
     # flex container - body of flexbox
     # flex item - items in container
     # main axis - horizontal length of container
@@ -32,21 +27,14 @@ We create flexbox using display none
     # cross size - vertical length of item
     # main end - left vertical border
     # cross end - left vertical border
-
-
 MEDIA QUERY SYNTAX:
 @media media-type and (media-feature){}
-
-
 PSEUDO SELECTORS IN CSS:
 div li p{} --if p is contained by any li which is contained by div
 div > p --if p is right inside div then this CSS will be applied
 div + p --if p is right after div i.e. p is the next sibling of div
-
 ;ike 
 @media screen and (min-width:800px){ content }
-
-
 Variables
 to create variable use '--'
 root is the global variable here, Any custom properties written in the root variable can be accessed anywhere in the code.
@@ -55,9 +43,6 @@ root is the global variable here, Any custom properties written in the root vari
             --danger-color: red;
             --maxw: 333px;
         }
-
-
-
 /* ------------------------------------------------------------------------------ */
 /* IMPORTING A WEB FONT FROM GOOGLE - copy font's stylesheet link in the head tag of html and then USE teh font-family name wherever required*/
 code {
@@ -95,7 +80,7 @@ code {
 
 
 body {
-  background-image: url("https://cloud-fww00tdhd-hack-club-bot.vercel.app/0compute-ea4c57a4.png");
+  background-color: #0A1929;
 
   /* background-color: black;
   background-color: rgb(0, 0, 0);
@@ -126,41 +111,54 @@ header {
 
 .navbar {
   background-color: #100f0f;
-  border-radius: 34px;
-  height: 70px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  height: 8vh;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color:#FEFFFF;
 }
-
-.navbar ul {
-  overflow: auto;
-  /* adds scrollbar when box overflows  */
+.brand{
+  color:#FEFFFF;
+  padding-left: 3vw;
 }
-
-.navbar h1 {
-  position: absolute;
-  /* relative to the positon of its first parent i.e. navbar? */
-  left: 60px;
-  margin: 12px;
-  padding: 5px 12px 80px 16px;
-  float: left;
-  font-size: 2rem;
-  border-radius: 10px;
-  /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
-  /* box-shadow: inset 0px 1px 24px 5px #410914; */
-  box-shadow: 0px 1px 24px 5px #322528;
+.navigator{
+  display:flex;
+  width:50vw;
 }
-
-.navbar li {
-  float: right;
-  list-style: none;
-  margin: 13px 20px;
+.navigator div{
+  height: 8vh;
+  width:8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.search {
-  margin: 0px 19px;
-  float: right;
-  color: white;
-  margin: 10px;
+.items:hover{
+  background-color: #FEFFFF;
+}
+.items:hover a{
+  color: #100f0f;
+}
+.navigator div a{
+  text-decoration: none;
+  color:#FEFFFF;
+}
+.search{
+  width:20vw !important; 
+}
+#search{
+  border-radius: 80px;
+  padding-left:2vw;
+  background-color: #2e2d2d;
+  color:#FEFFFF;
+}
+#search:focus{
+  outline: none;
+}
+.heading1{
+  font-size: 2em;
 }
 
 #logo {
@@ -168,13 +166,155 @@ header {
   height: 64px;
 }
 
-.navbar input {
-  border: 1px solid rgb(62, 58, 58);
-  border-radius: 14px;
-  padding: -1px 9px;
-  width: 163px;
+.drawer{
+  position: fixed;
+  left:0px;
+  top:8vh;
+  width:15vw;
+  display:flex;
+  height:100vh;
+  background-color: #0A1929;
+  display: flex;
+  flex-flow: column ;
+  border-right: 2px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1vh;
+    overflow: scroll;
 }
-
+.main-links{
+  border-bottom: 1px solid rgba(70, 70, 70, 0.952);
+  padding-left:1vw;
+  font-size: 1rem;
+}
+.links{
+  padding-left: 1vw;
+  border-bottom: 1px solid rgba(70, 70, 70, 0.952);
+}
+.links a{
+  border:none !important;
+  font-size: 0.85rem;
+}
+.drawer div:hover{
+  background-color: rgb(0, 76, 153);
+}
+.drawer div a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-size: 0.85rem;
+  
+}
+.content{
+  position: absolute;
+  top:10vh;
+  left:18vw;
+  width:fit-content;
+  height:fit-content;
+}
+.subcontent{
+  margin-top:1vh;
+  padding: 20px;
+  border-radius: 8px;
+}
+.blueback{
+  background-color: rgba(0, 58, 117, 0.2);
+  border: 1px solid rgb(0, 76, 153);
+  border-radius: 8px;
+}
+.example{
+  margin-top:1vh;
+  padding: 10px;
+  border-radius: 8px;
+}
+.tags{
+  color:rgb(0, 219, 110);
+}
+#entities div{
+  display:flex;
+  flex-direction: column;
+}
+.note{
+  font-size: 1.5rem;
+}
+.info{
+  display:flex;
+  justify-content: center;
+  padding:20px
+}
+.written{
+  color:rgb(189, 189, 189);
+}
+.sections{
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding:10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.sections li input{
+  border-radius: 8px;
+  width: 30vw;
+  color:rgb(255, 255, 255);
+  padding-left:10px;
+  background-color: #0A1929;
+}
+input:focus{
+  outline: none;
+}
+input:required{
+  border-color: red;
+}
+.valid:valid{
+  border-color: green;
+}
+.in-range:in-range{
+  border-color: green;
+}
+.out-of-range:out-of-range{
+  border-color: #410914;
+}
+.cyan{
+  color:cyan;
+}
+.blueback button{
+  border-radius: 8px;
+  margin-left:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #104885;
+  color: azure;
+  font-size: 0.85rem;
+  padding:10px;
+}
+.hover:hover{
+  background-color: green;
+}
+.focus:focus{
+  background-color: green;
+}
+.active:active{
+  background-color: green;
+}
+.heading3{
+  color:azure;
+  font-size: 1.2rem;
+}
+.frame{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 8vh;
+}
+.frame a{
+  text-decoration: none;
+  color:azure;
+}
+.frame-item{
+  padding: 10px;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
 header nav li {
   list-style: none;
 }
@@ -562,9 +702,6 @@ input:invalid {
   background-color: rgb(255, 0, 0);
 }
 
-input:valid {
-  border: 4px solid green;
-}
 
 input:in-range {
   color: green;

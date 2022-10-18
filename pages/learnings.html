@@ -42,131 +42,304 @@
 
     <!-- INTERNAL CSS -->
 
-<style>
+    <style>
 
-</style>
+    </style>
+
 </head>
 
 
 
 <body>
+    <div class="drawer">
+            <div class="links">
+                <a class="links" href="#block">Block And Inline</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#htmlTags">Use of Different HTML Tags</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#entities">Entities</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#media">Adding Media In HTML </a>
+            </div>
+            <div class="links">
+                <a class="links" href="#favicon">Favicons Icons</a>
+            </div>
+
+            <div class="links">
+                <a class="links" href="#selectors">Types of CSS Selectors</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#specificity">CSS Specificity</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#layout">CSS Layout</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#position">Types of position </a>
+            </div>
+            <div class="links">
+                <a class="links" href="#animation">Animation Properties </a>
+            </div>
+            <div class="links">
+                <a class="links" href="#responsive">Responsive Design</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#flexbox">Flexbox</a>
+            </div>
+            <div class="links">
+                <a class="links" href="#theme">Customized vs code theme  </a>
+            </div>
+            <div class="links">
+                <a class="links" href="#frameworks">CSS Frameworks</a>
+            </div>
+            <details>
+                <summary class="main-links">
+                    Other Links
+                </summary>
+                <div>
+                <a href="https://www.linkedin.com/in/faeka/" target="_blank">LinkedIn (Blank - new tab)</a>
+                </div>
+                <div>
+                    <a href="https://github.com/fykaa" target="_self">GitHub (Self - same tab)</a>
+                </div>
+                
+
+                <!-- Button for Navigation -->
+                <!-- <button onclick="document.location='../index.html'">
+                    Button Navigation
+                </button> -->
+
+                <!-- How to download a file -->
+                <div>
+                    <a href="../assets/girl.jpg">Click To Download</a>
+                </div>
+                
+
+                <!-- Lists -->
+                <div>
+                    <a href="./learnings/list.html">Lists file</a>
+                </div>
+                
+
+                <!-- TABLE -->
+                <div>
+                    <a href="./learnings/table.html">Tables Concepts</a>
+                </div>
+                
+
+                <!-- GRID -->
+                <div>
+                    <a href="./learnings/grid.html">Grid Concepts</a>
+                </div>
+                
+
+            <!-- FORMS -->
+            <div>
+                <a href="./learnings/form.html">Form Concepts</a>
+            </div>
+            
+
+
+
+            <!-- FLEXBOX -->
+            <div>
+                <a href="./learnings/flexbox.html">Flexbox Concepts</a>
+            </div>
+        </details>
+        <div class="links"><a href="../pages/learnings/bootstrap.html"> Bootstrap - complete notes</a></div>
+        <div class="links"><a href="../pages/learnings/javascript.html"> Javascript - complete notes</a></div>
+        
+    </div>
 
     <header>
 
         <nav class="navbar">
 
-            <h1>Learnings</h1>
-            <ul>
-                <!-- Linking Pages(Navigation) - Internal, Bookmark and Button -->
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder=" Search my Portfolio " autofocus>
-                </div>
-
-                <!-- Bookmarking Navigation using ids # -->
-                <li><a href="#footer" style="color:brown;">Copyrights</a></li>
-                
-                <li><a href="/pages/learnings/form.html" style="color:brown;">Feedback</a></li>
-                <li><a href="/pages/learnings/table.html" style="color:brown;">Projects</a></li>
-                <li><a href="../index.html" style="color:brown;">Home</a></li>
-
-            </ul>
+            <div class="brand">
+                <h1>Learnings</h1>
+            </div>
+            <div class="navigator">
+                    <!-- Linking Pages(Navigation) - Internal, Bookmark and Button -->
+                    
+                    <!-- Bookmarking Navigation using ids # -->
+                    <div class="items">
+                        <a href="#footer">Footer</a></li>
+                    </div>
+                    <div class="items">
+                        <a href="/pages/learnings/table.html">Tables</a>
+                    </div>
+                    <div class="items">
+                        <a href="/pages/learnings/form.html">Forms</a>
+                    </div>
+                    <div class="items">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus>
+                    </div>
+            </div>
         </nav>
     </header>
-    <section>
-        <!-- To add a break in line -->
-        <br><br><br>
-        <h1><mark>    Testing different HTML tags </mark><br></h1>
-        <!-- To open a link in a new tab we add target -->
-        1 . <a href="https://www.linkedin.com/in/faeka/" target="_blank" style="color:plum;">LinkedIn (Blank - new tab)</a>
-        2 . <a href="https://github.com/fykaa" target="_self" style="color:plum;" >GitHub (Self - same tab)</a>
-
-        <!-- Button for Navigation -->
-        3 . <button onclick="document.location='../index.html'" >
-            Button Navigation
-        </button><br>
-
-        <!-- How to download a file -->
-        4 . <a href="../assets/girl.jpg" style="color:plum;" >Click To Download</a>
-
-        <!-- Lists -->
-        5 . <a href="./learnings/list.html" style="color:plum;" >Lists file</a><br>
-
-        <!-- TABLE -->
-        6 . <a href="./learnings/table.html"  style="color:plum;">Tables Concepts</a>
-
-        <!-- GRID -->
-        7 . <a href="./learnings/grid.html"  style="color:plum;">Grid Concepts</a>
-    </section>
-
-    <!-- FORMS -->
-    8 . <a href="./learnings/form.html"  style="color:plum;">Form Concepts</a>
-
-    </div>
-
-
-    <!-- FLEXBOX -->
-    9 . <a href="./learnings/flexbox.html" style="color:plum;">Flexbox Concepts</a><br>
+<div class="content">
+    
 
     <!-- Inline Block Elements -->
     <!-- Examples of inline elements: <a> <strong> , <em> , <b> , <i> , <q>, <mark> <span>
         Examples of block elements:li, <p> and <div> -->
+    <div >
+        <div id="block" class="heading1">
+            Block and Inline
+        </div>
 
-   10 . <p style="color:lightcoral;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, atque!</p>
-   <p style="color:plum;">This is another p tag but on the same line proving p is block.</p>
-
-    <br>
-
-    11 . <span style="color:lightcoral;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate ipsam laboriosam harum ex ut? Eos
-        minus expedita magni nemo.</span> <span style="color:plum;"> This is another span tag but on same line proving span is inline.</span>
-
+        <div class="subcontent blueback written">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, atque!</p>
+            <p>This is another p tag but on the same line proving p is block</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate ipsam laboriosam harum ex ut? Eos
+            minus expedita magni nemo</span> <span> This is another span tag but on same line prooving span is inline</span>
+        </div>
+            
+    </div>
     <!-- IDs and Classes -->
     <!-- One Id is unique to only one element using # -->
     <!-- One Class can be given to multiple elements using . -->
 
     <br>
-
+    <hr>
     <!-- text formatting -->
-    12 . <small style="color:plum;">Hi</small>
-    13 . <sup style="color:plum;">superscript</sup>
-    yo
-    14 . <sub style="color:plum;">subscript</sub><br>
-    15 . <mark style="color:plum;">mark</mark>
-    16 . <q style="color:plum;">qquoted</q>
-    17 . <cite style="color:plum;">cited</cite><br>
-    18 . <del style="color:plum;">deleted</del>
-    19 . <blockquote style="color:plum;">blockquote</blockquote>
-    20 . <meter min="10" max="100" value="50">mmeter</meter>
-    <progress></progress>
-    <!-- customizing progress bar -->
-    21 . <progress max="100" value="50"></progress>
-    22 . <details style="color:plum;">I am the Details</details>
-    <!-- customizing details -->
-    23 . <details style="color:plum;">
-        <summary style="color:plum;">Account Details</summary>
-        I am account  details
-    </details>
+    <div>
+        <div id="htmlTags" class="heading1">
+            Uses of different Tags in HTML
+        </div>
+        <div class="subcontent">
+            <div class="heading2 written">
+                Use of <span class="tags">superscript</span> tag and <span class="tags">subscript</span> tags
+            </div>
+            <div class="example blueback">
+                This is <sup>superscript</sup> and this is <sub>subscript</sub>
+            </div>
+            <div class="heading2 written">
+                Use of <span class="tags">mark</span> tag
+            </div>
+            <div class="blueback example">
+                <mark>This text is marked</mark>
+            </div>
+            <div class="heading2 written">
+                Use of <span class="tags">q</span> tag
+            </div>
+            <div class="blueback example">
+                <q>This text is quoted</q>
+            </div>
+            <div class="heading2 written">
+                Use of <span class="tags">cite</span> tag
+            </div>
+            <div class="blueback example">
+                <cite>This text is cited</cite>
+            </div>
+            <div class="heading2 written">
+                Use of <span class="tags">del</span> tag
+            </div>
+            <div class="blueback example">
+                <del>This text is deleted</del>
+            </div>
+            <div class="heading2 written">
+                Use of <span class="tags">blockquote</span> tag
+            </div>
+            <div class="blueback example">
+                <blockquote>This text is blockquoted</blockquote>
+            </div> 
+            <div class="heading2 written">
+                The <span class="tags">meter</span> tag is used to display a scalar measurement in a known range.
+            </div>
+            <div class="blueback example">
+                <div>
+                    This is a meter of value 50 out of 100.
+                </div>
+                <meter min="10" max="100" value="50">meter</meter>
+            </div>
+            <div class="heading2 written">
+                The <span class="tags">progress</span> tag is used to display a progress bar or sometimes as a loader 
+            </div>
+            <div class="blueback example">
+                <div>
+                    As a loader :
+                </div>
+                <progress></progress>
+                <div>
+                    As a progress bar :
+                </div>
+                <progress max="100" value="50"></progress>
+            </div> 
+            <!-- customizing progress bar -->
+            <div class="heading2 written">
+                The <span class="tags">details</span> tag is used to shoe additional info which the user can open and close on demand
+            </div>
+            <div class="blueback example">
+                <details>
+                <summary>I am Summary</summary>
+                    I am the details
+                </details>
+            </div>
+            <!-- customizing details -->
+            
+        </div>
+    </div>
+    
     <hr>
 
-    24 . <h2 id="entities" >Entities</h2>
+    <h2 id="entities" class="heading1">Entities</h2>
 
     <!-- html advanced emojis and entities -->
     https://www.science.co.il/internet/html/Smileys.php &#128565; &#128519; 😅
-    <p style="color:plum;">
-        For extra space: nbsp &nbsp; |
-        Paragraph symbol: lt &lt; |
-        Pound symbol: pound &pound; |
-        Copyright: copy &copy; |
-        Arrow: rAarr &rAarr; |
-        Empty character : #8203 &#8203; |
-    </p>
-    25 . <hr>
+    <div>
+        <ul>
+            <li>
+                <div>
+                    For extra space: <span class='tags'>nbsp</span> &nbsp; 
+                </div>
+            </li>
+            <li style="color:azure">
+                <div>
+                    Paragraph symbol: <span class='tags'>lt</span> &lt;
+                </div> 
+            </li>
+            <li>
+                <div>
+                    Pound symbol: <span class='tags'>pound</span> &pound;
+                </div>
+            </li>
+            <li>
+                <div>
+                    Copyright: <span class='tags'>copy</span> &copy; 
+                </div>
+            </li>
+            <li>
+                <div>
+                    Arrow: <span class='tags'>rAarr</span> &rAarr;
+                </div>
+            </li> 
+            <li>
+                <div>
+                    Empty character : <span class='tags'>#8230</span> &#8203;
+                </div> 
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="media" class="heading1">
+        Adding Media In HTML
+    </div>
+    
     <!-- To add an image -->
     I am a hidden image <img src="https://source.unsplash.com/200x110/?nature,water" alt="remote image" width="233"
         height="100" id="image_to_hide">
     <br>
     <hr>
     <!-- To add a VIDEO -->
-    26 . Adding a Video
+    <div class="heading2">Adding a Video</div>
     <video width="400px" height="315" controls>
         <source src="../assets/butterfly.mp4" type="video/mp4" />
     </video>
@@ -174,7 +347,8 @@
     <hr>
 
     <!-- To add an AUDIO -->
-    27 . Adding an Audio
+    <div class="heading2">Adding an Audio</div>
+
     <audio controls>
         <source src="../assets/tyd.mp3" type="audio/mp3" />
     </audio>
@@ -183,7 +357,10 @@
 
 
     <!-- To play Youtube Videos iframe tag -->
-   28 .  Adding a Youtube Video
+    <div>
+        Adding a Youtube Video
+    </div>
+    
     <iframe width="400px" height="315" src="https://www.youtube.com/embed/EFHeeRIDAsg" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen> </iframe>
@@ -196,24 +373,35 @@
 
 
     <hr>
-    29 . <div class="favicons" >
-        <a href="./learnings/icons.html" style="color:plum;">Favicons</a>
-        Icons
-        <br /> 
-
-         Adding Icons and Favicons
-        <p style="color:plum;">
-            CDN - content delivery network - can be used to display icons from other s
+    <div id="favicon" class="favicons heading1">
+        Favicons Icons
+        <div>
+            Adding Icons and Favicons
+        </div>
+    </div>
+        <p class="blueback info">
+            CDN - content delivery network - can be used to display icons from others
             server
         </p>
-        30 . <ul style="color:plum;">
+        <ul>
             <li>Lineicons</li>
-            <li>Fontawesome</li>
+            <li>Fontawesome:</li>
         </ul>
-        31 . <i class="lni lni-angellist" style="font-size: 300px; color: pink;"></i>
+        <div class="example blueback">
+            <i class="lni lni-angellist" style="font-size: 100px; color: pink;"></i>
+            <div>
+                Fontawesome Icon
+            </div>
+        </div>
+    <br>
+    <div class="note">
         Adding favicon to title bar!
-        using
-        https://favicon.io/favicon-converter/
+    </div>
+    <div>
+        Using:<br>
+        <div >
+            <a href="https://favicon.io/favicon-converter/" style="color:cyan">https://favicon.io/favicon-converter/</a>
+        </div>
         just select the image <br>
         download the zip
         <br>
@@ -223,138 +411,206 @@
     </div>
 
     <hr>
-   -> Types of CSS Selectors - 4
+    <div id="selectors" class="heading1">
+        Types of CSS Selectors - 4
+    </div>
+    
     <br>
-    <ul style="color:plum;">
-        <li> Simple selectors (select elements based on element, name, id, class)</li>
-        <li> Combinator selectors (select elements based on a specific relationship between them)
-            <ul>
+    <div class="written">
+        <div class="sections">
+            <span class="tags">Simple selectors</span>  (select elements based on element, name, id, class)
+        </div>
+        <div class="sections">
+             <span class="tags">Combinator selectors</span> (select elements based on a specific relationship between them)
+            <ol>
                 <li>
                     Descendent Selector - called spacer
                 </li>
-                <li>
+                <li style="color:rgb(189, 189, 189)">
                     Child Selectors
                 </li>
-                <li>adjacent sibling selector</li>
-                <li>general sibling selector</li>
-            </ul>
+                <li>
+                    adjacent sibling selector
+                </li>
+                <li>
+                    general sibling selector
+                </li>
+            </ol>
+        </div>
+        
+        
+        <div class="sections">
+            <span class="tags">Pseudo-class selectors</span> (select elements based on a certain state)
+                
+                <ol>
+                    <li>
+                        <span class="cyan">input:required</span> : when the input field is required
+                        <div class="example blueback">
+                            <input type="text" placeholder="Required input" required>
+                        </div>
+                    </li>
+                    <li>
+                        input:disabled <span style="color:azure">: when the field needs to be disabled</span> 
+                        <div class="example blueback">
+                            <input type="text" placeholder="Disabled input" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:placeholder</span>
+                        <div class="example blueback">
+                            <input type="text" placeholder="Placerrr">
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:readonly</span> : for readonly field
+                        <div class="example blueback">
+                            <input type="text" placeholder='This is read only' readonly>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:invalid</span> : when required field is empty, or invalid input submitted
+                        <div class="example blueback">
+                            <input class="valid" type="text" placeholder="Its red because nothing is written and its required" required> 
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:valid</span> : when valid submission
+                        <div class="example blueback">
+                            <input class="valid" type="text" placeholder="It will be green if input is valid" required>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:in-range</span> : when in range
+                        <div class="example blueback">
+                            <input class="in-range" min="1" max="5" type="number" placeholder="Enter number bw 1 and 5" required>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cyan">input:out-of-range</span> : when out of range
+                        <div class="example blueback">
+                            <input class="out-of-range" min="1" max="5" type="number" placeholder="Enter number bw 1 and 5" required>
+                        </div>
+                    </li>
+                </ol>
+        </div>
+            
 
-        </li>
-        <li>Pseudo-class selectors (select elements based on a certain state)
-            <ul>
-                <li>input:required
-                    <input type="text" required>REQ
 
-                </li>
-                <li>input:disabled
-                    <input type="text" disabled>DIS
-                </li>
-                <li>input:placeholder
-                    <input type="text" placeholder="placerrr">PLH
-                </li>
-                <li>input:readonly
-                    <input type="text" readonly>RDO
-                </li>
-                <li>input:invalid
-                    <input type="text" required>INV - when required field is empty, or invalid input submitted
-                </li>
-                <li>input:valid
-                    <input type="text" required>VLD - when valid submission
-                </li>
-                <li>input:in-range
-                    <input min="1" max="5" type="number" placeholder="enter number bw 1 and 5" required>RNG in range
-                </li>
-                <li>input:out-of-range
-                    <input min="1" max="5" type="number" placeholder="enter number bw 1 and 5" required> ORN out of
-                    range
-                </li>
-            </ul>
-
-
-        </li>
-        <li> Pseudo-elements selectors (select and style a part of an element)
-            <p>User action pseudo classes</p>
-            <ul>
-                <li><button> Register</button></li>
-                <li>hover
-
-                </li>
-                <li>active
-
-                </li>
-                <li>focus
-
-                </li>
-            </ul>
-            <p>
-                location Pseudo-class
-            </p>
-            <ul>
-                <li>a:link</li>
-                <li>a:any-link</li>
-                <li>a:visited</li>
-            </ul>
-        </li>
-
-    </ul>
-    <div>
-        <p>inside div wala para</p>
-        <h2>
-            <p>
-                inside h2 wala para
-            </p>
-        </h2>
+        
+         <div class="sections">
+            <span class="tags">Pseudo-elements selectors</span> (select and style a part of an element)
+            <div class="sections">
+                <div class="tags">User action pseudo classes:</div>
+                <ol>
+                    <li>
+                        hover
+                    </li>
+                    <li style="color:rgb(189, 189, 189)">
+                        active
+                    </li>
+                    <li>
+                        focus
+                    </li>
+                </ol>
+                <div class="example blueback" style="margin-left:2vw;margin-right:2vw">
+                    <button class="hover">
+                        Hover on Me
+                    </button>
+                    <button class="focus">
+                        Click Me Once
+                    </button>
+                    <button class="active">
+                        Click Me
+                    </button>
+                </div>
+            </div>
+            <div class="sections">
+            
+                <p>
+                    <span class="tags">location Pseudo-class</span>
+                </p>
+                    <p style="margin-left: 2vw;">
+                        <ol>
+                            <li>
+                                a:link
+                            </li>
+                            <li style="color:rgb(189, 189, 189)">
+                                a:any-link
+                            </li>
+                            <li>
+                                a:visited
+                            </li>
+                        </ol>
+                        
+                    </p>
+                
+            <div>
+                <p>inside div wala para</p>
+                <h2>
+                    <p>
+                        inside h2 wala para
+                    </p>
+                </h2>
+            </div>
+        </div>
+         </div>
+         
     </div>
 
     <hr>
-    <h2>
-       -> CSS SPECIFICITY
-    </h2>
-    <p style="color:plum;">
+    <div id="specificity" class="heading1">
+        CSS SPECIFICITY
+    </div>
+    <div class="written">
+        <p>
         What is Specificity?
-        If there are two or more CSS rules that point to the same element, the selector with the highest specificity
+        <div class="blueback info">
+            If there are two or more CSS rules that point to the same element, the selector with the highest specificity
         value will "win", and its style declaration will be applied to that HTML element.
+        </div>
     </p>
     <h3>
-        Specificity Hierarchy
+        Specificity Hierarchy:
     </h3>
-    <p style="color:plum;">Every CSS selector has its place in the specificity hierarchy.
+    <p>Every CSS selector has its place in the specificity hierarchy.
 
         There are four categories which define the specificity level of a selector:
 
     </p>
-    <ul style="color:plum;">
+    <ul>
         <li>on top of all is !important </li>
-        <li style="color: white;">Inline styles - Example: h1 style="color: pink;"/h1 </li>
+        <li style="color: rgb(189, 189, 189);">Inline styles - Example: h1 style="color: pink;"/h1 </li>
         <li>IDs - Example: #navbar</li>
         <li>Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]</li>
         <li>Elements and pseudo-elements - Example: h1, :before</li>
     </ul>
-    <p style="color:plum;">
+    <div class="blueback info">
         On top of all these is !important used to override the rule
-    </p>
+    </div>
+    </div>
     <hr>
-    <h2>->CSS Layout</h2>
-    <ul>
+    <div id="layout" class="heading1">CSS Layout</div>
+    <div class="written">
+        <ul>
         <li>
-            Block level
+            <span class="tags">Block</span>  level
             <p>
 
-            <ul style="color:plum;">
+            <ul>
                 <li>new line, full width of PARENT, from left to right, </li>
-                <li>ex. div h1 p, we can set width height of the element</li>
+                <li style="color:rgb(189, 189, 189)">ex. div h1 p, we can set width height of the element</li>
                 <li>to check if an element is block or not just add a css style background color red, and see if this
                     makes the entire length red, its block else not.</li>
             </ul>
             </p>
         </li>
-        <li>
-            Inline level
+        <li style="color: rgb(189, 189, 189);">
+            <span class="tags">Inline</span>  level
             <p>
 
             <ul>
                 <li>NOT new line, NOT TAKE FULL width of PARENT, TAKES space as necessary </li>
-                <li>cant set width height of teh element</li>
+                <li style="color:rgb(189, 189, 189)">cant set width height of teh element</li>
                 <li>ex. span a img</li>
                 <li>to check if an element is inline or not just add a css style background color red, and see if this
                     doesnt makes the entire length red, its inline, also oyu cant adjust height width.</li>
@@ -362,12 +618,12 @@
             </p>
         </li>
         <li>
-            Block - Inline level
+            <span class="tags">Block - Inline</span> level
             <p>
 
             <ul>
                 <li>we can override display property from inline to block and vice erse </li>
-                <li>element sit next to other element</li>
+                <li style="color:rgb(189, 189, 189)">element sit next to other element</li>
                 <li>it doesnt add a line break after the element</li>
                 <li>use display:inline-block</li>
                 <li>use display: none to hide</li>
@@ -375,61 +631,70 @@
             </p>
         </li>
     </ul>
+    </div>
     <hr>
-    <h2>
-        ->Types of position
-    </h2>
-    <ul>
-        <li>Static - default, cant add top/bottom/left/right</li>
-        <li>relative - posn related to normal posn, can add t/b/l/r, other elmts behave there is no element</li>
-        <li>fixed - posn related to viewport, affected by tblr, doesnt leave gaps</li>
-        <li>absolute - posn related to nearest parent, aff by tblr, ti move from normal flow <b>it will look up if the
+    <div id="position" class="heading1">
+        Types of position
+    </div>
+    <div class="written">
+        <ul>
+        <li><span class="cyan">Static</span>  - default, cant add top/bottom/left/right</li>
+        <li style="color:rgb(189, 189, 189)"><span class="cyan">Relative</span> - posn related to normal posn, can add t/b/l/r, other elmts behave there is no element</li>
+        <li><span class="cyan">Fixed</span> - posn related to viewport, affected by tblr, doesnt leave gaps</li>
+        <li><span class="cyan">Absolute</span> - posn related to nearest parent, aff by tblr, ti move from normal flow <b>it will look up if the
                 parent has a position relative otherwise it document body</b></li>
-        <li>sticky - you can have tblr</li>
-    </ul>
+        <li><span class="cyan">Sticky</span> - you can have tblr</li>
+        </ul>
+    </div>
     <hr>
-    <h3>
-        -> Animation Properties
-    </h3>
-    <ul>
-        <li>name</li>
-        <li>duration</li>
-        <li>timing-function
+    <div id="animation" class="heading1">
+        Animation Properties
+    </div>
+    <div class="written">
+        <ul>
+        <li>Name</li>
+        <li style="color:rgb(189, 189, 189)">Duration</li>
+        <li>Timing-function
             <ol>
                 <li>Linear</li>
-                <li>ease</li>
-                <li> easein</li>
-                <li>ease-out</li>
+                <li style="color:rgb(189, 189, 189)">Ease</li>
+                <li> Easein</li>
+                <li>Ease-out</li>
 
             </ol>
         </li>
-        <li>delay</li>
-        <li>iteration-count</li>
-        <li>keyframes</li>
+        <li>Delay</li>
+        <li>Iteration-count</li>
+        <li>Keyframes</li>
     </ul>
-    <h3>
-        -> How to use animation
-    </h3>
+    <div class="heading3">
+        How to use animation:
+    </div>
     <ol>
-        <li>create using keyframes</li>
-        <li>add animation to eleemnt</li>
+        <li>Create using keyframes</li>
+        <li style="color:rgb(189, 189, 189)">A  dd animation to eleemnt</li>
     </ol>
+    </div>
+    
 
     <hr>
-    <h3>-> Responsive Design</h3>
-    <ul>
+    <div id="responsive" class="heading1">Responsive Design</div>
+    <div class="written">
+        <ul>
         <li>name = "viewport"/content = "width = device-width
-            - checkout <a href="https://www.mydevice.io/">Mydevice.io</a> for viewport(the visible part of your applncn)
+            <div class="blueback info">
+                checkout &nbsp;<a href="https://www.mydevice.io/">Mydevice.io</a>&nbsp; for viewport (the visible part of your applncn)
+            </div>
         </li>
-        <li>Media Query - using @media screen and (min-width:600px){ css }</li>
+        <li style="color:rgb(189, 189, 189)">Media Query - using @media screen and (min-width:600px){ css }</li>
     </ul>
-    <h4>-> Commonly used breakpoints</h4>
+    <div class="heading3">Commonly used breakpoints:</div>
     <ol>
         <li>/* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 600px) {...}
 
         </li>
-        <li>/* Small devices (portrait tablets and large phones, 600px and up) */
+        <li style="color:rgb(189, 189, 189)">/* Small devices (portrait tablets and large phones, 600px and up) */
             @media only screen and (min-width: 600px) {...}
 
         </li>
@@ -444,59 +709,75 @@
         <li>/* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {...}</li>
     </ol>
+    </div>
     <hr>
-    <h2>->FLEXBOX</h2>
-    <p>
-        it has a <br> parent(container) and a <br>
+    <div id="flexbox" class="heading1">FLEXBOX</div>
+    <div class="written">
+         <p class="blueback info">
+        It has a parent(container) and a
         child(elements wrapped - flex items)
-    <ol>
-        <h4>Flex container property</h4>
-        <li>flex direction</li>
-        <li>justify content</li>
-        <li>align items</li>
-        <li>align content</li>
-        <li>flex wrap</li>
-        <li>flex flow</li>
+        
+            <div class="heading3">Flex container property:</div>
+            <ol>
+                <li>flex direction</li>
+                <li style="color:rgb(189, 189, 189)">justify content</li>
+                <li>align items</li>
+                <li>align content</li>
+                <li>flex wrap</li>
+                <li>flex flow</li>
+            </ol>
+            <div class="heading3">Flex item property:</div>
+            <ol>
+                <li>order number</li>
+                <li style="color:rgb(189, 189, 189)">flex: number | auto| none</li>
+                <li>align-self: flex-start end center baseline stretch</li>
+            </ol>
+        </p>
 
-        <h4>Flex item property</h4>
-        <li>order number</li>
-        <li>flex: number | auto| none</li>
-        <li>align-self: flex-start end center baseline stretch</li>
-    </ol>
-    </p>
-
+    </div>
 
     <hr>
-    <h2>
-       -> How to customize your code theme :
-    </h2>
+    <div id="theme" class="heading1">
+        Customized vs code theme
+    </div>
     <p>
-    <ul style="color:aqua;">
-        <li style="color:aqua;">
-            Install extension "autorename"
+    <ul>
+        <li>
+            install extension autorename
         </li>
-        <li>Install extension "night owl"</li>
-        <li>Copy json command from teh internet</li>
-        <li>Settings > edit in settings.json</li>
-        <li>Paste json commands for customizing</li>
-        <li>Extensions > night owl > theme > italics</li>
+        <li style="color:rgb(189, 189, 189)">install extension night owl</li>
+        <li>copied json command from teh internet</li>
+        <li>settings > edit in settings.json</li>
+        <li>paste json commands for customizing</li>
+        <li>extensions > night owl > theme > italics</li>
     </ul>
     </p>
 
     <hr>
-    <h1>
-        ->CSS FRAMEWORKS
-    </h1>
-    <ol>
-        <li ><a href="https://semantic-ui.com/" style="color:aqua;">SEMANTIC UI </a></li>
-        <li><a href="https://get.foundation/" style="color:aqua;">Foundation</a></li>
-        <li><a href="http://getskeleton.com/" style="color:aqua;">Skeleton</a></li>
-        <li><a href="https://tailwindcss.com/" style="color:aqua;">Tailwind css</a></li>
-        <li><a href="https://bulma.io/" style="color:aqua;">Bulma</a></li>
-        <li><a href="https://getbootstrap.com/" style="color:aqua;">Bootstrap</a></li>
-    </ol>
-    <h2><a href="../pages/learnings/bootstrap.html" style="color:aliceblue;"> Bootstrap - complete notes</a></h2>
-    <h2><a href="../pages/learnings/javascript.html" style="color:aliceblue;"> Javascript - complete notes</a></h2>
+    <div class="heading1" id="frameworks">
+        CSS FRAMEWORKS
+    </div>
+    <div class="frame">
+        <div class="frame-item blueback">
+            <a href="https://semantic-ui.com/">SEMANTIC UI </a>
+        </div>
+        <div class="frame-item blueback">
+            <a href="https://get.foundation/">Foundation</a>
+        </div>
+        <div class="frame-item blueback">
+            <a href="http://getskeleton.com/">Skeleton</a>
+        </div>
+        <div class="frame-item blueback">
+            <a href="https://tailwindcss.com/">Tailwind css</a>
+        </div>
+
+        <div class="frame-item blueback">
+            <a href="https://bulma.io/">Bulma</a>
+        </div>
+        <div class="frame-item blueback">
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+        </div>
+    </div>
 
 
 
@@ -507,14 +788,11 @@
 
 
 
+</div>
 
     <div id="footer">
         footer
     </div>
-    
-        
-     
-            
     <footer>
         Copyright &copy; reserved w Fyka Ansar &nbsp;
     </footer>
