@@ -29,18 +29,18 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 </table>
 
 
-## 🎀 Contributor's Of the Month (Based on Most Efficient Contributions)
+## 🏆 Contributor's Of the Month (Based on Most Efficient Contributions) 🏆
 
 <table>
-  <tr>
-<td align="center"><a href="https://github.com/Pragya2056"><img src="https://avatars.githubusercontent.com/u/97490463?s=400&u=40ecf85c116732649a64751cc0892ff42afbd07d&v=4" width="100px;" alt=""/><br /><sub><b>Pragya</b></sub></a></td>
-  </tr>
-  <tr>
-<td align="center"><a href="https://github.com/Sivam2313"><img src="https://avatars.githubusercontent.com/u/97490463?s=400&u=40ecf85c116732649a64751cc0892ff42afbd07d&v=4" width="100px;" alt=""/><br /><sub><b>Sivam</b></sub></a></td>
-  </tr>
-  <tr>
-<td align="center"><a href="https://github.com/Sivam2313"><img src="https://avatars.githubusercontent.com/u/97490463?s=400&u=40ecf85c116732649a64751cc0892ff42afbd07d&v=4" width="100px;" alt=""/><br /><sub><b>Sivam</b></sub></a></td>
-  </tr>
+<!--   <tr> -->
+<td align="center"><a href="https://github.com/Pragya2056"><img src="https://avatars.githubusercontent.com/u/55945790?v=4" width="100px;" alt=""/><br /><sub><b>Pragya</b></sub></a></td>
+<!--   </tr> -->
+<!--   <tr> -->
+<!-- <td align="center"><a href="https://github.com/Sivam2313"><img src="https://avatars.githubusercontent.com/u/97490463?s=400&u=40ecf85c116732649a64751cc0892ff42afbd07d&v=4" width="100px;" alt=""/><br /><sub><b>Sivam</b></sub></a></td> -->
+<!--   </tr> -->
+<!--   <tr> -->
+<td align="center"><a href="https://github.com/Sivam2313"><img src="https://avatars.githubusercontent.com/u/100067002?v=4" width="100px;" alt=""/><br /><sub><b>Sivam</b></sub></a></td>
+<!--   </tr> -->
 </table>
 
 
