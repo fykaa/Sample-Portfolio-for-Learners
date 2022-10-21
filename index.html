@@ -20,21 +20,6 @@
   <link rel="stylesheet" href="./styling.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-   <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Bodoni&family=Playfair+Display:wght@400;500&family=Tapestry&display=swap" rel="stylesheet">
-     
-
-  <!-- Bootstrap Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
   <script src="javascript.js"></script>
 </head>
 
@@ -43,13 +28,11 @@
   <div class="bg"></div>
   <div class="bg bg2"></div>
   <div class="bg bg3"></div>
-
-
-
   <header>
-    
-    <nav class="navbar">
-      <a href="index.html"><h1> Portfolio</h1></a>
+    <nav class="navbar" style="display: flex; justify-content: end; ">
+      <a href="index.html">
+        <h1> Portfolio</h1>
+      </a>
       <ul>
 
         <li><a href="#work"> Contributions</a></li>
@@ -59,14 +42,14 @@
           <a href="./pages/learnings.html" target="_blank"> Learnings</a>
         </li>
         <li><a href="#about"> About</a></li>
-      
-        <li>
-        <!-- <div class="search"> -->
-          <!-- <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus /> -->
-        <!-- </div> -->
-        <!-- <img onclick="handleMenu()" id="menu" class="menu" src="./assets/menu.png" alt="menu"></li> -->
       </ul>
-    
+      <div style="display: flex; align-items: center; ">
+
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search my Portfolio" autofocus />
+        </div>
+        <img onclick="handleMenu()" id="menu" class="menu" src="./assets/menu.png" alt="menu">
+      </div>
 
     </nav>
   </header>
@@ -89,58 +72,151 @@
 
     </div>
   </div>
+  <div>
+    <section>
+      <section class="about" id="about">
+        <div class="about_content container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contentbox w50 ">
+                <h3>Hello there, I am</h3>
+                <h1> Karl Vegan</h1>
+                <div class="about_self">
+                  <h3>I'm a <u>Developer.</u></h3>
+                  <p>
+                    🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
+                    Photographer.<br />
+                    I love programming and making random web-based applications for
+                    fun. I am a future full-stack developer, currently I'm focusing
+                    on the backend.
+                  </p>
+                </div>
+                <div class="about_hobby">
+                  <h3>My Interests apart from coding</h3>
+                  <p>
+                    📖 reading books<br />
+                    📸 photography<br />
+                    🎨 sketching/painting!<br />
+                  </p>
+                </div>
+                <button class="custom-btn btn-3"><span>Let's connect</span></button>
+              </div>
+            </div>
 
-  <section>
-    <section class="about" id="about">
-      <!-- About me heading is not looking good here -->
-      <!-- <div class="subhead">
-        <h2>About me</h2>
-      </div> -->
-      
-      <div class="about_content container-fluid">
-        <div class="row">
-          <div class="col-lg-6"> 
-            <div class="contentbox w50 ">
-              <h3>Hello there, I am</h3>
-              <h1> Karl Vegan</h1>
-              <div class="about_self">
-                <h3>I'm a <u>Developer.</u></h3>
-                <p>
-                  🌀Self-taught Web Dev ⚡ Pursuing degree in Computer Science 📸
-                  Photographer.<br />
-                  I love programming and making random web-based applications for
-                  fun. I am a future full-stack developer, currently I'm focusing
-                  on the backend.
-                </p>
+      </section>
+
+      <div class="project" id="project">
+        <h3 class="subhead">Projects🎥 </h3>
+
+        <div class="grid-container">
+          <div class="grid-item" id="box-1">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/static%20card"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Static card.png" alt="Static card" /></div>
+              <div class="box">Static card <div class="box-content">Sorry the project detail was not available in any of
+                  the folder in inside the readme file. However, the project details goes here. </div>
               </div>
-              <div class="about_hobby">
-                <h3>My Interests apart from coding</h3>
-                <p>
-                  📖 reading books<br />
-                  📸 photography<br />
-                  🎨 sketching/painting!<br />
-                </p>
-              </div>
-              <button class="custom-btn btn-3"><span>Let's connect</span></button>
-            </div>
-            </div>
-          
-          <div class="col-lg-6">
-            <div aling="right" class="w50 about_img">
-            <img src="./assets/girl.jpg" class="img-responsive imgIM" />
-            </div>
+            </a>
           </div>
+          <div class="grid-item" id="box-2">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Aryan" target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Aryan.png" alt="Aryan" /></div>
+              <div class="box"> Aryan <div class="box-content">Sorry the project detail was not available in any of the
+                  folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-3">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Bank-project"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Bank-project.png" alt="Bank-project" /></div>
+              <div class="box">Bank-project <div class="box-content">Sorry the project detail was not available in any
+                  of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item" id="box-4">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Business-Card-main"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Business-card-main.png"
+                  alt="Business-Card-main" /></div>
+              <div class="box">Business-Card-main <div class="box-content">Sorry the project detail was not available in
+                  any of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-5">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Suryansh%20Card"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Suryansh Card.png" alt="Suryansh Card" />
+              </div>
+              <div class="box">Suryansh Card <div class="box-content">Sorry the project detail was not available in any
+                  of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-6">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/animesite"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/animesite.png" alt="animesite" /></div>
+              <div class="box">animesite <div class="box-content">Sorry the project detail was not available in any of
+                  the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-7">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/portfolio"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/portfolio.png" alt="portfolio" /></div>
+              <div class="box">portfolio <div class="box-content">Sorry the project detail was not available in any of
+                  the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-8">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/spotify-clone"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/spotify-clone.png" alt="spotify-clone" />
+              </div>
+              <div class="box">spotify-clone <div class="box-content">Sorry the project detail was not available in any
+                  of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-9">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Amit" target="_blank">
+              <div class="image-wrapper">
+                <img src="/assets/main home page/Amit.png" alt="Amit" />
+              </div>
+              <div class="box"> Amit <div class="box-content">Sorry the project detail was not available in any of the
+                  folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-10">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/Tribute-Page"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Gandalf.jpg" alt="Static card" /></div>
+              <div class="box">Tribute Page <div class="box-content">Sorry the project detail was not available in any
+                  of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item" id="box-11">
+            <a href="https://github.com/fykaa/Sample-Portfolio-for-Learners/tree/master/projects/vigenere%20cypher"
+              target="_blank">
+              <div class="image-wrapper"><img src="/assets/main home page/Vigenere Cipher.png" alt="vigenere cypher" />
+              </div>
+              <div class="box">vigenere cypher <div class="box-content">Sorry the project detail was not available in
+                  any of the folder in inside the readme file. However, the project details goes here. </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    </section>
+  </div>
 
-    <div class="project" id="project">
-      <h3 class="subhead">&rAarr;Projects&lAarr;</h3>
-      <p style="text-align: center">--to be updated--</p>
-    </div>
-
-
-  </section>
 
   <!-- FLEXBOX -->
   <div class="flexbox" id="contact">
@@ -181,7 +257,7 @@
       <a href="https://www.linkedin.com/in/faeka/" target="_blank">
         Open Source ♥ </a>
       | 2022 All rights reserved
-      <<<<<<< HEAD <div class="footer-wrapper">
+      <div class="footer-wrapper">
         <div class="icons">
           <ul>
             <li>
@@ -207,10 +283,10 @@
           </ul>
         </div>
 
-    </div>
-    <span class="floating-footer">
-      Copyright &copy; reserved w Fyka Ansari &nbsp;
-    </span>
+      </div>
+      <span class="floating-footer">
+        Copyright &copy; reserved w Fyka Ansari &nbsp;
+      </span>
   </footer>
   <script src="./javascript.js"></script>
 </body>
