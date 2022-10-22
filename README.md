@@ -29,8 +29,8 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 </table>
 
 
-## 🏆 Contributor's Of the Month (Based on Most Efficient Contributions) 🏆
-
+## 🏆 Contribution Trophy - Contributors Of the Month🏆
+ (Based on Most Efficient Contributions) 
 <table>
 <!--   <tr> -->
 <td align="center"><a href="https://github.com/Pragya2056"><img src="https://avatars.githubusercontent.com/u/55945790?v=4" width="100px;" alt=""/><br /><sub><b>Pragya</b></sub></a></td>
