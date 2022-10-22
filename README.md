@@ -6,7 +6,8 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 ---
 
 ## Intructions for successfully merged PR under HACKTOBERFEST 👩‍💻🏆👨‍💻
-
+- Most efficient PR receives a Shout-Out under the [Contributions Trophy](https://github.com/fykaa/Sample-Portfolio-for-Learners/blob/master/README.md#-contribution-trophy---contributors-of-the-month) of the month
+- Is Merged the FASTEST (within 4 hours)
     1. Star this repo ⭐
     2. Create Issue
     3. Submit Valid PR within 24hrs of Assignment
