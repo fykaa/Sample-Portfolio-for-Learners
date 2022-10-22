@@ -255,16 +255,15 @@ section .about {
   /* padding: 1px 60px 0px 60px; */
   width: 100%;
   background: transparent;
-  padding-top: 60px;
+  padding-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 1px 60px 0px 60px;
-  width: 100%;
   background: transparent;
-  padding-top: 50px;
-
+  padding-top: 0px;
+  margin-top: 1rem;
 }
 
 .contentbox h1 {
@@ -273,7 +272,11 @@ section .about {
   padding: auto;
   font-weight: 900;
 }
-
+.contentbox h3 u{
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
 .contentbox p {
   font-size: 15px;
   margin: auto;
@@ -452,26 +455,32 @@ section .about {
 
 /* Projects section */
 .project h3 {
-  color: white;
+  color: orange;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .project {
-  background-color: #0c1222;
+  background-color: #0a192f;
 }
-
 .grid-container {
   display: grid;
-  width: 100%;
+  width: 95%;
   gap: 34px;
   padding-bottom: 50px;
   grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
 }
 
 .grid-container>div {
-  background-color: #181A1B;
+  background-color: #112240;
   text-align: center;
   margin: 0px;
 
+}
+.grid-container>div:hover {
+  border: 1px solid #0a192f;
 }
 
 .grid-item {
@@ -611,7 +620,7 @@ section .about {
 
 /* Contact Us */
 .container {
-  max-width: 400px;
+  max-width: 70%;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -620,7 +629,6 @@ section .about {
 /* #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; } */
 
 #contact {
-  background: #9d4343;
   padding: 25px;
   margin: 50px 0;
 }
@@ -628,17 +636,24 @@ section .about {
 #contact h3 {
   color: #F96;
   display: block;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-  margin: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  /* text-align: center; */
+  /* margin: 10px; */
+  margin-bottom: 25px;
 }
 
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 15px;
-  text-align: center;
+  font-size: 20px;
+  /* text-align: center; */
+  background: #410914;
+  color: white;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 fieldset {
@@ -649,6 +664,12 @@ fieldset {
   width: 100%;
 }
 
+.field{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -656,8 +677,10 @@ fieldset {
 #contact textarea {
   width: 100%;
   border: 1px solid #CCC;
+  border-radius: 5px;
+  margin: 10px;
   background: #FFF;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
   padding: 10px;
 }
 
@@ -721,6 +744,9 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+
+
 
 /* footer */
 
