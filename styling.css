@@ -456,19 +456,29 @@ section .about {
 }
 
 .project {
-  background-color: #0c1222;
+  /* background-color: rgba(194, 123, 123, 0.603); */
+   /* background: transparent; */
+   background: rgba(255, 220, 155, 0.747);
+
+}
+.project> h3{
+  text-transform: uppercase;
+  color: rgb(255, 95, 95);
+  margin: 20px;
 }
 
 .grid-container {
   display: grid;
   width: 100%;
   gap: 34px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  padding: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-container>div {
-  background-color: #181A1B;
+  /* background-color: #181A1B; */
+  border:  5px solid rgb(255, 95, 95);
   text-align: center;
   margin: 0px;
 
@@ -478,6 +488,7 @@ section .about {
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
+  max-width: 400px;
 
 }
 
@@ -503,16 +514,34 @@ section .about {
   height: 250px;
   overflow: hidden;
 }
+.box>h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 2px;
+}
 
 .box {
   height: fit-content;
-  font-size: 30px;
+  
+  /* background:#0000005e; */
+  background: rgb(255, 95, 95);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
 }
 
 .box>.box-content {
   font-family: 'Times New Roman', Times, serif;
   font-size: small;
-  font-style: oblique;
+  /* font-style: oblique; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+}
+.box-content>p {
+  text-align: start;
+  line-height: 23px;
 }
 
 @media only screen and (max-width: 900px) {
