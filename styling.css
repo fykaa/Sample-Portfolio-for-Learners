@@ -652,6 +652,10 @@ section .about {
   background: #9d4343;
   padding: 25px;
   margin: 50px 0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #contact h3 {
