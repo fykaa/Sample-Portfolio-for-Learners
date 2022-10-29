@@ -720,13 +720,15 @@ fieldset {
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  border-radius: 100px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #09C;
+  background: rgb(2, 164, 218);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+  font-size: 110%;
 }
 
 #contact button[type="submit"]:active {
