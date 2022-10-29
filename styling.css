@@ -693,6 +693,16 @@ fieldset {
   margin: 0 0 5px;
   padding: 10px;
 }
+#contact input[type="text"]{
+  border-radius: 10px;
+}
+
+#contact input[type="email"]{
+  border-radius: 10px;
+}
+#contact textarea{
+  border-radius: 10px;
+}
 
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
