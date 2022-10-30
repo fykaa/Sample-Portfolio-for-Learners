@@ -578,7 +578,7 @@ section .about {
 
 .flexbox {
   display: flex;
-  height: 200px;
+  height: 170px;
   width: 100%;
   background-color: #6d1022;
   border: 2px black solid;
@@ -811,7 +811,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.2rem 0;
+  margin: 0rem 0;
   gap: 0.3rem;
 }
 
