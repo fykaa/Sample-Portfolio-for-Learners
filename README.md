@@ -5,6 +5,7 @@ Link to the Github Repo [source code](https://github.com/fykaa/Sample-Portfolio-
 
 ---
 
+_Archives_
 ## Intructions for successfully merged PR under HACKTOBERFEST 👩‍💻🏆👨‍💻
 - Most efficient PR receives a Shout-Out under the [Contributions Trophy](https://github.com/fykaa/Sample-Portfolio-for-Learners/blob/master/README.md#-contribution-trophy---contributors-of-the-month) of the month
 - Is Merged the FASTEST (within 4 hours)
