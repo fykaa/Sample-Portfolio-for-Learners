@@ -1,10 +1,7 @@
 /* There are 3 ways to add CSS
-Inline: directly to element                     <div style="color: pink; background-color: blue;"></div>           
 Internal: inside head tag in style tag          <style> div{ color:color: pink; background-color: blue;} </style>
-External: in a css stylesheet 
 PRIORITY: EXTERNAL > INLINE > INTERNAL
 Types of CSS Selectors:
--CSS element Selector           
 -CSS id Selector                #id
 -CSS class Selector             .class
 -The CSS grouping Selector      div, span, footer{}
@@ -33,7 +30,6 @@ PSEUDO SELECTORS IN CSS:
 div li p{} --if p is contained by any li which is contained by div
 div > p --if p is right inside div then this CSS will be applied
 div + p --if p is right after div i.e. p is the next sibling of div
-;ike 
 @media screen and (min-width:800px){ content }
 Variables
 to create variable use '--'
@@ -146,7 +142,6 @@ header {
   color:#FEFFFF;
 }
 .search{
-  width:20vw !important; 
 }
 #search{
   border-radius: 80px;
@@ -200,7 +195,6 @@ header {
   text-decoration: none;
   color:rgb(255, 255, 255);
   font-size: 0.85rem;
-  
 }
 .content{
   position: absolute;
@@ -464,18 +458,13 @@ li:nth-child(2) {
 
 /* Two more topics in grid-
   1) Grid in Layout i.e.
-  grid-template-areas: 
-          'navbar navbar navbar navbar' 
           'section section section aside'
-          'footer footer footer footer '; 
-          
+          'footer footer footer footer ';
   2) media queries in grid:
   @media only screen and (max-width: 300px) section
-  { 
+  {
       display:none;
   }
-  
-          
           */
 
 /* One of the most confusion which now arises is what amongst floats, flexbox or grids should we use? The simple answer is, you are free to use any three of them irrespective of your website should look good and responsive and you should be comfortable with the development. You must always try to give the best user experience because it’s the most important part of SEO. */
@@ -487,8 +476,6 @@ li:nth-child(2) {
 
 .write form {
   /* Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block */
-  /* display: inline-block;       
-  
       height: 800px;
       width: 100%; */
   color: #100f0f;
@@ -627,17 +614,14 @@ select {
           top: 0px;
           left: 0px;
       }
-  
       25% {
           top: 250px;
           left: 0px;
       }
-  
       75% {
           top: 250px;
           left: 250px;
       }
-  
       100% {
           top: 0px;
           left: 250px;
@@ -732,12 +716,133 @@ li>button:focus {
 /* footer */
 footer {
   font-size: small;
+
+  border-top-left-radius: 34px;
+  background-color: #;
+  padding-left: 10px;
+  position: fixed;
+  bottom: -10px;
+  right: 0px;
+
+}
+footer .floating-footer {
+  font-size: small;
   border: 1px solid #9f8e92;
   border-top-left-radius: 34px;
-  background-color: #6d1022;
+  background-color:rgb(37, 26, 26) ;
   padding-left: 10px;
   position: fixed;
   bottom: -10px;
   right: 0px;
   opacity: 20%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  color: white;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
+  padding: 15px 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer a {
+  color: var(--light-color);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.2rem 0;
+  gap: 0.3rem;
+}
+
+.icons ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul li a {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 26.5px;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons ul li a:hover:before {
+  top: 0;
+}
+
+.icons ul li:nth-child(1) a:before {
+  background: #0077B5;
+}
+
+.icons ul li:nth-child(2) a:before {
+  background: black;
+}
+
+.icons ul li:nth-child(4) a:before {
+  background: #E1306C;
+}
+.line{
+  height:2px;
+  background-color: #B8B8B8;
+  margin:0 60px 0 60px;
+}
+.footer-text{
+  color: rgb(0, 219, 110);
+  font-family: "Cabin", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
