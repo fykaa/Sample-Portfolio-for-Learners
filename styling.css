@@ -75,7 +75,7 @@ header {
 
 .navbar {
   background-color: #100f0f;
-  border-radius: 34px;
+  border-radius: 35px;
   height: 70px;
   width: 100%;
 }
@@ -117,7 +117,7 @@ header {
 }
 
 .search {
-  margin: 0px 19px;
+  margin: 0px 20px;
   float: right;
   color: white;
   margin: 10px;
@@ -139,7 +139,7 @@ header {
   border: 1px solid rgb(62, 58, 58);
   border-radius: 14px;
   padding: -1px 9px;
-  width: 163px;
+  width: 164px;
 
 }
 
